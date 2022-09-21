@@ -110,7 +110,7 @@
   "cdktf": {
     "provider": {
       "name": "registry.terraform.io/dnsimple/dnsimple",
-      "version": "0.13.0"
+      "version": "0.14.0"
     }
   },
   "resolutions": {
