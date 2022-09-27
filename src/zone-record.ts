@@ -66,7 +66,7 @@ export class ZoneRecord extends cdktf.TerraformResource {
       terraformResourceType: 'dnsimple_zone_record',
       terraformGeneratorMetadata: {
         providerName: 'dnsimple',
-        providerVersion: '0.14.0',
+        providerVersion: '0.14.1',
         providerVersionConstraint: '~> 0.13'
       },
       provider: config.provider,
