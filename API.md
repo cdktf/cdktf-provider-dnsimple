@@ -265,6 +265,8 @@ public resetId(): void
 | **Name** | **Description** |
 | --- | --- |
 | <code><a href="#@cdktf/provider-dnsimple.dataDnsimpleCertificate.DataDnsimpleCertificate.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktf/provider-dnsimple.dataDnsimpleCertificate.DataDnsimpleCertificate.isTerraformElement">isTerraformElement</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-dnsimple.dataDnsimpleCertificate.DataDnsimpleCertificate.isTerraformDataSource">isTerraformDataSource</a></code> | *No description.* |
 
 ---
 
@@ -297,6 +299,34 @@ this type-testing method instead.
 - *Type:* any
 
 Any object.
+
+---
+
+##### `isTerraformElement` <a name="isTerraformElement" id="@cdktf/provider-dnsimple.dataDnsimpleCertificate.DataDnsimpleCertificate.isTerraformElement"></a>
+
+```typescript
+import { dataDnsimpleCertificate } from '@cdktf/provider-dnsimple'
+
+dataDnsimpleCertificate.DataDnsimpleCertificate.isTerraformElement(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-dnsimple.dataDnsimpleCertificate.DataDnsimpleCertificate.isTerraformElement.parameter.x"></a>
+
+- *Type:* any
+
+---
+
+##### `isTerraformDataSource` <a name="isTerraformDataSource" id="@cdktf/provider-dnsimple.dataDnsimpleCertificate.DataDnsimpleCertificate.isTerraformDataSource"></a>
+
+```typescript
+import { dataDnsimpleCertificate } from '@cdktf/provider-dnsimple'
+
+dataDnsimpleCertificate.DataDnsimpleCertificate.isTerraformDataSource(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-dnsimple.dataDnsimpleCertificate.DataDnsimpleCertificate.isTerraformDataSource.parameter.x"></a>
+
+- *Type:* any
 
 ---
 
@@ -825,6 +855,8 @@ public interpolationForAttribute(terraformAttribute: string): IResolvable
 | **Name** | **Description** |
 | --- | --- |
 | <code><a href="#@cdktf/provider-dnsimple.dataDnsimpleZone.DataDnsimpleZone.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktf/provider-dnsimple.dataDnsimpleZone.DataDnsimpleZone.isTerraformElement">isTerraformElement</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-dnsimple.dataDnsimpleZone.DataDnsimpleZone.isTerraformDataSource">isTerraformDataSource</a></code> | *No description.* |
 
 ---
 
@@ -857,6 +889,34 @@ this type-testing method instead.
 - *Type:* any
 
 Any object.
+
+---
+
+##### `isTerraformElement` <a name="isTerraformElement" id="@cdktf/provider-dnsimple.dataDnsimpleZone.DataDnsimpleZone.isTerraformElement"></a>
+
+```typescript
+import { dataDnsimpleZone } from '@cdktf/provider-dnsimple'
+
+dataDnsimpleZone.DataDnsimpleZone.isTerraformElement(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-dnsimple.dataDnsimpleZone.DataDnsimpleZone.isTerraformElement.parameter.x"></a>
+
+- *Type:* any
+
+---
+
+##### `isTerraformDataSource` <a name="isTerraformDataSource" id="@cdktf/provider-dnsimple.dataDnsimpleZone.DataDnsimpleZone.isTerraformDataSource"></a>
+
+```typescript
+import { dataDnsimpleZone } from '@cdktf/provider-dnsimple'
+
+dataDnsimpleZone.DataDnsimpleZone.isTerraformDataSource(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-dnsimple.dataDnsimpleZone.DataDnsimpleZone.isTerraformDataSource.parameter.x"></a>
+
+- *Type:* any
 
 ---
 
@@ -1228,6 +1288,8 @@ public resetUserAgent(): void
 | **Name** | **Description** |
 | --- | --- |
 | <code><a href="#@cdktf/provider-dnsimple.provider.DnsimpleProvider.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktf/provider-dnsimple.provider.DnsimpleProvider.isTerraformElement">isTerraformElement</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-dnsimple.provider.DnsimpleProvider.isTerraformProvider">isTerraformProvider</a></code> | *No description.* |
 
 ---
 
@@ -1260,6 +1322,34 @@ this type-testing method instead.
 - *Type:* any
 
 Any object.
+
+---
+
+##### `isTerraformElement` <a name="isTerraformElement" id="@cdktf/provider-dnsimple.provider.DnsimpleProvider.isTerraformElement"></a>
+
+```typescript
+import { provider } from '@cdktf/provider-dnsimple'
+
+provider.DnsimpleProvider.isTerraformElement(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-dnsimple.provider.DnsimpleProvider.isTerraformElement.parameter.x"></a>
+
+- *Type:* any
+
+---
+
+##### `isTerraformProvider` <a name="isTerraformProvider" id="@cdktf/provider-dnsimple.provider.DnsimpleProvider.isTerraformProvider"></a>
+
+```typescript
+import { provider } from '@cdktf/provider-dnsimple'
+
+provider.DnsimpleProvider.isTerraformProvider(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-dnsimple.provider.DnsimpleProvider.isTerraformProvider.parameter.x"></a>
+
+- *Type:* any
 
 ---
 
@@ -1773,6 +1863,8 @@ public resetId(): void
 | **Name** | **Description** |
 | --- | --- |
 | <code><a href="#@cdktf/provider-dnsimple.domain.Domain.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktf/provider-dnsimple.domain.Domain.isTerraformElement">isTerraformElement</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-dnsimple.domain.Domain.isTerraformResource">isTerraformResource</a></code> | *No description.* |
 
 ---
 
@@ -1805,6 +1897,34 @@ this type-testing method instead.
 - *Type:* any
 
 Any object.
+
+---
+
+##### `isTerraformElement` <a name="isTerraformElement" id="@cdktf/provider-dnsimple.domain.Domain.isTerraformElement"></a>
+
+```typescript
+import { domain } from '@cdktf/provider-dnsimple'
+
+domain.Domain.isTerraformElement(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-dnsimple.domain.Domain.isTerraformElement.parameter.x"></a>
+
+- *Type:* any
+
+---
+
+##### `isTerraformResource` <a name="isTerraformResource" id="@cdktf/provider-dnsimple.domain.Domain.isTerraformResource"></a>
+
+```typescript
+import { domain } from '@cdktf/provider-dnsimple'
+
+domain.Domain.isTerraformResource(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-dnsimple.domain.Domain.isTerraformResource.parameter.x"></a>
+
+- *Type:* any
 
 ---
 
@@ -2362,6 +2482,8 @@ public resetId(): void
 | **Name** | **Description** |
 | --- | --- |
 | <code><a href="#@cdktf/provider-dnsimple.emailForward.EmailForward.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktf/provider-dnsimple.emailForward.EmailForward.isTerraformElement">isTerraformElement</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-dnsimple.emailForward.EmailForward.isTerraformResource">isTerraformResource</a></code> | *No description.* |
 
 ---
 
@@ -2394,6 +2516,34 @@ this type-testing method instead.
 - *Type:* any
 
 Any object.
+
+---
+
+##### `isTerraformElement` <a name="isTerraformElement" id="@cdktf/provider-dnsimple.emailForward.EmailForward.isTerraformElement"></a>
+
+```typescript
+import { emailForward } from '@cdktf/provider-dnsimple'
+
+emailForward.EmailForward.isTerraformElement(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-dnsimple.emailForward.EmailForward.isTerraformElement.parameter.x"></a>
+
+- *Type:* any
+
+---
+
+##### `isTerraformResource` <a name="isTerraformResource" id="@cdktf/provider-dnsimple.emailForward.EmailForward.isTerraformResource"></a>
+
+```typescript
+import { emailForward } from '@cdktf/provider-dnsimple'
+
+emailForward.EmailForward.isTerraformResource(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-dnsimple.emailForward.EmailForward.isTerraformResource.parameter.x"></a>
+
+- *Type:* any
 
 ---
 
@@ -2960,6 +3110,8 @@ public resetTimeouts(): void
 | **Name** | **Description** |
 | --- | --- |
 | <code><a href="#@cdktf/provider-dnsimple.letsEncryptCertificate.LetsEncryptCertificate.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktf/provider-dnsimple.letsEncryptCertificate.LetsEncryptCertificate.isTerraformElement">isTerraformElement</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-dnsimple.letsEncryptCertificate.LetsEncryptCertificate.isTerraformResource">isTerraformResource</a></code> | *No description.* |
 
 ---
 
@@ -2992,6 +3144,34 @@ this type-testing method instead.
 - *Type:* any
 
 Any object.
+
+---
+
+##### `isTerraformElement` <a name="isTerraformElement" id="@cdktf/provider-dnsimple.letsEncryptCertificate.LetsEncryptCertificate.isTerraformElement"></a>
+
+```typescript
+import { letsEncryptCertificate } from '@cdktf/provider-dnsimple'
+
+letsEncryptCertificate.LetsEncryptCertificate.isTerraformElement(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-dnsimple.letsEncryptCertificate.LetsEncryptCertificate.isTerraformElement.parameter.x"></a>
+
+- *Type:* any
+
+---
+
+##### `isTerraformResource` <a name="isTerraformResource" id="@cdktf/provider-dnsimple.letsEncryptCertificate.LetsEncryptCertificate.isTerraformResource"></a>
+
+```typescript
+import { letsEncryptCertificate } from '@cdktf/provider-dnsimple'
+
+letsEncryptCertificate.LetsEncryptCertificate.isTerraformResource(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-dnsimple.letsEncryptCertificate.LetsEncryptCertificate.isTerraformResource.parameter.x"></a>
+
+- *Type:* any
 
 ---
 
@@ -3651,6 +3831,8 @@ public resetTtl(): void
 | **Name** | **Description** |
 | --- | --- |
 | <code><a href="#@cdktf/provider-dnsimple.record.Record.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktf/provider-dnsimple.record.Record.isTerraformElement">isTerraformElement</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-dnsimple.record.Record.isTerraformResource">isTerraformResource</a></code> | *No description.* |
 
 ---
 
@@ -3683,6 +3865,34 @@ this type-testing method instead.
 - *Type:* any
 
 Any object.
+
+---
+
+##### `isTerraformElement` <a name="isTerraformElement" id="@cdktf/provider-dnsimple.record.Record.isTerraformElement"></a>
+
+```typescript
+import { record } from '@cdktf/provider-dnsimple'
+
+record.Record.isTerraformElement(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-dnsimple.record.Record.isTerraformElement.parameter.x"></a>
+
+- *Type:* any
+
+---
+
+##### `isTerraformResource` <a name="isTerraformResource" id="@cdktf/provider-dnsimple.record.Record.isTerraformResource"></a>
+
+```typescript
+import { record } from '@cdktf/provider-dnsimple'
+
+record.Record.isTerraformResource(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-dnsimple.record.Record.isTerraformResource.parameter.x"></a>
+
+- *Type:* any
 
 ---
 
@@ -4320,6 +4530,8 @@ public resetTtl(): void
 | **Name** | **Description** |
 | --- | --- |
 | <code><a href="#@cdktf/provider-dnsimple.zoneRecord.ZoneRecord.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktf/provider-dnsimple.zoneRecord.ZoneRecord.isTerraformElement">isTerraformElement</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-dnsimple.zoneRecord.ZoneRecord.isTerraformResource">isTerraformResource</a></code> | *No description.* |
 
 ---
 
@@ -4352,6 +4564,34 @@ this type-testing method instead.
 - *Type:* any
 
 Any object.
+
+---
+
+##### `isTerraformElement` <a name="isTerraformElement" id="@cdktf/provider-dnsimple.zoneRecord.ZoneRecord.isTerraformElement"></a>
+
+```typescript
+import { zoneRecord } from '@cdktf/provider-dnsimple'
+
+zoneRecord.ZoneRecord.isTerraformElement(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-dnsimple.zoneRecord.ZoneRecord.isTerraformElement.parameter.x"></a>
+
+- *Type:* any
+
+---
+
+##### `isTerraformResource` <a name="isTerraformResource" id="@cdktf/provider-dnsimple.zoneRecord.ZoneRecord.isTerraformResource"></a>
+
+```typescript
+import { zoneRecord } from '@cdktf/provider-dnsimple'
+
+zoneRecord.ZoneRecord.isTerraformResource(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-dnsimple.zoneRecord.ZoneRecord.isTerraformResource.parameter.x"></a>
+
+- *Type:* any
 
 ---
 
