@@ -14,7 +14,7 @@ export interface LetsEncryptCertificateConfig extends cdktf.TerraformMetaArgumen
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/dnsimple/r/lets_encrypt_certificate#contact_id LetsEncryptCertificate#contact_id}
   */
-  readonly contactId: number;
+  readonly contactId?: number;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/dnsimple/r/lets_encrypt_certificate#domain_id LetsEncryptCertificate#domain_id}
   */
@@ -132,7 +132,7 @@ export class LetsEncryptCertificate extends cdktf.TerraformResource {
       terraformResourceType: 'dnsimple_lets_encrypt_certificate',
       terraformGeneratorMetadata: {
         providerName: 'dnsimple',
-        providerVersion: '0.14.1',
+        providerVersion: '0.15.0',
         providerVersionConstraint: '~> 0.13'
       },
       provider: config.provider,
@@ -172,13 +172,16 @@ export class LetsEncryptCertificate extends cdktf.TerraformResource {
     return this._autoRenew;
   }
 
-  // contact_id - computed: false, optional: false, required: true
+  // contact_id - computed: false, optional: true, required: false
   private _contactId?: number; 
   public get contactId() {
     return this.getNumberAttribute('contact_id');
   }
   public set contactId(value: number) {
     this._contactId = value;
+  }
+  public resetContactId() {
+    this._contactId = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get contactIdInput() {
