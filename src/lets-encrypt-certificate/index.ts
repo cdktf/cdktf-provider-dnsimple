@@ -24,6 +24,10 @@ export interface LetsEncryptCertificateConfig extends cdktf.TerraformMetaArgumen
   */
   readonly name: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/dnsimple/r/lets_encrypt_certificate#signature_algorithm LetsEncryptCertificate#signature_algorithm}
+  */
+  readonly signatureAlgorithm?: string;
+  /**
   * timeouts block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/dnsimple/r/lets_encrypt_certificate#timeouts LetsEncryptCertificate#timeouts}
@@ -132,7 +136,7 @@ export class LetsEncryptCertificate extends cdktf.TerraformResource {
       terraformResourceType: 'dnsimple_lets_encrypt_certificate',
       terraformGeneratorMetadata: {
         providerName: 'dnsimple',
-        providerVersion: '0.15.0',
+        providerVersion: '0.16.1',
         providerVersionConstraint: '~> 0.13'
       },
       provider: config.provider,
@@ -147,6 +151,7 @@ export class LetsEncryptCertificate extends cdktf.TerraformResource {
     this._contactId = config.contactId;
     this._domainId = config.domainId;
     this._name = config.name;
+    this._signatureAlgorithm = config.signatureAlgorithm;
     this._timeouts.internalValue = config.timeouts;
   }
 
@@ -237,6 +242,22 @@ export class LetsEncryptCertificate extends cdktf.TerraformResource {
     return this._name;
   }
 
+  // signature_algorithm - computed: false, optional: true, required: false
+  private _signatureAlgorithm?: string; 
+  public get signatureAlgorithm() {
+    return this.getStringAttribute('signature_algorithm');
+  }
+  public set signatureAlgorithm(value: string) {
+    this._signatureAlgorithm = value;
+  }
+  public resetSignatureAlgorithm() {
+    this._signatureAlgorithm = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get signatureAlgorithmInput() {
+    return this._signatureAlgorithm;
+  }
+
   // state - computed: true, optional: false, required: false
   public get state() {
     return this.getStringAttribute('state');
@@ -278,6 +299,7 @@ export class LetsEncryptCertificate extends cdktf.TerraformResource {
       contact_id: cdktf.numberToTerraform(this._contactId),
       domain_id: cdktf.stringToTerraform(this._domainId),
       name: cdktf.stringToTerraform(this._name),
+      signature_algorithm: cdktf.stringToTerraform(this._signatureAlgorithm),
       timeouts: letsEncryptCertificateTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
