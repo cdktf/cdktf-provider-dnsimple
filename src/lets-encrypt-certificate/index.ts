@@ -136,7 +136,7 @@ export class LetsEncryptCertificate extends cdktf.TerraformResource {
       terraformResourceType: 'dnsimple_lets_encrypt_certificate',
       terraformGeneratorMetadata: {
         providerName: 'dnsimple',
-        providerVersion: '0.16.1',
+        providerVersion: '0.16.2',
         providerVersionConstraint: '~> 0.13'
       },
       provider: config.provider,
