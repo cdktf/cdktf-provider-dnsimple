@@ -50,7 +50,7 @@ export class DataDnsimpleCertificate extends cdktf.TerraformDataSource {
       terraformResourceType: 'dnsimple_certificate',
       terraformGeneratorMetadata: {
         providerName: 'dnsimple',
-        providerVersion: '0.16.1',
+        providerVersion: '0.16.2',
         providerVersionConstraint: '~> 0.13'
       },
       provider: config.provider,
