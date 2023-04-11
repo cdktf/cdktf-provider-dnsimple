@@ -12,13 +12,13 @@ Represents a {@link https://www.terraform.io/docs/providers/dnsimple dnsimple}.
 import com.hashicorp.cdktf.providers.dnsimple.provider.DnsimpleProvider;
 
 DnsimpleProvider.Builder.create(Construct scope, java.lang.String id)
-    .account(java.lang.String)
-    .token(java.lang.String)
+//  .account(java.lang.String)
 //  .alias(java.lang.String)
 //  .prefetch(java.lang.Boolean)
 //  .prefetch(IResolvable)
 //  .sandbox(java.lang.Boolean)
 //  .sandbox(IResolvable)
+//  .token(java.lang.String)
 //  .userAgent(java.lang.String)
     .build();
 ```
@@ -28,10 +28,10 @@ DnsimpleProvider.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-dnsimple.provider.DnsimpleProvider.Initializer.parameter.scope">scope</a></code> | <code>software.constructs.Construct</code> | The scope in which to define this construct. |
 | <code><a href="#@cdktf/provider-dnsimple.provider.DnsimpleProvider.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | The scoped construct ID. |
 | <code><a href="#@cdktf/provider-dnsimple.provider.DnsimpleProvider.Initializer.parameter.account">account</a></code> | <code>java.lang.String</code> | The account for API operations. |
-| <code><a href="#@cdktf/provider-dnsimple.provider.DnsimpleProvider.Initializer.parameter.token">token</a></code> | <code>java.lang.String</code> | The API v2 token for API operations. |
 | <code><a href="#@cdktf/provider-dnsimple.provider.DnsimpleProvider.Initializer.parameter.alias">alias</a></code> | <code>java.lang.String</code> | Alias name. |
 | <code><a href="#@cdktf/provider-dnsimple.provider.DnsimpleProvider.Initializer.parameter.prefetch">prefetch</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Flag to enable the prefetch of zone records. |
 | <code><a href="#@cdktf/provider-dnsimple.provider.DnsimpleProvider.Initializer.parameter.sandbox">sandbox</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Flag to enable the sandbox API. |
+| <code><a href="#@cdktf/provider-dnsimple.provider.DnsimpleProvider.Initializer.parameter.token">token</a></code> | <code>java.lang.String</code> | The API v2 token for API operations. |
 | <code><a href="#@cdktf/provider-dnsimple.provider.DnsimpleProvider.Initializer.parameter.userAgent">userAgent</a></code> | <code>java.lang.String</code> | Custom string to append to the user agent used for sending HTTP requests to the API. |
 
 ---
@@ -54,23 +54,13 @@ Must be unique amongst siblings in the same scope
 
 ---
 
-##### `account`<sup>Required</sup> <a name="account" id="@cdktf/provider-dnsimple.provider.DnsimpleProvider.Initializer.parameter.account"></a>
+##### `account`<sup>Optional</sup> <a name="account" id="@cdktf/provider-dnsimple.provider.DnsimpleProvider.Initializer.parameter.account"></a>
 
 - *Type:* java.lang.String
 
 The account for API operations.
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/dnsimple#account DnsimpleProvider#account}
-
----
-
-##### `token`<sup>Required</sup> <a name="token" id="@cdktf/provider-dnsimple.provider.DnsimpleProvider.Initializer.parameter.token"></a>
-
-- *Type:* java.lang.String
-
-The API v2 token for API operations.
-
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/dnsimple#token DnsimpleProvider#token}
 
 ---
 
@@ -104,6 +94,16 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/dnsim
 
 ---
 
+##### `token`<sup>Optional</sup> <a name="token" id="@cdktf/provider-dnsimple.provider.DnsimpleProvider.Initializer.parameter.token"></a>
+
+- *Type:* java.lang.String
+
+The API v2 token for API operations.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/dnsimple#token DnsimpleProvider#token}
+
+---
+
 ##### `userAgent`<sup>Optional</sup> <a name="userAgent" id="@cdktf/provider-dnsimple.provider.DnsimpleProvider.Initializer.parameter.userAgent"></a>
 
 - *Type:* java.lang.String
@@ -124,9 +124,11 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/dnsim
 | <code><a href="#@cdktf/provider-dnsimple.provider.DnsimpleProvider.resetOverrideLogicalId">resetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
 | <code><a href="#@cdktf/provider-dnsimple.provider.DnsimpleProvider.toMetadata">toMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-dnsimple.provider.DnsimpleProvider.toTerraform">toTerraform</a></code> | Adds this resource to the terraform JSON output. |
+| <code><a href="#@cdktf/provider-dnsimple.provider.DnsimpleProvider.resetAccount">resetAccount</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-dnsimple.provider.DnsimpleProvider.resetAlias">resetAlias</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-dnsimple.provider.DnsimpleProvider.resetPrefetch">resetPrefetch</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-dnsimple.provider.DnsimpleProvider.resetSandbox">resetSandbox</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-dnsimple.provider.DnsimpleProvider.resetToken">resetToken</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-dnsimple.provider.DnsimpleProvider.resetUserAgent">resetUserAgent</a></code> | *No description.* |
 
 ---
@@ -195,6 +197,12 @@ public java.lang.Object toTerraform()
 
 Adds this resource to the terraform JSON output.
 
+##### `resetAccount` <a name="resetAccount" id="@cdktf/provider-dnsimple.provider.DnsimpleProvider.resetAccount"></a>
+
+```java
+public void resetAccount()
+```
+
 ##### `resetAlias` <a name="resetAlias" id="@cdktf/provider-dnsimple.provider.DnsimpleProvider.resetAlias"></a>
 
 ```java
@@ -211,6 +219,12 @@ public void resetPrefetch()
 
 ```java
 public void resetSandbox()
+```
+
+##### `resetToken` <a name="resetToken" id="@cdktf/provider-dnsimple.provider.DnsimpleProvider.resetToken"></a>
+
+```java
+public void resetToken()
 ```
 
 ##### `resetUserAgent` <a name="resetUserAgent" id="@cdktf/provider-dnsimple.provider.DnsimpleProvider.resetUserAgent"></a>
@@ -546,13 +560,13 @@ public java.lang.String getTfResourceType();
 import com.hashicorp.cdktf.providers.dnsimple.provider.DnsimpleProviderConfig;
 
 DnsimpleProviderConfig.builder()
-    .account(java.lang.String)
-    .token(java.lang.String)
+//  .account(java.lang.String)
 //  .alias(java.lang.String)
 //  .prefetch(java.lang.Boolean)
 //  .prefetch(IResolvable)
 //  .sandbox(java.lang.Boolean)
 //  .sandbox(IResolvable)
+//  .token(java.lang.String)
 //  .userAgent(java.lang.String)
     .build();
 ```
@@ -562,15 +576,15 @@ DnsimpleProviderConfig.builder()
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-dnsimple.provider.DnsimpleProviderConfig.property.account">account</a></code> | <code>java.lang.String</code> | The account for API operations. |
-| <code><a href="#@cdktf/provider-dnsimple.provider.DnsimpleProviderConfig.property.token">token</a></code> | <code>java.lang.String</code> | The API v2 token for API operations. |
 | <code><a href="#@cdktf/provider-dnsimple.provider.DnsimpleProviderConfig.property.alias">alias</a></code> | <code>java.lang.String</code> | Alias name. |
 | <code><a href="#@cdktf/provider-dnsimple.provider.DnsimpleProviderConfig.property.prefetch">prefetch</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Flag to enable the prefetch of zone records. |
 | <code><a href="#@cdktf/provider-dnsimple.provider.DnsimpleProviderConfig.property.sandbox">sandbox</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Flag to enable the sandbox API. |
+| <code><a href="#@cdktf/provider-dnsimple.provider.DnsimpleProviderConfig.property.token">token</a></code> | <code>java.lang.String</code> | The API v2 token for API operations. |
 | <code><a href="#@cdktf/provider-dnsimple.provider.DnsimpleProviderConfig.property.userAgent">userAgent</a></code> | <code>java.lang.String</code> | Custom string to append to the user agent used for sending HTTP requests to the API. |
 
 ---
 
-##### `account`<sup>Required</sup> <a name="account" id="@cdktf/provider-dnsimple.provider.DnsimpleProviderConfig.property.account"></a>
+##### `account`<sup>Optional</sup> <a name="account" id="@cdktf/provider-dnsimple.provider.DnsimpleProviderConfig.property.account"></a>
 
 ```java
 public java.lang.String getAccount();
@@ -581,20 +595,6 @@ public java.lang.String getAccount();
 The account for API operations.
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/dnsimple#account DnsimpleProvider#account}
-
----
-
-##### `token`<sup>Required</sup> <a name="token" id="@cdktf/provider-dnsimple.provider.DnsimpleProviderConfig.property.token"></a>
-
-```java
-public java.lang.String getToken();
-```
-
-- *Type:* java.lang.String
-
-The API v2 token for API operations.
-
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/dnsimple#token DnsimpleProvider#token}
 
 ---
 
@@ -637,6 +637,20 @@ public java.lang.Object getSandbox();
 Flag to enable the sandbox API.
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/dnsimple#sandbox DnsimpleProvider#sandbox}
+
+---
+
+##### `token`<sup>Optional</sup> <a name="token" id="@cdktf/provider-dnsimple.provider.DnsimpleProviderConfig.property.token"></a>
+
+```java
+public java.lang.String getToken();
+```
+
+- *Type:* java.lang.String
+
+The API v2 token for API operations.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/dnsimple#token DnsimpleProvider#token}
 
 ---
 

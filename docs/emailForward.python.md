@@ -23,8 +23,7 @@ emailForward.EmailForward(
   provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
   alias_name: str,
   destination_email: str,
-  domain: str,
-  id: str = None
+  domain: str
 )
 ```
 
@@ -42,7 +41,6 @@ emailForward.EmailForward(
 | <code><a href="#@cdktf/provider-dnsimple.emailForward.EmailForward.Initializer.parameter.aliasName">alias_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/dnsimple/r/email_forward#alias_name EmailForward#alias_name}. |
 | <code><a href="#@cdktf/provider-dnsimple.emailForward.EmailForward.Initializer.parameter.destinationEmail">destination_email</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/dnsimple/r/email_forward#destination_email EmailForward#destination_email}. |
 | <code><a href="#@cdktf/provider-dnsimple.emailForward.EmailForward.Initializer.parameter.domain">domain</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/dnsimple/r/email_forward#domain EmailForward#domain}. |
-| <code><a href="#@cdktf/provider-dnsimple.emailForward.EmailForward.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/dnsimple/r/email_forward#id EmailForward#id}. |
 
 ---
 
@@ -130,17 +128,6 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/dnsim
 
 ---
 
-##### `id`<sup>Optional</sup> <a name="id" id="@cdktf/provider-dnsimple.emailForward.EmailForward.Initializer.parameter.id"></a>
-
-- *Type:* str
-
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/dnsimple/r/email_forward#id EmailForward#id}.
-
-Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
-If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
-
----
-
 #### Methods <a name="Methods" id="Methods"></a>
 
 | **Name** | **Description** |
@@ -161,7 +148,6 @@ If you experience problems setting this value it might not be settable. Please t
 | <code><a href="#@cdktf/provider-dnsimple.emailForward.EmailForward.getStringAttribute">get_string_attribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-dnsimple.emailForward.EmailForward.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-dnsimple.emailForward.EmailForward.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-dnsimple.emailForward.EmailForward.resetId">reset_id</a></code> | *No description.* |
 
 ---
 
@@ -374,12 +360,6 @@ def interpolation_for_attribute(
 
 ---
 
-##### `reset_id` <a name="reset_id" id="@cdktf/provider-dnsimple.emailForward.EmailForward.resetId"></a>
-
-```python
-def reset_id() -> None
-```
-
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -475,14 +455,13 @@ emailForward.EmailForward.is_terraform_resource(
 | <code><a href="#@cdktf/provider-dnsimple.emailForward.EmailForward.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-dnsimple.emailForward.EmailForward.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-dnsimple.emailForward.EmailForward.property.aliasEmail">alias_email</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-dnsimple.emailForward.EmailForward.property.id">id</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-dnsimple.emailForward.EmailForward.property.aliasNameInput">alias_name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-dnsimple.emailForward.EmailForward.property.destinationEmailInput">destination_email_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-dnsimple.emailForward.EmailForward.property.domainInput">domain_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-dnsimple.emailForward.EmailForward.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-dnsimple.emailForward.EmailForward.property.aliasName">alias_name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-dnsimple.emailForward.EmailForward.property.destinationEmail">destination_email</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-dnsimple.emailForward.EmailForward.property.domain">domain</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-dnsimple.emailForward.EmailForward.property.id">id</a></code> | <code>str</code> | *No description.* |
 
 ---
 
@@ -638,6 +617,16 @@ alias_email: str
 
 ---
 
+##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-dnsimple.emailForward.EmailForward.property.id"></a>
+
+```python
+id: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+---
+
 ##### `alias_name_input`<sup>Optional</sup> <a name="alias_name_input" id="@cdktf/provider-dnsimple.emailForward.EmailForward.property.aliasNameInput"></a>
 
 ```python
@@ -668,16 +657,6 @@ domain_input: str
 
 ---
 
-##### `id_input`<sup>Optional</sup> <a name="id_input" id="@cdktf/provider-dnsimple.emailForward.EmailForward.property.idInput"></a>
-
-```python
-id_input: str
-```
-
-- *Type:* str
-
----
-
 ##### `alias_name`<sup>Required</sup> <a name="alias_name" id="@cdktf/provider-dnsimple.emailForward.EmailForward.property.aliasName"></a>
 
 ```python
@@ -702,16 +681,6 @@ destination_email: str
 
 ```python
 domain: str
-```
-
-- *Type:* str
-
----
-
-##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-dnsimple.emailForward.EmailForward.property.id"></a>
-
-```python
-id: str
 ```
 
 - *Type:* str
@@ -755,8 +724,7 @@ emailForward.EmailForwardConfig(
   provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
   alias_name: str,
   destination_email: str,
-  domain: str,
-  id: str = None
+  domain: str
 )
 ```
 
@@ -774,7 +742,6 @@ emailForward.EmailForwardConfig(
 | <code><a href="#@cdktf/provider-dnsimple.emailForward.EmailForwardConfig.property.aliasName">alias_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/dnsimple/r/email_forward#alias_name EmailForward#alias_name}. |
 | <code><a href="#@cdktf/provider-dnsimple.emailForward.EmailForwardConfig.property.destinationEmail">destination_email</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/dnsimple/r/email_forward#destination_email EmailForward#destination_email}. |
 | <code><a href="#@cdktf/provider-dnsimple.emailForward.EmailForwardConfig.property.domain">domain</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/dnsimple/r/email_forward#domain EmailForward#domain}. |
-| <code><a href="#@cdktf/provider-dnsimple.emailForward.EmailForwardConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/dnsimple/r/email_forward#id EmailForward#id}. |
 
 ---
 
@@ -881,21 +848,6 @@ domain: str
 - *Type:* str
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/dnsimple/r/email_forward#domain EmailForward#domain}.
-
----
-
-##### `id`<sup>Optional</sup> <a name="id" id="@cdktf/provider-dnsimple.emailForward.EmailForwardConfig.property.id"></a>
-
-```python
-id: str
-```
-
-- *Type:* str
-
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/dnsimple/r/email_forward#id EmailForward#id}.
-
-Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
-If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 
 ---
 

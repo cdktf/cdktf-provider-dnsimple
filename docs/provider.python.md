@@ -14,11 +14,11 @@ from cdktf_cdktf_provider_dnsimple import provider
 provider.DnsimpleProvider(
   scope: Construct,
   id: str,
-  account: str,
-  token: str,
+  account: str = None,
   alias: str = None,
   prefetch: typing.Union[bool, IResolvable] = None,
   sandbox: typing.Union[bool, IResolvable] = None,
+  token: str = None,
   user_agent: str = None
 )
 ```
@@ -28,10 +28,10 @@ provider.DnsimpleProvider(
 | <code><a href="#@cdktf/provider-dnsimple.provider.DnsimpleProvider.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
 | <code><a href="#@cdktf/provider-dnsimple.provider.DnsimpleProvider.Initializer.parameter.id">id</a></code> | <code>str</code> | The scoped construct ID. |
 | <code><a href="#@cdktf/provider-dnsimple.provider.DnsimpleProvider.Initializer.parameter.account">account</a></code> | <code>str</code> | The account for API operations. |
-| <code><a href="#@cdktf/provider-dnsimple.provider.DnsimpleProvider.Initializer.parameter.token">token</a></code> | <code>str</code> | The API v2 token for API operations. |
 | <code><a href="#@cdktf/provider-dnsimple.provider.DnsimpleProvider.Initializer.parameter.alias">alias</a></code> | <code>str</code> | Alias name. |
 | <code><a href="#@cdktf/provider-dnsimple.provider.DnsimpleProvider.Initializer.parameter.prefetch">prefetch</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Flag to enable the prefetch of zone records. |
 | <code><a href="#@cdktf/provider-dnsimple.provider.DnsimpleProvider.Initializer.parameter.sandbox">sandbox</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Flag to enable the sandbox API. |
+| <code><a href="#@cdktf/provider-dnsimple.provider.DnsimpleProvider.Initializer.parameter.token">token</a></code> | <code>str</code> | The API v2 token for API operations. |
 | <code><a href="#@cdktf/provider-dnsimple.provider.DnsimpleProvider.Initializer.parameter.userAgent">user_agent</a></code> | <code>str</code> | Custom string to append to the user agent used for sending HTTP requests to the API. |
 
 ---
@@ -54,23 +54,13 @@ Must be unique amongst siblings in the same scope
 
 ---
 
-##### `account`<sup>Required</sup> <a name="account" id="@cdktf/provider-dnsimple.provider.DnsimpleProvider.Initializer.parameter.account"></a>
+##### `account`<sup>Optional</sup> <a name="account" id="@cdktf/provider-dnsimple.provider.DnsimpleProvider.Initializer.parameter.account"></a>
 
 - *Type:* str
 
 The account for API operations.
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/dnsimple#account DnsimpleProvider#account}
-
----
-
-##### `token`<sup>Required</sup> <a name="token" id="@cdktf/provider-dnsimple.provider.DnsimpleProvider.Initializer.parameter.token"></a>
-
-- *Type:* str
-
-The API v2 token for API operations.
-
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/dnsimple#token DnsimpleProvider#token}
 
 ---
 
@@ -104,6 +94,16 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/dnsim
 
 ---
 
+##### `token`<sup>Optional</sup> <a name="token" id="@cdktf/provider-dnsimple.provider.DnsimpleProvider.Initializer.parameter.token"></a>
+
+- *Type:* str
+
+The API v2 token for API operations.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/dnsimple#token DnsimpleProvider#token}
+
+---
+
 ##### `user_agent`<sup>Optional</sup> <a name="user_agent" id="@cdktf/provider-dnsimple.provider.DnsimpleProvider.Initializer.parameter.userAgent"></a>
 
 - *Type:* str
@@ -124,9 +124,11 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/dnsim
 | <code><a href="#@cdktf/provider-dnsimple.provider.DnsimpleProvider.resetOverrideLogicalId">reset_override_logical_id</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
 | <code><a href="#@cdktf/provider-dnsimple.provider.DnsimpleProvider.toMetadata">to_metadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-dnsimple.provider.DnsimpleProvider.toTerraform">to_terraform</a></code> | Adds this resource to the terraform JSON output. |
+| <code><a href="#@cdktf/provider-dnsimple.provider.DnsimpleProvider.resetAccount">reset_account</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-dnsimple.provider.DnsimpleProvider.resetAlias">reset_alias</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-dnsimple.provider.DnsimpleProvider.resetPrefetch">reset_prefetch</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-dnsimple.provider.DnsimpleProvider.resetSandbox">reset_sandbox</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-dnsimple.provider.DnsimpleProvider.resetToken">reset_token</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-dnsimple.provider.DnsimpleProvider.resetUserAgent">reset_user_agent</a></code> | *No description.* |
 
 ---
@@ -200,6 +202,12 @@ def to_terraform() -> typing.Any
 
 Adds this resource to the terraform JSON output.
 
+##### `reset_account` <a name="reset_account" id="@cdktf/provider-dnsimple.provider.DnsimpleProvider.resetAccount"></a>
+
+```python
+def reset_account() -> None
+```
+
 ##### `reset_alias` <a name="reset_alias" id="@cdktf/provider-dnsimple.provider.DnsimpleProvider.resetAlias"></a>
 
 ```python
@@ -216,6 +224,12 @@ def reset_prefetch() -> None
 
 ```python
 def reset_sandbox() -> None
+```
+
+##### `reset_token` <a name="reset_token" id="@cdktf/provider-dnsimple.provider.DnsimpleProvider.resetToken"></a>
+
+```python
+def reset_token() -> None
 ```
 
 ##### `reset_user_agent` <a name="reset_user_agent" id="@cdktf/provider-dnsimple.provider.DnsimpleProvider.resetUserAgent"></a>
@@ -557,11 +571,11 @@ tfResourceType: str
 from cdktf_cdktf_provider_dnsimple import provider
 
 provider.DnsimpleProviderConfig(
-  account: str,
-  token: str,
+  account: str = None,
   alias: str = None,
   prefetch: typing.Union[bool, IResolvable] = None,
   sandbox: typing.Union[bool, IResolvable] = None,
+  token: str = None,
   user_agent: str = None
 )
 ```
@@ -571,15 +585,15 @@ provider.DnsimpleProviderConfig(
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-dnsimple.provider.DnsimpleProviderConfig.property.account">account</a></code> | <code>str</code> | The account for API operations. |
-| <code><a href="#@cdktf/provider-dnsimple.provider.DnsimpleProviderConfig.property.token">token</a></code> | <code>str</code> | The API v2 token for API operations. |
 | <code><a href="#@cdktf/provider-dnsimple.provider.DnsimpleProviderConfig.property.alias">alias</a></code> | <code>str</code> | Alias name. |
 | <code><a href="#@cdktf/provider-dnsimple.provider.DnsimpleProviderConfig.property.prefetch">prefetch</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Flag to enable the prefetch of zone records. |
 | <code><a href="#@cdktf/provider-dnsimple.provider.DnsimpleProviderConfig.property.sandbox">sandbox</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Flag to enable the sandbox API. |
+| <code><a href="#@cdktf/provider-dnsimple.provider.DnsimpleProviderConfig.property.token">token</a></code> | <code>str</code> | The API v2 token for API operations. |
 | <code><a href="#@cdktf/provider-dnsimple.provider.DnsimpleProviderConfig.property.userAgent">user_agent</a></code> | <code>str</code> | Custom string to append to the user agent used for sending HTTP requests to the API. |
 
 ---
 
-##### `account`<sup>Required</sup> <a name="account" id="@cdktf/provider-dnsimple.provider.DnsimpleProviderConfig.property.account"></a>
+##### `account`<sup>Optional</sup> <a name="account" id="@cdktf/provider-dnsimple.provider.DnsimpleProviderConfig.property.account"></a>
 
 ```python
 account: str
@@ -590,20 +604,6 @@ account: str
 The account for API operations.
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/dnsimple#account DnsimpleProvider#account}
-
----
-
-##### `token`<sup>Required</sup> <a name="token" id="@cdktf/provider-dnsimple.provider.DnsimpleProviderConfig.property.token"></a>
-
-```python
-token: str
-```
-
-- *Type:* str
-
-The API v2 token for API operations.
-
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/dnsimple#token DnsimpleProvider#token}
 
 ---
 
@@ -646,6 +646,20 @@ sandbox: typing.Union[bool, IResolvable]
 Flag to enable the sandbox API.
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/dnsimple#sandbox DnsimpleProvider#sandbox}
+
+---
+
+##### `token`<sup>Optional</sup> <a name="token" id="@cdktf/provider-dnsimple.provider.DnsimpleProviderConfig.property.token"></a>
+
+```python
+token: str
+```
+
+- *Type:* str
+
+The API v2 token for API operations.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/dnsimple#token DnsimpleProvider#token}
 
 ---
 

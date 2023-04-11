@@ -66,7 +66,6 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-dnsimple.domain.Domain.getStringAttribute">getStringAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-dnsimple.domain.Domain.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-dnsimple.domain.Domain.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-dnsimple.domain.Domain.resetId">resetId</a></code> | *No description.* |
 
 ---
 
@@ -254,12 +253,6 @@ public interpolationForAttribute(terraformAttribute: string): IResolvable
 
 ---
 
-##### `resetId` <a name="resetId" id="@cdktf/provider-dnsimple.domain.Domain.resetId"></a>
-
-```typescript
-public resetId(): void
-```
-
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -350,13 +343,12 @@ domain.Domain.isTerraformResource(x: any)
 | <code><a href="#@cdktf/provider-dnsimple.domain.Domain.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-dnsimple.domain.Domain.property.accountId">accountId</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-dnsimple.domain.Domain.property.autoRenew">autoRenew</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-dnsimple.domain.Domain.property.id">id</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-dnsimple.domain.Domain.property.privateWhois">privateWhois</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-dnsimple.domain.Domain.property.registrantId">registrantId</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-dnsimple.domain.Domain.property.state">state</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-dnsimple.domain.Domain.property.unicodeName">unicodeName</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-dnsimple.domain.Domain.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-dnsimple.domain.Domain.property.nameInput">nameInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-dnsimple.domain.Domain.property.id">id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-dnsimple.domain.Domain.property.name">name</a></code> | <code>string</code> | *No description.* |
 
 ---
@@ -523,6 +515,16 @@ public readonly autoRenew: IResolvable;
 
 ---
 
+##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-dnsimple.domain.Domain.property.id"></a>
+
+```typescript
+public readonly id: number;
+```
+
+- *Type:* number
+
+---
+
 ##### `privateWhois`<sup>Required</sup> <a name="privateWhois" id="@cdktf/provider-dnsimple.domain.Domain.property.privateWhois"></a>
 
 ```typescript
@@ -563,30 +565,10 @@ public readonly unicodeName: string;
 
 ---
 
-##### `idInput`<sup>Optional</sup> <a name="idInput" id="@cdktf/provider-dnsimple.domain.Domain.property.idInput"></a>
-
-```typescript
-public readonly idInput: string;
-```
-
-- *Type:* string
-
----
-
 ##### `nameInput`<sup>Optional</sup> <a name="nameInput" id="@cdktf/provider-dnsimple.domain.Domain.property.nameInput"></a>
 
 ```typescript
 public readonly nameInput: string;
-```
-
-- *Type:* string
-
----
-
-##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-dnsimple.domain.Domain.property.id"></a>
-
-```typescript
-public readonly id: string;
 ```
 
 - *Type:* string
@@ -645,7 +627,6 @@ const domainConfig: domain.DomainConfig = { ... }
 | <code><a href="#@cdktf/provider-dnsimple.domain.DomainConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-dnsimple.domain.DomainConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-dnsimple.domain.DomainConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/dnsimple/r/domain#name Domain#name}. |
-| <code><a href="#@cdktf/provider-dnsimple.domain.DomainConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/dnsimple/r/domain#id Domain#id}. |
 
 ---
 
@@ -728,21 +709,6 @@ public readonly name: string;
 - *Type:* string
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/dnsimple/r/domain#name Domain#name}.
-
----
-
-##### `id`<sup>Optional</sup> <a name="id" id="@cdktf/provider-dnsimple.domain.DomainConfig.property.id"></a>
-
-```typescript
-public readonly id: string;
-```
-
-- *Type:* string
-
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/dnsimple/r/domain#id Domain#id}.
-
-Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
-If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 
 ---
 

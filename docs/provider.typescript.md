@@ -11,7 +11,7 @@ Represents a {@link https://www.terraform.io/docs/providers/dnsimple dnsimple}.
 ```typescript
 import { provider } from '@cdktf/provider-dnsimple'
 
-new provider.DnsimpleProvider(scope: Construct, id: string, config: DnsimpleProviderConfig)
+new provider.DnsimpleProvider(scope: Construct, id: string, config?: DnsimpleProviderConfig)
 ```
 
 | **Name** | **Type** | **Description** |
@@ -40,7 +40,7 @@ Must be unique amongst siblings in the same scope
 
 ---
 
-##### `config`<sup>Required</sup> <a name="config" id="@cdktf/provider-dnsimple.provider.DnsimpleProvider.Initializer.parameter.config"></a>
+##### `config`<sup>Optional</sup> <a name="config" id="@cdktf/provider-dnsimple.provider.DnsimpleProvider.Initializer.parameter.config"></a>
 
 - *Type:* <a href="#@cdktf/provider-dnsimple.provider.DnsimpleProviderConfig">DnsimpleProviderConfig</a>
 
@@ -56,9 +56,11 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-dnsimple.provider.DnsimpleProvider.resetOverrideLogicalId">resetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
 | <code><a href="#@cdktf/provider-dnsimple.provider.DnsimpleProvider.toMetadata">toMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-dnsimple.provider.DnsimpleProvider.toTerraform">toTerraform</a></code> | Adds this resource to the terraform JSON output. |
+| <code><a href="#@cdktf/provider-dnsimple.provider.DnsimpleProvider.resetAccount">resetAccount</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-dnsimple.provider.DnsimpleProvider.resetAlias">resetAlias</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-dnsimple.provider.DnsimpleProvider.resetPrefetch">resetPrefetch</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-dnsimple.provider.DnsimpleProvider.resetSandbox">resetSandbox</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-dnsimple.provider.DnsimpleProvider.resetToken">resetToken</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-dnsimple.provider.DnsimpleProvider.resetUserAgent">resetUserAgent</a></code> | *No description.* |
 
 ---
@@ -127,6 +129,12 @@ public toTerraform(): any
 
 Adds this resource to the terraform JSON output.
 
+##### `resetAccount` <a name="resetAccount" id="@cdktf/provider-dnsimple.provider.DnsimpleProvider.resetAccount"></a>
+
+```typescript
+public resetAccount(): void
+```
+
 ##### `resetAlias` <a name="resetAlias" id="@cdktf/provider-dnsimple.provider.DnsimpleProvider.resetAlias"></a>
 
 ```typescript
@@ -143,6 +151,12 @@ public resetPrefetch(): void
 
 ```typescript
 public resetSandbox(): void
+```
+
+##### `resetToken` <a name="resetToken" id="@cdktf/provider-dnsimple.provider.DnsimpleProvider.resetToken"></a>
+
+```typescript
+public resetToken(): void
 ```
 
 ##### `resetUserAgent` <a name="resetUserAgent" id="@cdktf/provider-dnsimple.provider.DnsimpleProvider.resetUserAgent"></a>
@@ -485,15 +499,15 @@ const dnsimpleProviderConfig: provider.DnsimpleProviderConfig = { ... }
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-dnsimple.provider.DnsimpleProviderConfig.property.account">account</a></code> | <code>string</code> | The account for API operations. |
-| <code><a href="#@cdktf/provider-dnsimple.provider.DnsimpleProviderConfig.property.token">token</a></code> | <code>string</code> | The API v2 token for API operations. |
 | <code><a href="#@cdktf/provider-dnsimple.provider.DnsimpleProviderConfig.property.alias">alias</a></code> | <code>string</code> | Alias name. |
 | <code><a href="#@cdktf/provider-dnsimple.provider.DnsimpleProviderConfig.property.prefetch">prefetch</a></code> | <code>boolean \| cdktf.IResolvable</code> | Flag to enable the prefetch of zone records. |
 | <code><a href="#@cdktf/provider-dnsimple.provider.DnsimpleProviderConfig.property.sandbox">sandbox</a></code> | <code>boolean \| cdktf.IResolvable</code> | Flag to enable the sandbox API. |
+| <code><a href="#@cdktf/provider-dnsimple.provider.DnsimpleProviderConfig.property.token">token</a></code> | <code>string</code> | The API v2 token for API operations. |
 | <code><a href="#@cdktf/provider-dnsimple.provider.DnsimpleProviderConfig.property.userAgent">userAgent</a></code> | <code>string</code> | Custom string to append to the user agent used for sending HTTP requests to the API. |
 
 ---
 
-##### `account`<sup>Required</sup> <a name="account" id="@cdktf/provider-dnsimple.provider.DnsimpleProviderConfig.property.account"></a>
+##### `account`<sup>Optional</sup> <a name="account" id="@cdktf/provider-dnsimple.provider.DnsimpleProviderConfig.property.account"></a>
 
 ```typescript
 public readonly account: string;
@@ -504,20 +518,6 @@ public readonly account: string;
 The account for API operations.
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/dnsimple#account DnsimpleProvider#account}
-
----
-
-##### `token`<sup>Required</sup> <a name="token" id="@cdktf/provider-dnsimple.provider.DnsimpleProviderConfig.property.token"></a>
-
-```typescript
-public readonly token: string;
-```
-
-- *Type:* string
-
-The API v2 token for API operations.
-
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/dnsimple#token DnsimpleProvider#token}
 
 ---
 
@@ -560,6 +560,20 @@ public readonly sandbox: boolean | IResolvable;
 Flag to enable the sandbox API.
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/dnsimple#sandbox DnsimpleProvider#sandbox}
+
+---
+
+##### `token`<sup>Optional</sup> <a name="token" id="@cdktf/provider-dnsimple.provider.DnsimpleProviderConfig.property.token"></a>
+
+```typescript
+public readonly token: string;
+```
+
+- *Type:* string
+
+The API v2 token for API operations.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/dnsimple#token DnsimpleProvider#token}
 
 ---
 

@@ -8,20 +8,17 @@ import * as cdktf from 'cdktf';
 
 export interface DataDnsimpleCertificateConfig extends cdktf.TerraformMetaArguments {
   /**
+  * Certificate ID
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/dnsimple/d/certificate#certificate_id DataDnsimpleCertificate#certificate_id}
   */
-  readonly certificateId: string;
+  readonly certificateId: number;
   /**
+  * Domain name
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/dnsimple/d/certificate#domain DataDnsimpleCertificate#domain}
   */
   readonly domain: string;
-  /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/dnsimple/d/certificate#id DataDnsimpleCertificate#id}
-  *
-  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
-  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
-  */
-  readonly id?: string;
 }
 
 /**
@@ -50,7 +47,7 @@ export class DataDnsimpleCertificate extends cdktf.TerraformDataSource {
       terraformResourceType: 'dnsimple_certificate',
       terraformGeneratorMetadata: {
         providerName: 'dnsimple',
-        providerVersion: '0.16.3',
+        providerVersion: '0.17.0',
         providerVersionConstraint: '~> 0.13'
       },
       provider: config.provider,
@@ -63,7 +60,6 @@ export class DataDnsimpleCertificate extends cdktf.TerraformDataSource {
     });
     this._certificateId = config.certificateId;
     this._domain = config.domain;
-    this._id = config.id;
   }
 
   // ==========
@@ -76,11 +72,11 @@ export class DataDnsimpleCertificate extends cdktf.TerraformDataSource {
   }
 
   // certificate_id - computed: false, optional: false, required: true
-  private _certificateId?: string; 
+  private _certificateId?: number; 
   public get certificateId() {
-    return this.getStringAttribute('certificate_id');
+    return this.getNumberAttribute('certificate_id');
   }
-  public set certificateId(value: string) {
+  public set certificateId(value: number) {
     this._certificateId = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -101,20 +97,9 @@ export class DataDnsimpleCertificate extends cdktf.TerraformDataSource {
     return this._domain;
   }
 
-  // id - computed: true, optional: true, required: false
-  private _id?: string; 
+  // id - computed: true, optional: false, required: false
   public get id() {
     return this.getStringAttribute('id');
-  }
-  public set id(value: string) {
-    this._id = value;
-  }
-  public resetId() {
-    this._id = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get idInput() {
-    return this._id;
   }
 
   // private_key - computed: true, optional: false, required: false
@@ -138,9 +123,8 @@ export class DataDnsimpleCertificate extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      certificate_id: cdktf.stringToTerraform(this._certificateId),
+      certificate_id: cdktf.numberToTerraform(this._certificateId),
       domain: cdktf.stringToTerraform(this._domain),
-      id: cdktf.stringToTerraform(this._id),
     };
   }
 }
