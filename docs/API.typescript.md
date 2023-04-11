@@ -7,5 +7,4 @@ The following submodules are available:
 - [emailForward](./emailForward.typescript.md)
 - [letsEncryptCertificate](./letsEncryptCertificate.typescript.md)
 - [provider](./provider.typescript.md)
-- [record](./record.typescript.md)
 - [zoneRecord](./zoneRecord.typescript.md)

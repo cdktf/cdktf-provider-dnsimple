@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/dnsimple/r/domain dn
 #### Initializers <a name="Initializers" id="@cdktf/provider-dnsimple.domain.Domain.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-dnsimple-go/dnsimple/v3/domain"
+import "github.com/cdktf/cdktf-provider-dnsimple-go/dnsimple/v4/domain"
 
 domain.NewDomain(scope Construct, id *string, config DomainConfig) Domain
 ```
@@ -66,7 +66,6 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-dnsimple.domain.Domain.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-dnsimple.domain.Domain.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-dnsimple.domain.Domain.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-dnsimple.domain.Domain.resetId">ResetId</a></code> | *No description.* |
 
 ---
 
@@ -254,12 +253,6 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 
 ---
 
-##### `ResetId` <a name="ResetId" id="@cdktf/provider-dnsimple.domain.Domain.resetId"></a>
-
-```go
-func ResetId()
-```
-
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -273,7 +266,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-dnsimple.domain.Domain.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-dnsimple-go/dnsimple/v3/domain"
+import "github.com/cdktf/cdktf-provider-dnsimple-go/dnsimple/v4/domain"
 
 domain.Domain_IsConstruct(x interface{}) *bool
 ```
@@ -305,7 +298,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-dnsimple.domain.Domain.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-dnsimple-go/dnsimple/v3/domain"
+import "github.com/cdktf/cdktf-provider-dnsimple-go/dnsimple/v4/domain"
 
 domain.Domain_IsTerraformElement(x interface{}) *bool
 ```
@@ -319,7 +312,7 @@ domain.Domain_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-dnsimple.domain.Domain.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-dnsimple-go/dnsimple/v3/domain"
+import "github.com/cdktf/cdktf-provider-dnsimple-go/dnsimple/v4/domain"
 
 domain.Domain_IsTerraformResource(x interface{}) *bool
 ```
@@ -350,13 +343,12 @@ domain.Domain_IsTerraformResource(x interface{}) *bool
 | <code><a href="#@cdktf/provider-dnsimple.domain.Domain.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-dnsimple.domain.Domain.property.accountId">AccountId</a></code> | <code>*f64</code> | *No description.* |
 | <code><a href="#@cdktf/provider-dnsimple.domain.Domain.property.autoRenew">AutoRenew</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-dnsimple.domain.Domain.property.id">Id</a></code> | <code>*f64</code> | *No description.* |
 | <code><a href="#@cdktf/provider-dnsimple.domain.Domain.property.privateWhois">PrivateWhois</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-dnsimple.domain.Domain.property.registrantId">RegistrantId</a></code> | <code>*f64</code> | *No description.* |
 | <code><a href="#@cdktf/provider-dnsimple.domain.Domain.property.state">State</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-dnsimple.domain.Domain.property.unicodeName">UnicodeName</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-dnsimple.domain.Domain.property.idInput">IdInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-dnsimple.domain.Domain.property.nameInput">NameInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-dnsimple.domain.Domain.property.id">Id</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-dnsimple.domain.Domain.property.name">Name</a></code> | <code>*string</code> | *No description.* |
 
 ---
@@ -523,6 +515,16 @@ func AutoRenew() IResolvable
 
 ---
 
+##### `Id`<sup>Required</sup> <a name="Id" id="@cdktf/provider-dnsimple.domain.Domain.property.id"></a>
+
+```go
+func Id() *f64
+```
+
+- *Type:* *f64
+
+---
+
 ##### `PrivateWhois`<sup>Required</sup> <a name="PrivateWhois" id="@cdktf/provider-dnsimple.domain.Domain.property.privateWhois"></a>
 
 ```go
@@ -563,30 +565,10 @@ func UnicodeName() *string
 
 ---
 
-##### `IdInput`<sup>Optional</sup> <a name="IdInput" id="@cdktf/provider-dnsimple.domain.Domain.property.idInput"></a>
-
-```go
-func IdInput() *string
-```
-
-- *Type:* *string
-
----
-
 ##### `NameInput`<sup>Optional</sup> <a name="NameInput" id="@cdktf/provider-dnsimple.domain.Domain.property.nameInput"></a>
 
 ```go
 func NameInput() *string
-```
-
-- *Type:* *string
-
----
-
-##### `Id`<sup>Required</sup> <a name="Id" id="@cdktf/provider-dnsimple.domain.Domain.property.id"></a>
-
-```go
-func Id() *string
 ```
 
 - *Type:* *string
@@ -628,7 +610,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-dnsimple.domain.DomainConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-dnsimple-go/dnsimple/v3/domain"
+import "github.com/cdktf/cdktf-provider-dnsimple-go/dnsimple/v4/domain"
 
 &domain.DomainConfig {
 	Connection: interface{},
@@ -639,7 +621,6 @@ import "github.com/cdktf/cdktf-provider-dnsimple-go/dnsimple/v3/domain"
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
 	Name: *string,
-	Id: *string,
 }
 ```
 
@@ -655,7 +636,6 @@ import "github.com/cdktf/cdktf-provider-dnsimple-go/dnsimple/v3/domain"
 | <code><a href="#@cdktf/provider-dnsimple.domain.DomainConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-dnsimple.domain.DomainConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-dnsimple.domain.DomainConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/dnsimple/r/domain#name Domain#name}. |
-| <code><a href="#@cdktf/provider-dnsimple.domain.DomainConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/dnsimple/r/domain#id Domain#id}. |
 
 ---
 
@@ -738,21 +718,6 @@ Name *string
 - *Type:* *string
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/dnsimple/r/domain#name Domain#name}.
-
----
-
-##### `Id`<sup>Optional</sup> <a name="Id" id="@cdktf/provider-dnsimple.domain.DomainConfig.property.id"></a>
-
-```go
-Id *string
-```
-
-- *Type:* *string
-
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/dnsimple/r/domain#id Domain#id}.
-
-Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
-If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 
 ---
 

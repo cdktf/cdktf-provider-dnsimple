@@ -7,5 +7,4 @@ The following submodules are available:
 - [emailForward](./emailForward.java.md)
 - [letsEncryptCertificate](./letsEncryptCertificate.java.md)
 - [provider](./provider.java.md)
-- [record](./record.java.md)
 - [zoneRecord](./zoneRecord.java.md)

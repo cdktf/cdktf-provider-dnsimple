@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/dnsimple/r/zone_reco
 #### Initializers <a name="Initializers" id="@cdktf/provider-dnsimple.zoneRecord.ZoneRecord.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-dnsimple-go/dnsimple/v3/zonerecord"
+import "github.com/cdktf/cdktf-provider-dnsimple-go/dnsimple/v4/zonerecord"
 
 zonerecord.NewZoneRecord(scope Construct, id *string, config ZoneRecordConfig) ZoneRecord
 ```
@@ -66,7 +66,6 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-dnsimple.zoneRecord.ZoneRecord.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-dnsimple.zoneRecord.ZoneRecord.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-dnsimple.zoneRecord.ZoneRecord.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-dnsimple.zoneRecord.ZoneRecord.resetId">ResetId</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-dnsimple.zoneRecord.ZoneRecord.resetPriority">ResetPriority</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-dnsimple.zoneRecord.ZoneRecord.resetTtl">ResetTtl</a></code> | *No description.* |
 
@@ -256,12 +255,6 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 
 ---
 
-##### `ResetId` <a name="ResetId" id="@cdktf/provider-dnsimple.zoneRecord.ZoneRecord.resetId"></a>
-
-```go
-func ResetId()
-```
-
 ##### `ResetPriority` <a name="ResetPriority" id="@cdktf/provider-dnsimple.zoneRecord.ZoneRecord.resetPriority"></a>
 
 ```go
@@ -287,7 +280,7 @@ func ResetTtl()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-dnsimple.zoneRecord.ZoneRecord.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-dnsimple-go/dnsimple/v3/zonerecord"
+import "github.com/cdktf/cdktf-provider-dnsimple-go/dnsimple/v4/zonerecord"
 
 zonerecord.ZoneRecord_IsConstruct(x interface{}) *bool
 ```
@@ -319,7 +312,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-dnsimple.zoneRecord.ZoneRecord.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-dnsimple-go/dnsimple/v3/zonerecord"
+import "github.com/cdktf/cdktf-provider-dnsimple-go/dnsimple/v4/zonerecord"
 
 zonerecord.ZoneRecord_IsTerraformElement(x interface{}) *bool
 ```
@@ -333,7 +326,7 @@ zonerecord.ZoneRecord_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-dnsimple.zoneRecord.ZoneRecord.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-dnsimple-go/dnsimple/v3/zonerecord"
+import "github.com/cdktf/cdktf-provider-dnsimple-go/dnsimple/v4/zonerecord"
 
 zonerecord.ZoneRecord_IsTerraformResource(x interface{}) *bool
 ```
@@ -362,19 +355,18 @@ zonerecord.ZoneRecord_IsTerraformResource(x interface{}) *bool
 | <code><a href="#@cdktf/provider-dnsimple.zoneRecord.ZoneRecord.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-dnsimple.zoneRecord.ZoneRecord.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-dnsimple.zoneRecord.ZoneRecord.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
+| <code><a href="#@cdktf/provider-dnsimple.zoneRecord.ZoneRecord.property.id">Id</a></code> | <code>*f64</code> | *No description.* |
 | <code><a href="#@cdktf/provider-dnsimple.zoneRecord.ZoneRecord.property.qualifiedName">QualifiedName</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-dnsimple.zoneRecord.ZoneRecord.property.zoneId">ZoneId</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-dnsimple.zoneRecord.ZoneRecord.property.idInput">IdInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-dnsimple.zoneRecord.ZoneRecord.property.nameInput">NameInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-dnsimple.zoneRecord.ZoneRecord.property.priorityInput">PriorityInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-dnsimple.zoneRecord.ZoneRecord.property.ttlInput">TtlInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-dnsimple.zoneRecord.ZoneRecord.property.priorityInput">PriorityInput</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-dnsimple.zoneRecord.ZoneRecord.property.ttlInput">TtlInput</a></code> | <code>*f64</code> | *No description.* |
 | <code><a href="#@cdktf/provider-dnsimple.zoneRecord.ZoneRecord.property.typeInput">TypeInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-dnsimple.zoneRecord.ZoneRecord.property.valueInput">ValueInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-dnsimple.zoneRecord.ZoneRecord.property.zoneNameInput">ZoneNameInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-dnsimple.zoneRecord.ZoneRecord.property.id">Id</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-dnsimple.zoneRecord.ZoneRecord.property.name">Name</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-dnsimple.zoneRecord.ZoneRecord.property.priority">Priority</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-dnsimple.zoneRecord.ZoneRecord.property.ttl">Ttl</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-dnsimple.zoneRecord.ZoneRecord.property.priority">Priority</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-dnsimple.zoneRecord.ZoneRecord.property.ttl">Ttl</a></code> | <code>*f64</code> | *No description.* |
 | <code><a href="#@cdktf/provider-dnsimple.zoneRecord.ZoneRecord.property.type">Type</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-dnsimple.zoneRecord.ZoneRecord.property.value">Value</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-dnsimple.zoneRecord.ZoneRecord.property.zoneName">ZoneName</a></code> | <code>*string</code> | *No description.* |
@@ -523,6 +515,16 @@ func Provisioners() *[]interface{}
 
 ---
 
+##### `Id`<sup>Required</sup> <a name="Id" id="@cdktf/provider-dnsimple.zoneRecord.ZoneRecord.property.id"></a>
+
+```go
+func Id() *f64
+```
+
+- *Type:* *f64
+
+---
+
 ##### `QualifiedName`<sup>Required</sup> <a name="QualifiedName" id="@cdktf/provider-dnsimple.zoneRecord.ZoneRecord.property.qualifiedName"></a>
 
 ```go
@@ -543,16 +545,6 @@ func ZoneId() *string
 
 ---
 
-##### `IdInput`<sup>Optional</sup> <a name="IdInput" id="@cdktf/provider-dnsimple.zoneRecord.ZoneRecord.property.idInput"></a>
-
-```go
-func IdInput() *string
-```
-
-- *Type:* *string
-
----
-
 ##### `NameInput`<sup>Optional</sup> <a name="NameInput" id="@cdktf/provider-dnsimple.zoneRecord.ZoneRecord.property.nameInput"></a>
 
 ```go
@@ -566,20 +558,20 @@ func NameInput() *string
 ##### `PriorityInput`<sup>Optional</sup> <a name="PriorityInput" id="@cdktf/provider-dnsimple.zoneRecord.ZoneRecord.property.priorityInput"></a>
 
 ```go
-func PriorityInput() *string
+func PriorityInput() *f64
 ```
 
-- *Type:* *string
+- *Type:* *f64
 
 ---
 
 ##### `TtlInput`<sup>Optional</sup> <a name="TtlInput" id="@cdktf/provider-dnsimple.zoneRecord.ZoneRecord.property.ttlInput"></a>
 
 ```go
-func TtlInput() *string
+func TtlInput() *f64
 ```
 
-- *Type:* *string
+- *Type:* *f64
 
 ---
 
@@ -613,16 +605,6 @@ func ZoneNameInput() *string
 
 ---
 
-##### `Id`<sup>Required</sup> <a name="Id" id="@cdktf/provider-dnsimple.zoneRecord.ZoneRecord.property.id"></a>
-
-```go
-func Id() *string
-```
-
-- *Type:* *string
-
----
-
 ##### `Name`<sup>Required</sup> <a name="Name" id="@cdktf/provider-dnsimple.zoneRecord.ZoneRecord.property.name"></a>
 
 ```go
@@ -636,20 +618,20 @@ func Name() *string
 ##### `Priority`<sup>Required</sup> <a name="Priority" id="@cdktf/provider-dnsimple.zoneRecord.ZoneRecord.property.priority"></a>
 
 ```go
-func Priority() *string
+func Priority() *f64
 ```
 
-- *Type:* *string
+- *Type:* *f64
 
 ---
 
 ##### `Ttl`<sup>Required</sup> <a name="Ttl" id="@cdktf/provider-dnsimple.zoneRecord.ZoneRecord.property.ttl"></a>
 
 ```go
-func Ttl() *string
+func Ttl() *f64
 ```
 
-- *Type:* *string
+- *Type:* *f64
 
 ---
 
@@ -708,7 +690,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-dnsimple.zoneRecord.ZoneRecordConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-dnsimple-go/dnsimple/v3/zonerecord"
+import "github.com/cdktf/cdktf-provider-dnsimple-go/dnsimple/v4/zonerecord"
 
 &zonerecord.ZoneRecordConfig {
 	Connection: interface{},
@@ -722,9 +704,8 @@ import "github.com/cdktf/cdktf-provider-dnsimple-go/dnsimple/v3/zonerecord"
 	Type: *string,
 	Value: *string,
 	ZoneName: *string,
-	Id: *string,
-	Priority: *string,
-	Ttl: *string,
+	Priority: *f64,
+	Ttl: *f64,
 }
 ```
 
@@ -743,9 +724,8 @@ import "github.com/cdktf/cdktf-provider-dnsimple-go/dnsimple/v3/zonerecord"
 | <code><a href="#@cdktf/provider-dnsimple.zoneRecord.ZoneRecordConfig.property.type">Type</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/dnsimple/r/zone_record#type ZoneRecord#type}. |
 | <code><a href="#@cdktf/provider-dnsimple.zoneRecord.ZoneRecordConfig.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/dnsimple/r/zone_record#value ZoneRecord#value}. |
 | <code><a href="#@cdktf/provider-dnsimple.zoneRecord.ZoneRecordConfig.property.zoneName">ZoneName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/dnsimple/r/zone_record#zone_name ZoneRecord#zone_name}. |
-| <code><a href="#@cdktf/provider-dnsimple.zoneRecord.ZoneRecordConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/dnsimple/r/zone_record#id ZoneRecord#id}. |
-| <code><a href="#@cdktf/provider-dnsimple.zoneRecord.ZoneRecordConfig.property.priority">Priority</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/dnsimple/r/zone_record#priority ZoneRecord#priority}. |
-| <code><a href="#@cdktf/provider-dnsimple.zoneRecord.ZoneRecordConfig.property.ttl">Ttl</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/dnsimple/r/zone_record#ttl ZoneRecord#ttl}. |
+| <code><a href="#@cdktf/provider-dnsimple.zoneRecord.ZoneRecordConfig.property.priority">Priority</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/dnsimple/r/zone_record#priority ZoneRecord#priority}. |
+| <code><a href="#@cdktf/provider-dnsimple.zoneRecord.ZoneRecordConfig.property.ttl">Ttl</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/dnsimple/r/zone_record#ttl ZoneRecord#ttl}. |
 
 ---
 
@@ -867,28 +847,13 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/dnsim
 
 ---
 
-##### `Id`<sup>Optional</sup> <a name="Id" id="@cdktf/provider-dnsimple.zoneRecord.ZoneRecordConfig.property.id"></a>
-
-```go
-Id *string
-```
-
-- *Type:* *string
-
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/dnsimple/r/zone_record#id ZoneRecord#id}.
-
-Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
-If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
-
----
-
 ##### `Priority`<sup>Optional</sup> <a name="Priority" id="@cdktf/provider-dnsimple.zoneRecord.ZoneRecordConfig.property.priority"></a>
 
 ```go
-Priority *string
+Priority *f64
 ```
 
-- *Type:* *string
+- *Type:* *f64
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/dnsimple/r/zone_record#priority ZoneRecord#priority}.
 
@@ -897,10 +862,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/dnsim
 ##### `Ttl`<sup>Optional</sup> <a name="Ttl" id="@cdktf/provider-dnsimple.zoneRecord.ZoneRecordConfig.property.ttl"></a>
 
 ```go
-Ttl *string
+Ttl *f64
 ```
 
-- *Type:* *string
+- *Type:* *f64
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/dnsimple/r/zone_record#ttl ZoneRecord#ttl}.
 

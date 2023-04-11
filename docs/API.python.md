@@ -7,5 +7,4 @@ The following submodules are available:
 - [emailForward](./emailForward.python.md)
 - [letsEncryptCertificate](./letsEncryptCertificate.python.md)
 - [provider](./provider.python.md)
-- [record](./record.python.md)
 - [zoneRecord](./zoneRecord.python.md)

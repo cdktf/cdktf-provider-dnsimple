@@ -19,13 +19,6 @@ export interface EmailForwardConfig extends cdktf.TerraformMetaArguments {
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/dnsimple/r/email_forward#domain EmailForward#domain}
   */
   readonly domain: string;
-  /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/dnsimple/r/email_forward#id EmailForward#id}
-  *
-  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
-  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
-  */
-  readonly id?: string;
 }
 
 /**
@@ -54,7 +47,7 @@ export class EmailForward extends cdktf.TerraformResource {
       terraformResourceType: 'dnsimple_email_forward',
       terraformGeneratorMetadata: {
         providerName: 'dnsimple',
-        providerVersion: '0.16.3',
+        providerVersion: '0.17.0',
         providerVersionConstraint: '~> 0.13'
       },
       provider: config.provider,
@@ -68,7 +61,6 @@ export class EmailForward extends cdktf.TerraformResource {
     this._aliasName = config.aliasName;
     this._destinationEmail = config.destinationEmail;
     this._domain = config.domain;
-    this._id = config.id;
   }
 
   // ==========
@@ -119,20 +111,9 @@ export class EmailForward extends cdktf.TerraformResource {
     return this._domain;
   }
 
-  // id - computed: true, optional: true, required: false
-  private _id?: string; 
+  // id - computed: true, optional: false, required: false
   public get id() {
-    return this.getStringAttribute('id');
-  }
-  public set id(value: string) {
-    this._id = value;
-  }
-  public resetId() {
-    this._id = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get idInput() {
-    return this._id;
+    return this.getNumberAttribute('id');
   }
 
   // =========
@@ -144,7 +125,6 @@ export class EmailForward extends cdktf.TerraformResource {
       alias_name: cdktf.stringToTerraform(this._aliasName),
       destination_email: cdktf.stringToTerraform(this._destinationEmail),
       domain: cdktf.stringToTerraform(this._domain),
-      id: cdktf.stringToTerraform(this._id),
     };
   }
 }

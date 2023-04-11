@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/dnsimple dnsimple}.
 #### Initializers <a name="Initializers" id="@cdktf/provider-dnsimple.provider.DnsimpleProvider.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-dnsimple-go/dnsimple/v3/provider"
+import "github.com/cdktf/cdktf-provider-dnsimple-go/dnsimple/v4/provider"
 
 provider.NewDnsimpleProvider(scope Construct, id *string, config DnsimpleProviderConfig) DnsimpleProvider
 ```
@@ -40,7 +40,7 @@ Must be unique amongst siblings in the same scope
 
 ---
 
-##### `config`<sup>Required</sup> <a name="config" id="@cdktf/provider-dnsimple.provider.DnsimpleProvider.Initializer.parameter.config"></a>
+##### `config`<sup>Optional</sup> <a name="config" id="@cdktf/provider-dnsimple.provider.DnsimpleProvider.Initializer.parameter.config"></a>
 
 - *Type:* <a href="#@cdktf/provider-dnsimple.provider.DnsimpleProviderConfig">DnsimpleProviderConfig</a>
 
@@ -56,9 +56,11 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-dnsimple.provider.DnsimpleProvider.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
 | <code><a href="#@cdktf/provider-dnsimple.provider.DnsimpleProvider.toMetadata">ToMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-dnsimple.provider.DnsimpleProvider.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
+| <code><a href="#@cdktf/provider-dnsimple.provider.DnsimpleProvider.resetAccount">ResetAccount</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-dnsimple.provider.DnsimpleProvider.resetAlias">ResetAlias</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-dnsimple.provider.DnsimpleProvider.resetPrefetch">ResetPrefetch</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-dnsimple.provider.DnsimpleProvider.resetSandbox">ResetSandbox</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-dnsimple.provider.DnsimpleProvider.resetToken">ResetToken</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-dnsimple.provider.DnsimpleProvider.resetUserAgent">ResetUserAgent</a></code> | *No description.* |
 
 ---
@@ -127,6 +129,12 @@ func ToTerraform() interface{}
 
 Adds this resource to the terraform JSON output.
 
+##### `ResetAccount` <a name="ResetAccount" id="@cdktf/provider-dnsimple.provider.DnsimpleProvider.resetAccount"></a>
+
+```go
+func ResetAccount()
+```
+
 ##### `ResetAlias` <a name="ResetAlias" id="@cdktf/provider-dnsimple.provider.DnsimpleProvider.resetAlias"></a>
 
 ```go
@@ -143,6 +151,12 @@ func ResetPrefetch()
 
 ```go
 func ResetSandbox()
+```
+
+##### `ResetToken` <a name="ResetToken" id="@cdktf/provider-dnsimple.provider.DnsimpleProvider.resetToken"></a>
+
+```go
+func ResetToken()
 ```
 
 ##### `ResetUserAgent` <a name="ResetUserAgent" id="@cdktf/provider-dnsimple.provider.DnsimpleProvider.resetUserAgent"></a>
@@ -164,7 +178,7 @@ func ResetUserAgent()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-dnsimple.provider.DnsimpleProvider.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-dnsimple-go/dnsimple/v3/provider"
+import "github.com/cdktf/cdktf-provider-dnsimple-go/dnsimple/v4/provider"
 
 provider.DnsimpleProvider_IsConstruct(x interface{}) *bool
 ```
@@ -196,7 +210,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-dnsimple.provider.DnsimpleProvider.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-dnsimple-go/dnsimple/v3/provider"
+import "github.com/cdktf/cdktf-provider-dnsimple-go/dnsimple/v4/provider"
 
 provider.DnsimpleProvider_IsTerraformElement(x interface{}) *bool
 ```
@@ -210,7 +224,7 @@ provider.DnsimpleProvider_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformProvider` <a name="IsTerraformProvider" id="@cdktf/provider-dnsimple.provider.DnsimpleProvider.isTerraformProvider"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-dnsimple-go/dnsimple/v3/provider"
+import "github.com/cdktf/cdktf-provider-dnsimple-go/dnsimple/v4/provider"
 
 provider.DnsimpleProvider_IsTerraformProvider(x interface{}) *bool
 ```
@@ -475,14 +489,14 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-dnsimple.provider.DnsimpleProviderConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-dnsimple-go/dnsimple/v3/provider"
+import "github.com/cdktf/cdktf-provider-dnsimple-go/dnsimple/v4/provider"
 
 &provider.DnsimpleProviderConfig {
 	Account: *string,
-	Token: *string,
 	Alias: *string,
 	Prefetch: interface{},
 	Sandbox: interface{},
+	Token: *string,
 	UserAgent: *string,
 }
 ```
@@ -492,15 +506,15 @@ import "github.com/cdktf/cdktf-provider-dnsimple-go/dnsimple/v3/provider"
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-dnsimple.provider.DnsimpleProviderConfig.property.account">Account</a></code> | <code>*string</code> | The account for API operations. |
-| <code><a href="#@cdktf/provider-dnsimple.provider.DnsimpleProviderConfig.property.token">Token</a></code> | <code>*string</code> | The API v2 token for API operations. |
 | <code><a href="#@cdktf/provider-dnsimple.provider.DnsimpleProviderConfig.property.alias">Alias</a></code> | <code>*string</code> | Alias name. |
 | <code><a href="#@cdktf/provider-dnsimple.provider.DnsimpleProviderConfig.property.prefetch">Prefetch</a></code> | <code>interface{}</code> | Flag to enable the prefetch of zone records. |
 | <code><a href="#@cdktf/provider-dnsimple.provider.DnsimpleProviderConfig.property.sandbox">Sandbox</a></code> | <code>interface{}</code> | Flag to enable the sandbox API. |
+| <code><a href="#@cdktf/provider-dnsimple.provider.DnsimpleProviderConfig.property.token">Token</a></code> | <code>*string</code> | The API v2 token for API operations. |
 | <code><a href="#@cdktf/provider-dnsimple.provider.DnsimpleProviderConfig.property.userAgent">UserAgent</a></code> | <code>*string</code> | Custom string to append to the user agent used for sending HTTP requests to the API. |
 
 ---
 
-##### `Account`<sup>Required</sup> <a name="Account" id="@cdktf/provider-dnsimple.provider.DnsimpleProviderConfig.property.account"></a>
+##### `Account`<sup>Optional</sup> <a name="Account" id="@cdktf/provider-dnsimple.provider.DnsimpleProviderConfig.property.account"></a>
 
 ```go
 Account *string
@@ -511,20 +525,6 @@ Account *string
 The account for API operations.
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/dnsimple#account DnsimpleProvider#account}
-
----
-
-##### `Token`<sup>Required</sup> <a name="Token" id="@cdktf/provider-dnsimple.provider.DnsimpleProviderConfig.property.token"></a>
-
-```go
-Token *string
-```
-
-- *Type:* *string
-
-The API v2 token for API operations.
-
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/dnsimple#token DnsimpleProvider#token}
 
 ---
 
@@ -567,6 +567,20 @@ Sandbox interface{}
 Flag to enable the sandbox API.
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/dnsimple#sandbox DnsimpleProvider#sandbox}
+
+---
+
+##### `Token`<sup>Optional</sup> <a name="Token" id="@cdktf/provider-dnsimple.provider.DnsimpleProviderConfig.property.token"></a>
+
+```go
+Token *string
+```
+
+- *Type:* *string
+
+The API v2 token for API operations.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/dnsimple#token DnsimpleProvider#token}
 
 ---
 

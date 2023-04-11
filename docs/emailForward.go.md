@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/dnsimple/r/email_for
 #### Initializers <a name="Initializers" id="@cdktf/provider-dnsimple.emailForward.EmailForward.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-dnsimple-go/dnsimple/v3/emailforward"
+import "github.com/cdktf/cdktf-provider-dnsimple-go/dnsimple/v4/emailforward"
 
 emailforward.NewEmailForward(scope Construct, id *string, config EmailForwardConfig) EmailForward
 ```
@@ -66,7 +66,6 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-dnsimple.emailForward.EmailForward.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-dnsimple.emailForward.EmailForward.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-dnsimple.emailForward.EmailForward.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-dnsimple.emailForward.EmailForward.resetId">ResetId</a></code> | *No description.* |
 
 ---
 
@@ -254,12 +253,6 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 
 ---
 
-##### `ResetId` <a name="ResetId" id="@cdktf/provider-dnsimple.emailForward.EmailForward.resetId"></a>
-
-```go
-func ResetId()
-```
-
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -273,7 +266,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-dnsimple.emailForward.EmailForward.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-dnsimple-go/dnsimple/v3/emailforward"
+import "github.com/cdktf/cdktf-provider-dnsimple-go/dnsimple/v4/emailforward"
 
 emailforward.EmailForward_IsConstruct(x interface{}) *bool
 ```
@@ -305,7 +298,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-dnsimple.emailForward.EmailForward.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-dnsimple-go/dnsimple/v3/emailforward"
+import "github.com/cdktf/cdktf-provider-dnsimple-go/dnsimple/v4/emailforward"
 
 emailforward.EmailForward_IsTerraformElement(x interface{}) *bool
 ```
@@ -319,7 +312,7 @@ emailforward.EmailForward_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-dnsimple.emailForward.EmailForward.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-dnsimple-go/dnsimple/v3/emailforward"
+import "github.com/cdktf/cdktf-provider-dnsimple-go/dnsimple/v4/emailforward"
 
 emailforward.EmailForward_IsTerraformResource(x interface{}) *bool
 ```
@@ -349,14 +342,13 @@ emailforward.EmailForward_IsTerraformResource(x interface{}) *bool
 | <code><a href="#@cdktf/provider-dnsimple.emailForward.EmailForward.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-dnsimple.emailForward.EmailForward.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-dnsimple.emailForward.EmailForward.property.aliasEmail">AliasEmail</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-dnsimple.emailForward.EmailForward.property.id">Id</a></code> | <code>*f64</code> | *No description.* |
 | <code><a href="#@cdktf/provider-dnsimple.emailForward.EmailForward.property.aliasNameInput">AliasNameInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-dnsimple.emailForward.EmailForward.property.destinationEmailInput">DestinationEmailInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-dnsimple.emailForward.EmailForward.property.domainInput">DomainInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-dnsimple.emailForward.EmailForward.property.idInput">IdInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-dnsimple.emailForward.EmailForward.property.aliasName">AliasName</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-dnsimple.emailForward.EmailForward.property.destinationEmail">DestinationEmail</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-dnsimple.emailForward.EmailForward.property.domain">Domain</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-dnsimple.emailForward.EmailForward.property.id">Id</a></code> | <code>*string</code> | *No description.* |
 
 ---
 
@@ -512,6 +504,16 @@ func AliasEmail() *string
 
 ---
 
+##### `Id`<sup>Required</sup> <a name="Id" id="@cdktf/provider-dnsimple.emailForward.EmailForward.property.id"></a>
+
+```go
+func Id() *f64
+```
+
+- *Type:* *f64
+
+---
+
 ##### `AliasNameInput`<sup>Optional</sup> <a name="AliasNameInput" id="@cdktf/provider-dnsimple.emailForward.EmailForward.property.aliasNameInput"></a>
 
 ```go
@@ -536,16 +538,6 @@ func DestinationEmailInput() *string
 
 ```go
 func DomainInput() *string
-```
-
-- *Type:* *string
-
----
-
-##### `IdInput`<sup>Optional</sup> <a name="IdInput" id="@cdktf/provider-dnsimple.emailForward.EmailForward.property.idInput"></a>
-
-```go
-func IdInput() *string
 ```
 
 - *Type:* *string
@@ -582,16 +574,6 @@ func Domain() *string
 
 ---
 
-##### `Id`<sup>Required</sup> <a name="Id" id="@cdktf/provider-dnsimple.emailForward.EmailForward.property.id"></a>
-
-```go
-func Id() *string
-```
-
-- *Type:* *string
-
----
-
 #### Constants <a name="Constants" id="Constants"></a>
 
 | **Name** | **Type** | **Description** |
@@ -617,7 +599,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-dnsimple.emailForward.EmailForwardConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-dnsimple-go/dnsimple/v3/emailforward"
+import "github.com/cdktf/cdktf-provider-dnsimple-go/dnsimple/v4/emailforward"
 
 &emailforward.EmailForwardConfig {
 	Connection: interface{},
@@ -630,7 +612,6 @@ import "github.com/cdktf/cdktf-provider-dnsimple-go/dnsimple/v3/emailforward"
 	AliasName: *string,
 	DestinationEmail: *string,
 	Domain: *string,
-	Id: *string,
 }
 ```
 
@@ -648,7 +629,6 @@ import "github.com/cdktf/cdktf-provider-dnsimple-go/dnsimple/v3/emailforward"
 | <code><a href="#@cdktf/provider-dnsimple.emailForward.EmailForwardConfig.property.aliasName">AliasName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/dnsimple/r/email_forward#alias_name EmailForward#alias_name}. |
 | <code><a href="#@cdktf/provider-dnsimple.emailForward.EmailForwardConfig.property.destinationEmail">DestinationEmail</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/dnsimple/r/email_forward#destination_email EmailForward#destination_email}. |
 | <code><a href="#@cdktf/provider-dnsimple.emailForward.EmailForwardConfig.property.domain">Domain</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/dnsimple/r/email_forward#domain EmailForward#domain}. |
-| <code><a href="#@cdktf/provider-dnsimple.emailForward.EmailForwardConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/dnsimple/r/email_forward#id EmailForward#id}. |
 
 ---
 
@@ -755,21 +735,6 @@ Domain *string
 - *Type:* *string
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/dnsimple/r/email_forward#domain EmailForward#domain}.
-
----
-
-##### `Id`<sup>Optional</sup> <a name="Id" id="@cdktf/provider-dnsimple.emailForward.EmailForwardConfig.property.id"></a>
-
-```go
-Id *string
-```
-
-- *Type:* *string
-
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/dnsimple/r/email_forward#id EmailForward#id}.
-
-Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
-If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 
 ---
 

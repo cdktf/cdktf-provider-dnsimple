@@ -8,6 +8,8 @@ import * as cdktf from 'cdktf';
 
 export interface DataDnsimpleZoneConfig extends cdktf.TerraformMetaArguments {
   /**
+  * Zone Name
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/dnsimple/d/zone#name DataDnsimpleZone#name}
   */
   readonly name: string;
@@ -39,7 +41,7 @@ export class DataDnsimpleZone extends cdktf.TerraformDataSource {
       terraformResourceType: 'dnsimple_zone',
       terraformGeneratorMetadata: {
         providerName: 'dnsimple',
-        providerVersion: '0.16.3',
+        providerVersion: '0.17.0',
         providerVersionConstraint: '~> 0.13'
       },
       provider: config.provider,

@@ -11,7 +11,7 @@ Represents a {@link https://www.terraform.io/docs/providers/dnsimple dnsimple}.
 ```csharp
 using HashiCorp.Cdktf.Providers.Dnsimple;
 
-new DnsimpleProvider(Construct Scope, string Id, DnsimpleProviderConfig Config);
+new DnsimpleProvider(Construct Scope, string Id, DnsimpleProviderConfig Config = null);
 ```
 
 | **Name** | **Type** | **Description** |
@@ -40,7 +40,7 @@ Must be unique amongst siblings in the same scope
 
 ---
 
-##### `Config`<sup>Required</sup> <a name="Config" id="@cdktf/provider-dnsimple.provider.DnsimpleProvider.Initializer.parameter.config"></a>
+##### `Config`<sup>Optional</sup> <a name="Config" id="@cdktf/provider-dnsimple.provider.DnsimpleProvider.Initializer.parameter.config"></a>
 
 - *Type:* <a href="#@cdktf/provider-dnsimple.provider.DnsimpleProviderConfig">DnsimpleProviderConfig</a>
 
@@ -56,9 +56,11 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-dnsimple.provider.DnsimpleProvider.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
 | <code><a href="#@cdktf/provider-dnsimple.provider.DnsimpleProvider.toMetadata">ToMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-dnsimple.provider.DnsimpleProvider.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
+| <code><a href="#@cdktf/provider-dnsimple.provider.DnsimpleProvider.resetAccount">ResetAccount</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-dnsimple.provider.DnsimpleProvider.resetAlias">ResetAlias</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-dnsimple.provider.DnsimpleProvider.resetPrefetch">ResetPrefetch</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-dnsimple.provider.DnsimpleProvider.resetSandbox">ResetSandbox</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-dnsimple.provider.DnsimpleProvider.resetToken">ResetToken</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-dnsimple.provider.DnsimpleProvider.resetUserAgent">ResetUserAgent</a></code> | *No description.* |
 
 ---
@@ -127,6 +129,12 @@ private object ToTerraform()
 
 Adds this resource to the terraform JSON output.
 
+##### `ResetAccount` <a name="ResetAccount" id="@cdktf/provider-dnsimple.provider.DnsimpleProvider.resetAccount"></a>
+
+```csharp
+private void ResetAccount()
+```
+
 ##### `ResetAlias` <a name="ResetAlias" id="@cdktf/provider-dnsimple.provider.DnsimpleProvider.resetAlias"></a>
 
 ```csharp
@@ -143,6 +151,12 @@ private void ResetPrefetch()
 
 ```csharp
 private void ResetSandbox()
+```
+
+##### `ResetToken` <a name="ResetToken" id="@cdktf/provider-dnsimple.provider.DnsimpleProvider.resetToken"></a>
+
+```csharp
+private void ResetToken()
 ```
 
 ##### `ResetUserAgent` <a name="ResetUserAgent" id="@cdktf/provider-dnsimple.provider.DnsimpleProvider.resetUserAgent"></a>
@@ -478,11 +492,11 @@ public string TfResourceType { get; }
 using HashiCorp.Cdktf.Providers.Dnsimple;
 
 new DnsimpleProviderConfig {
-    string Account,
-    string Token,
+    string Account = null,
     string Alias = null,
     object Prefetch = null,
     object Sandbox = null,
+    string Token = null,
     string UserAgent = null
 };
 ```
@@ -492,15 +506,15 @@ new DnsimpleProviderConfig {
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-dnsimple.provider.DnsimpleProviderConfig.property.account">Account</a></code> | <code>string</code> | The account for API operations. |
-| <code><a href="#@cdktf/provider-dnsimple.provider.DnsimpleProviderConfig.property.token">Token</a></code> | <code>string</code> | The API v2 token for API operations. |
 | <code><a href="#@cdktf/provider-dnsimple.provider.DnsimpleProviderConfig.property.alias">Alias</a></code> | <code>string</code> | Alias name. |
 | <code><a href="#@cdktf/provider-dnsimple.provider.DnsimpleProviderConfig.property.prefetch">Prefetch</a></code> | <code>object</code> | Flag to enable the prefetch of zone records. |
 | <code><a href="#@cdktf/provider-dnsimple.provider.DnsimpleProviderConfig.property.sandbox">Sandbox</a></code> | <code>object</code> | Flag to enable the sandbox API. |
+| <code><a href="#@cdktf/provider-dnsimple.provider.DnsimpleProviderConfig.property.token">Token</a></code> | <code>string</code> | The API v2 token for API operations. |
 | <code><a href="#@cdktf/provider-dnsimple.provider.DnsimpleProviderConfig.property.userAgent">UserAgent</a></code> | <code>string</code> | Custom string to append to the user agent used for sending HTTP requests to the API. |
 
 ---
 
-##### `Account`<sup>Required</sup> <a name="Account" id="@cdktf/provider-dnsimple.provider.DnsimpleProviderConfig.property.account"></a>
+##### `Account`<sup>Optional</sup> <a name="Account" id="@cdktf/provider-dnsimple.provider.DnsimpleProviderConfig.property.account"></a>
 
 ```csharp
 public string Account { get; set; }
@@ -511,20 +525,6 @@ public string Account { get; set; }
 The account for API operations.
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/dnsimple#account DnsimpleProvider#account}
-
----
-
-##### `Token`<sup>Required</sup> <a name="Token" id="@cdktf/provider-dnsimple.provider.DnsimpleProviderConfig.property.token"></a>
-
-```csharp
-public string Token { get; set; }
-```
-
-- *Type:* string
-
-The API v2 token for API operations.
-
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/dnsimple#token DnsimpleProvider#token}
 
 ---
 
@@ -567,6 +567,20 @@ public object Sandbox { get; set; }
 Flag to enable the sandbox API.
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/dnsimple#sandbox DnsimpleProvider#sandbox}
+
+---
+
+##### `Token`<sup>Optional</sup> <a name="Token" id="@cdktf/provider-dnsimple.provider.DnsimpleProviderConfig.property.token"></a>
+
+```csharp
+public string Token { get; set; }
+```
+
+- *Type:* string
+
+The API v2 token for API operations.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/dnsimple#token DnsimpleProvider#token}
 
 ---
 
