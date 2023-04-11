@@ -8,24 +8,17 @@ import * as cdktf from 'cdktf';
 
 export interface ZoneRecordConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/dnsimple/r/zone_record#id ZoneRecord#id}
-  *
-  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
-  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
-  */
-  readonly id?: string;
-  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/dnsimple/r/zone_record#name ZoneRecord#name}
   */
   readonly name: string;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/dnsimple/r/zone_record#priority ZoneRecord#priority}
   */
-  readonly priority?: string;
+  readonly priority?: number;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/dnsimple/r/zone_record#ttl ZoneRecord#ttl}
   */
-  readonly ttl?: string;
+  readonly ttl?: number;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/dnsimple/r/zone_record#type ZoneRecord#type}
   */
@@ -66,7 +59,7 @@ export class ZoneRecord extends cdktf.TerraformResource {
       terraformResourceType: 'dnsimple_zone_record',
       terraformGeneratorMetadata: {
         providerName: 'dnsimple',
-        providerVersion: '0.16.3',
+        providerVersion: '0.17.0',
         providerVersionConstraint: '~> 0.13'
       },
       provider: config.provider,
@@ -77,7 +70,6 @@ export class ZoneRecord extends cdktf.TerraformResource {
       connection: config.connection,
       forEach: config.forEach
     });
-    this._id = config.id;
     this._name = config.name;
     this._priority = config.priority;
     this._ttl = config.ttl;
@@ -90,20 +82,9 @@ export class ZoneRecord extends cdktf.TerraformResource {
   // ATTRIBUTES
   // ==========
 
-  // id - computed: true, optional: true, required: false
-  private _id?: string; 
+  // id - computed: true, optional: false, required: false
   public get id() {
-    return this.getStringAttribute('id');
-  }
-  public set id(value: string) {
-    this._id = value;
-  }
-  public resetId() {
-    this._id = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get idInput() {
-    return this._id;
+    return this.getNumberAttribute('id');
   }
 
   // name - computed: false, optional: false, required: true
@@ -120,11 +101,11 @@ export class ZoneRecord extends cdktf.TerraformResource {
   }
 
   // priority - computed: true, optional: true, required: false
-  private _priority?: string; 
+  private _priority?: number; 
   public get priority() {
-    return this.getStringAttribute('priority');
+    return this.getNumberAttribute('priority');
   }
-  public set priority(value: string) {
+  public set priority(value: number) {
     this._priority = value;
   }
   public resetPriority() {
@@ -140,12 +121,12 @@ export class ZoneRecord extends cdktf.TerraformResource {
     return this.getStringAttribute('qualified_name');
   }
 
-  // ttl - computed: false, optional: true, required: false
-  private _ttl?: string; 
+  // ttl - computed: true, optional: true, required: false
+  private _ttl?: number; 
   public get ttl() {
-    return this.getStringAttribute('ttl');
+    return this.getNumberAttribute('ttl');
   }
-  public set ttl(value: string) {
+  public set ttl(value: number) {
     this._ttl = value;
   }
   public resetTtl() {
@@ -206,10 +187,9 @@ export class ZoneRecord extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
       name: cdktf.stringToTerraform(this._name),
-      priority: cdktf.stringToTerraform(this._priority),
-      ttl: cdktf.stringToTerraform(this._ttl),
+      priority: cdktf.numberToTerraform(this._priority),
+      ttl: cdktf.numberToTerraform(this._ttl),
       type: cdktf.stringToTerraform(this._type),
       value: cdktf.stringToTerraform(this._value),
       zone_name: cdktf.stringToTerraform(this._zoneName),

@@ -7,5 +7,4 @@ The following submodules are available:
 - [emailForward](./emailForward.go.md)
 - [letsEncryptCertificate](./letsEncryptCertificate.go.md)
 - [provider](./provider.go.md)
-- [record](./record.go.md)
 - [zoneRecord](./zoneRecord.go.md)

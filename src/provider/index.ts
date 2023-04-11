@@ -12,7 +12,7 @@ export interface DnsimpleProviderConfig {
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/dnsimple#account DnsimpleProvider#account}
   */
-  readonly account: string;
+  readonly account?: string;
   /**
   * Flag to enable the prefetch of zone records.
   * 
@@ -30,7 +30,7 @@ export interface DnsimpleProviderConfig {
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/dnsimple#token DnsimpleProvider#token}
   */
-  readonly token: string;
+  readonly token?: string;
   /**
   * Custom string to append to the user agent used for sending HTTP requests to the API.
   * 
@@ -64,14 +64,14 @@ export class DnsimpleProvider extends cdktf.TerraformProvider {
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
-  * @param options DnsimpleProviderConfig
+  * @param options DnsimpleProviderConfig = {}
   */
-  public constructor(scope: Construct, id: string, config: DnsimpleProviderConfig) {
+  public constructor(scope: Construct, id: string, config: DnsimpleProviderConfig = {}) {
     super(scope, id, {
       terraformResourceType: 'dnsimple',
       terraformGeneratorMetadata: {
         providerName: 'dnsimple',
-        providerVersion: '0.16.3',
+        providerVersion: '0.17.0',
         providerVersionConstraint: '~> 0.13'
       },
       terraformProviderSource: 'dnsimple/dnsimple'
@@ -88,13 +88,16 @@ export class DnsimpleProvider extends cdktf.TerraformProvider {
   // ATTRIBUTES
   // ==========
 
-  // account - computed: false, optional: false, required: true
+  // account - computed: false, optional: true, required: false
   private _account?: string; 
   public get account() {
     return this._account;
   }
   public set account(value: string | undefined) {
     this._account = value;
+  }
+  public resetAccount() {
+    this._account = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get accountInput() {
@@ -133,13 +136,16 @@ export class DnsimpleProvider extends cdktf.TerraformProvider {
     return this._sandbox;
   }
 
-  // token - computed: false, optional: false, required: true
+  // token - computed: false, optional: true, required: false
   private _token?: string; 
   public get token() {
     return this._token;
   }
   public set token(value: string | undefined) {
     this._token = value;
+  }
+  public resetToken() {
+    this._token = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get tokenInput() {

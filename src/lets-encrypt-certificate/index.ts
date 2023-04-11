@@ -12,13 +12,9 @@ export interface LetsEncryptCertificateConfig extends cdktf.TerraformMetaArgumen
   */
   readonly autoRenew: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/dnsimple/r/lets_encrypt_certificate#contact_id LetsEncryptCertificate#contact_id}
-  */
-  readonly contactId?: number;
-  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/dnsimple/r/lets_encrypt_certificate#domain_id LetsEncryptCertificate#domain_id}
   */
-  readonly domainId?: string;
+  readonly domainId: string;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/dnsimple/r/lets_encrypt_certificate#name LetsEncryptCertificate#name}
   */
@@ -27,87 +23,6 @@ export interface LetsEncryptCertificateConfig extends cdktf.TerraformMetaArgumen
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/dnsimple/r/lets_encrypt_certificate#signature_algorithm LetsEncryptCertificate#signature_algorithm}
   */
   readonly signatureAlgorithm?: string;
-  /**
-  * timeouts block
-  * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/dnsimple/r/lets_encrypt_certificate#timeouts LetsEncryptCertificate#timeouts}
-  */
-  readonly timeouts?: LetsEncryptCertificateTimeouts;
-}
-export interface LetsEncryptCertificateTimeouts {
-  /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/dnsimple/r/lets_encrypt_certificate#read LetsEncryptCertificate#read}
-  */
-  readonly read?: string;
-}
-
-export function letsEncryptCertificateTimeoutsToTerraform(struct?: LetsEncryptCertificateTimeoutsOutputReference | LetsEncryptCertificateTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
-  }
-  return {
-    read: cdktf.stringToTerraform(struct!.read),
-  }
-}
-
-export class LetsEncryptCertificateTimeoutsOutputReference extends cdktf.ComplexObject {
-  private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
-
-  /**
-  * @param terraformResource The parent resource
-  * @param terraformAttribute The attribute on the parent resource this class is referencing
-  */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
-    super(terraformResource, terraformAttribute, false, 0);
-  }
-
-  public get internalValue(): LetsEncryptCertificateTimeouts | cdktf.IResolvable | undefined {
-    if (this.resolvableValue) {
-      return this.resolvableValue;
-    }
-    let hasAnyValues = this.isEmptyObject;
-    const internalValueResult: any = {};
-    if (this._read !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.read = this._read;
-    }
-    return hasAnyValues ? internalValueResult : undefined;
-  }
-
-  public set internalValue(value: LetsEncryptCertificateTimeouts | cdktf.IResolvable | undefined) {
-    if (value === undefined) {
-      this.isEmptyObject = false;
-      this.resolvableValue = undefined;
-      this._read = undefined;
-    }
-    else if (cdktf.Tokenization.isResolvable(value)) {
-      this.isEmptyObject = false;
-      this.resolvableValue = value;
-    }
-    else {
-      this.isEmptyObject = Object.keys(value).length === 0;
-      this.resolvableValue = undefined;
-      this._read = value.read;
-    }
-  }
-
-  // read - computed: false, optional: true, required: false
-  private _read?: string; 
-  public get read() {
-    return this.getStringAttribute('read');
-  }
-  public set read(value: string) {
-    this._read = value;
-  }
-  public resetRead() {
-    this._read = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get readInput() {
-    return this._read;
-  }
 }
 
 /**
@@ -136,7 +51,7 @@ export class LetsEncryptCertificate extends cdktf.TerraformResource {
       terraformResourceType: 'dnsimple_lets_encrypt_certificate',
       terraformGeneratorMetadata: {
         providerName: 'dnsimple',
-        providerVersion: '0.16.3',
+        providerVersion: '0.17.0',
         providerVersionConstraint: '~> 0.13'
       },
       provider: config.provider,
@@ -148,11 +63,9 @@ export class LetsEncryptCertificate extends cdktf.TerraformResource {
       forEach: config.forEach
     });
     this._autoRenew = config.autoRenew;
-    this._contactId = config.contactId;
     this._domainId = config.domainId;
     this._name = config.name;
     this._signatureAlgorithm = config.signatureAlgorithm;
-    this._timeouts.internalValue = config.timeouts;
   }
 
   // ==========
@@ -177,22 +90,6 @@ export class LetsEncryptCertificate extends cdktf.TerraformResource {
     return this._autoRenew;
   }
 
-  // contact_id - computed: false, optional: true, required: false
-  private _contactId?: number; 
-  public get contactId() {
-    return this.getNumberAttribute('contact_id');
-  }
-  public set contactId(value: number) {
-    this._contactId = value;
-  }
-  public resetContactId() {
-    this._contactId = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get contactIdInput() {
-    return this._contactId;
-  }
-
   // created_at - computed: true, optional: false, required: false
   public get createdAt() {
     return this.getStringAttribute('created_at');
@@ -203,7 +100,7 @@ export class LetsEncryptCertificate extends cdktf.TerraformResource {
     return this.getStringAttribute('csr');
   }
 
-  // domain_id - computed: false, optional: true, required: false
+  // domain_id - computed: false, optional: false, required: true
   private _domainId?: string; 
   public get domainId() {
     return this.getStringAttribute('domain_id');
@@ -211,22 +108,19 @@ export class LetsEncryptCertificate extends cdktf.TerraformResource {
   public set domainId(value: string) {
     this._domainId = value;
   }
-  public resetDomainId() {
-    this._domainId = undefined;
-  }
   // Temporarily expose input value. Use with caution.
   public get domainIdInput() {
     return this._domainId;
   }
 
-  // expires_on - computed: true, optional: false, required: false
-  public get expiresOn() {
-    return this.getStringAttribute('expires_on');
+  // expires_at - computed: true, optional: false, required: false
+  public get expiresAt() {
+    return this.getStringAttribute('expires_at');
   }
 
   // id - computed: true, optional: false, required: false
   public get id() {
-    return this.getStringAttribute('id');
+    return this.getNumberAttribute('id');
   }
 
   // name - computed: false, optional: false, required: true
@@ -273,22 +167,6 @@ export class LetsEncryptCertificate extends cdktf.TerraformResource {
     return this.getNumberAttribute('years');
   }
 
-  // timeouts - computed: false, optional: true, required: false
-  private _timeouts = new LetsEncryptCertificateTimeoutsOutputReference(this, "timeouts");
-  public get timeouts() {
-    return this._timeouts;
-  }
-  public putTimeouts(value: LetsEncryptCertificateTimeouts) {
-    this._timeouts.internalValue = value;
-  }
-  public resetTimeouts() {
-    this._timeouts.internalValue = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get timeoutsInput() {
-    return this._timeouts.internalValue;
-  }
-
   // =========
   // SYNTHESIS
   // =========
@@ -296,11 +174,9 @@ export class LetsEncryptCertificate extends cdktf.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       auto_renew: cdktf.booleanToTerraform(this._autoRenew),
-      contact_id: cdktf.numberToTerraform(this._contactId),
       domain_id: cdktf.stringToTerraform(this._domainId),
       name: cdktf.stringToTerraform(this._name),
       signature_algorithm: cdktf.stringToTerraform(this._signatureAlgorithm),
-      timeouts: letsEncryptCertificateTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
 }
