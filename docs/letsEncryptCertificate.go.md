@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/dnsimple/r/lets_encr
 #### Initializers <a name="Initializers" id="@cdktf/provider-dnsimple.letsEncryptCertificate.LetsEncryptCertificate.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-dnsimple-go/dnsimple/v4/letsencryptcertificate"
+import "github.com/cdktf/cdktf-provider-dnsimple-go/dnsimple/letsencryptcertificate"
 
 letsencryptcertificate.NewLetsEncryptCertificate(scope Construct, id *string, config LetsEncryptCertificateConfig) LetsEncryptCertificate
 ```
@@ -273,7 +273,7 @@ func ResetSignatureAlgorithm()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-dnsimple.letsEncryptCertificate.LetsEncryptCertificate.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-dnsimple-go/dnsimple/v4/letsencryptcertificate"
+import "github.com/cdktf/cdktf-provider-dnsimple-go/dnsimple/letsencryptcertificate"
 
 letsencryptcertificate.LetsEncryptCertificate_IsConstruct(x interface{}) *bool
 ```
@@ -305,7 +305,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-dnsimple.letsEncryptCertificate.LetsEncryptCertificate.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-dnsimple-go/dnsimple/v4/letsencryptcertificate"
+import "github.com/cdktf/cdktf-provider-dnsimple-go/dnsimple/letsencryptcertificate"
 
 letsencryptcertificate.LetsEncryptCertificate_IsTerraformElement(x interface{}) *bool
 ```
@@ -319,7 +319,7 @@ letsencryptcertificate.LetsEncryptCertificate_IsTerraformElement(x interface{}) 
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-dnsimple.letsEncryptCertificate.LetsEncryptCertificate.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-dnsimple-go/dnsimple/v4/letsencryptcertificate"
+import "github.com/cdktf/cdktf-provider-dnsimple-go/dnsimple/letsencryptcertificate"
 
 letsencryptcertificate.LetsEncryptCertificate_IsTerraformResource(x interface{}) *bool
 ```
@@ -694,7 +694,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-dnsimple.letsEncryptCertificate.LetsEncryptCertificateConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-dnsimple-go/dnsimple/v4/letsencryptcertificate"
+import "github.com/cdktf/cdktf-provider-dnsimple-go/dnsimple/letsencryptcertificate"
 
 &letsencryptcertificate.LetsEncryptCertificateConfig {
 	Connection: interface{},

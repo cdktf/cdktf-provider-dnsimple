@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/dnsimple dnsimple}.
 #### Initializers <a name="Initializers" id="@cdktf/provider-dnsimple.provider.DnsimpleProvider.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-dnsimple-go/dnsimple/v4/provider"
+import "github.com/cdktf/cdktf-provider-dnsimple-go/dnsimple/provider"
 
 provider.NewDnsimpleProvider(scope Construct, id *string, config DnsimpleProviderConfig) DnsimpleProvider
 ```
@@ -178,7 +178,7 @@ func ResetUserAgent()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-dnsimple.provider.DnsimpleProvider.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-dnsimple-go/dnsimple/v4/provider"
+import "github.com/cdktf/cdktf-provider-dnsimple-go/dnsimple/provider"
 
 provider.DnsimpleProvider_IsConstruct(x interface{}) *bool
 ```
@@ -210,7 +210,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-dnsimple.provider.DnsimpleProvider.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-dnsimple-go/dnsimple/v4/provider"
+import "github.com/cdktf/cdktf-provider-dnsimple-go/dnsimple/provider"
 
 provider.DnsimpleProvider_IsTerraformElement(x interface{}) *bool
 ```
@@ -224,7 +224,7 @@ provider.DnsimpleProvider_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformProvider` <a name="IsTerraformProvider" id="@cdktf/provider-dnsimple.provider.DnsimpleProvider.isTerraformProvider"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-dnsimple-go/dnsimple/v4/provider"
+import "github.com/cdktf/cdktf-provider-dnsimple-go/dnsimple/provider"
 
 provider.DnsimpleProvider_IsTerraformProvider(x interface{}) *bool
 ```
@@ -489,7 +489,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-dnsimple.provider.DnsimpleProviderConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-dnsimple-go/dnsimple/v4/provider"
+import "github.com/cdktf/cdktf-provider-dnsimple-go/dnsimple/provider"
 
 &provider.DnsimpleProviderConfig {
 	Account: *string,
