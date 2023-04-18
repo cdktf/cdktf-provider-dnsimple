@@ -1,3 +1,7 @@
+# `dnsimple_email_forward`
+
+Refer to the Terraform Registory for docs: [`dnsimple_email_forward`](https://www.terraform.io/docs/providers/dnsimple/r/email_forward).
+
 # `emailForward` Submodule <a name="`emailForward` Submodule" id="@cdktf/provider-dnsimple.emailForward"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
