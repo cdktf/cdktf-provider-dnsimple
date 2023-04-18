@@ -6,8 +6,8 @@
 const { CdktfProviderProject } = require("@cdktf/provider-project");
 const project = new CdktfProviderProject({
   useCustomGithubRunner: false,
-  terraformProvider: "dnsimple/dnsimple@~> 0.13",
-  cdktfVersion: "^0.15.0",
+  terraformProvider: "dnsimple/dnsimple@~> 1.0",
+  cdktfVersion: "^0.16.0",
   constructsVersion: "^10.0.0",
   minNodeVersion: "16.14.0",
   jsiiVersion: "^1.53.0",
