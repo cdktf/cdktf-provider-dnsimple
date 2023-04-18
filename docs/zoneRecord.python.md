@@ -1,3 +1,7 @@
+# `dnsimple_zone_record`
+
+Refer to the Terraform Registory for docs: [`dnsimple_zone_record`](https://www.terraform.io/docs/providers/dnsimple/r/zone_record).
+
 # `zoneRecord` Submodule <a name="`zoneRecord` Submodule" id="@cdktf/provider-dnsimple.zoneRecord"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

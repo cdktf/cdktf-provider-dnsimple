@@ -1,3 +1,7 @@
+# `dnsimple_domain`
+
+Refer to the Terraform Registory for docs: [`dnsimple_domain`](https://www.terraform.io/docs/providers/dnsimple/r/domain).
+
 # `domain` Submodule <a name="`domain` Submodule" id="@cdktf/provider-dnsimple.domain"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

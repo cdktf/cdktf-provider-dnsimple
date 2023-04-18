@@ -1,3 +1,7 @@
+# `dnsimple_lets_encrypt_certificate`
+
+Refer to the Terraform Registory for docs: [`dnsimple_lets_encrypt_certificate`](https://www.terraform.io/docs/providers/dnsimple/r/lets_encrypt_certificate).
+
 # `letsEncryptCertificate` Submodule <a name="`letsEncryptCertificate` Submodule" id="@cdktf/provider-dnsimple.letsEncryptCertificate"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
