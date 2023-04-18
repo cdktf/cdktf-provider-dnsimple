@@ -10,7 +10,7 @@ const actions = require("@actions/core");
 // const { versionMatchesConstraint } = require('cdktf-cli/lib/dependencies/version-constraints');
 
 // set by the projen file that generates this script
-const CONSTRAINT = "~> 0.13";
+const CONSTRAINT = "~> 1.0";
 const FQ_PROVIDER_NAME = "dnsimple/dnsimple";
 
 (async function main() {
