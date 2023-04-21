@@ -1,4 +1,4 @@
-// https://registry.terraform.io/providers/dnsimple/dnsimple/1.0.0/docs/resources/domain
+// https://registry.terraform.io/providers/dnsimple/dnsimple/1.1.0/docs/resources/domain
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -8,13 +8,13 @@ import * as cdktf from 'cdktf';
 
 export interface DomainConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.0.0/docs/resources/domain#name Domain#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.1.0/docs/resources/domain#name Domain#name}
   */
   readonly name: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.0.0/docs/resources/domain dnsimple_domain}
+* Represents a {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.1.0/docs/resources/domain dnsimple_domain}
 */
 export class Domain extends cdktf.TerraformResource {
 
@@ -28,7 +28,7 @@ export class Domain extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.0.0/docs/resources/domain dnsimple_domain} Resource
+  * Create a new {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.1.0/docs/resources/domain dnsimple_domain} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -39,7 +39,7 @@ export class Domain extends cdktf.TerraformResource {
       terraformResourceType: 'dnsimple_domain',
       terraformGeneratorMetadata: {
         providerName: 'dnsimple',
-        providerVersion: '1.0.0',
+        providerVersion: '1.1.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,

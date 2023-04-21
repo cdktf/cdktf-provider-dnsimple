@@ -1,6 +1,6 @@
 # `data_dnsimple_zone`
 
-Refer to the Terraform Registory for docs: [`data_dnsimple_zone`](https://registry.terraform.io/providers/dnsimple/dnsimple/1.0.0/docs/data-sources/zone).
+Refer to the Terraform Registory for docs: [`data_dnsimple_zone`](https://registry.terraform.io/providers/dnsimple/dnsimple/1.1.0/docs/data-sources/zone).
 
 # `dataDnsimpleZone` Submodule <a name="`dataDnsimpleZone` Submodule" id="@cdktf/provider-dnsimple.dataDnsimpleZone"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`data_dnsimple_zone`](https://regist
 
 ### DataDnsimpleZone <a name="DataDnsimpleZone" id="@cdktf/provider-dnsimple.dataDnsimpleZone.DataDnsimpleZone"></a>
 
-Represents a {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.0.0/docs/data-sources/zone dnsimple_zone}.
+Represents a {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.1.0/docs/data-sources/zone dnsimple_zone}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-dnsimple.dataDnsimpleZone.DataDnsimpleZone.Initializer"></a>
 
@@ -112,7 +112,7 @@ Must be unique amongst siblings in the same scope
 
 Zone Name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.0.0/docs/data-sources/zone#name DataDnsimpleZone#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.1.0/docs/data-sources/zone#name DataDnsimpleZone#name}
 
 ---
 
@@ -727,7 +727,7 @@ public java.lang.String getName();
 
 Zone Name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.0.0/docs/data-sources/zone#name DataDnsimpleZone#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.1.0/docs/data-sources/zone#name DataDnsimpleZone#name}
 
 ---
 
