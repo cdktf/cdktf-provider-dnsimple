@@ -1,6 +1,6 @@
 # `dnsimple_ds_record`
 
-Refer to the Terraform Registory for docs: [`dnsimple_ds_record`](https://registry.terraform.io/providers/dnsimple/dnsimple/1.1.0/docs/resources/ds_record).
+Refer to the Terraform Registory for docs: [`dnsimple_ds_record`](https://registry.terraform.io/providers/dnsimple/dnsimple/1.1.1/docs/resources/ds_record).
 
 # `dsRecord` Submodule <a name="`dsRecord` Submodule" id="@cdktf/provider-dnsimple.dsRecord"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`dnsimple_ds_record`](https://regist
 
 ### DsRecord <a name="DsRecord" id="@cdktf/provider-dnsimple.dsRecord.DsRecord"></a>
 
-Represents a {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.1.0/docs/resources/ds_record dnsimple_ds_record}.
+Represents a {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.1.1/docs/resources/ds_record dnsimple_ds_record}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-dnsimple.dsRecord.DsRecord.Initializer"></a>
 
@@ -738,12 +738,12 @@ new DsRecordConfig {
 | <code><a href="#@cdktf/provider-dnsimple.dsRecord.DsRecordConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-dnsimple.dsRecord.DsRecordConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-dnsimple.dsRecord.DsRecordConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-dnsimple.dsRecord.DsRecordConfig.property.algorithm">Algorithm</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.1.0/docs/resources/ds_record#algorithm DsRecord#algorithm}. |
-| <code><a href="#@cdktf/provider-dnsimple.dsRecord.DsRecordConfig.property.domain">Domain</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.1.0/docs/resources/ds_record#domain DsRecord#domain}. |
-| <code><a href="#@cdktf/provider-dnsimple.dsRecord.DsRecordConfig.property.digest">Digest</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.1.0/docs/resources/ds_record#digest DsRecord#digest}. |
-| <code><a href="#@cdktf/provider-dnsimple.dsRecord.DsRecordConfig.property.digestType">DigestType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.1.0/docs/resources/ds_record#digest_type DsRecord#digest_type}. |
-| <code><a href="#@cdktf/provider-dnsimple.dsRecord.DsRecordConfig.property.keytag">Keytag</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.1.0/docs/resources/ds_record#keytag DsRecord#keytag}. |
-| <code><a href="#@cdktf/provider-dnsimple.dsRecord.DsRecordConfig.property.publicKey">PublicKey</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.1.0/docs/resources/ds_record#public_key DsRecord#public_key}. |
+| <code><a href="#@cdktf/provider-dnsimple.dsRecord.DsRecordConfig.property.algorithm">Algorithm</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.1.1/docs/resources/ds_record#algorithm DsRecord#algorithm}. |
+| <code><a href="#@cdktf/provider-dnsimple.dsRecord.DsRecordConfig.property.domain">Domain</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.1.1/docs/resources/ds_record#domain DsRecord#domain}. |
+| <code><a href="#@cdktf/provider-dnsimple.dsRecord.DsRecordConfig.property.digest">Digest</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.1.1/docs/resources/ds_record#digest DsRecord#digest}. |
+| <code><a href="#@cdktf/provider-dnsimple.dsRecord.DsRecordConfig.property.digestType">DigestType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.1.1/docs/resources/ds_record#digest_type DsRecord#digest_type}. |
+| <code><a href="#@cdktf/provider-dnsimple.dsRecord.DsRecordConfig.property.keytag">Keytag</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.1.1/docs/resources/ds_record#keytag DsRecord#keytag}. |
+| <code><a href="#@cdktf/provider-dnsimple.dsRecord.DsRecordConfig.property.publicKey">PublicKey</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.1.1/docs/resources/ds_record#public_key DsRecord#public_key}. |
 
 ---
 
@@ -825,7 +825,7 @@ public string Algorithm { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.1.0/docs/resources/ds_record#algorithm DsRecord#algorithm}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.1.1/docs/resources/ds_record#algorithm DsRecord#algorithm}.
 
 ---
 
@@ -837,7 +837,7 @@ public string Domain { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.1.0/docs/resources/ds_record#domain DsRecord#domain}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.1.1/docs/resources/ds_record#domain DsRecord#domain}.
 
 ---
 
@@ -849,7 +849,7 @@ public string Digest { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.1.0/docs/resources/ds_record#digest DsRecord#digest}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.1.1/docs/resources/ds_record#digest DsRecord#digest}.
 
 ---
 
@@ -861,7 +861,7 @@ public string DigestType { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.1.0/docs/resources/ds_record#digest_type DsRecord#digest_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.1.1/docs/resources/ds_record#digest_type DsRecord#digest_type}.
 
 ---
 
@@ -873,7 +873,7 @@ public string Keytag { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.1.0/docs/resources/ds_record#keytag DsRecord#keytag}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.1.1/docs/resources/ds_record#keytag DsRecord#keytag}.
 
 ---
 
@@ -885,7 +885,7 @@ public string PublicKey { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.1.0/docs/resources/ds_record#public_key DsRecord#public_key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.1.1/docs/resources/ds_record#public_key DsRecord#public_key}.
 
 ---
 
