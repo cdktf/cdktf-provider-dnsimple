@@ -1,4 +1,4 @@
-// https://registry.terraform.io/providers/dnsimple/dnsimple/1.1.1/docs
+// https://registry.terraform.io/providers/dnsimple/dnsimple/1.1.2/docs
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -10,43 +10,43 @@ export interface DnsimpleProviderConfig {
   /**
   * The account for API operations.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.1.1/docs#account DnsimpleProvider#account}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.1.2/docs#account DnsimpleProvider#account}
   */
   readonly account?: string;
   /**
   * Flag to enable the prefetch of zone records.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.1.1/docs#prefetch DnsimpleProvider#prefetch}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.1.2/docs#prefetch DnsimpleProvider#prefetch}
   */
   readonly prefetch?: boolean | cdktf.IResolvable;
   /**
   * Flag to enable the sandbox API.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.1.1/docs#sandbox DnsimpleProvider#sandbox}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.1.2/docs#sandbox DnsimpleProvider#sandbox}
   */
   readonly sandbox?: boolean | cdktf.IResolvable;
   /**
   * The API v2 token for API operations.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.1.1/docs#token DnsimpleProvider#token}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.1.2/docs#token DnsimpleProvider#token}
   */
   readonly token?: string;
   /**
   * Custom string to append to the user agent used for sending HTTP requests to the API.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.1.1/docs#user_agent DnsimpleProvider#user_agent}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.1.2/docs#user_agent DnsimpleProvider#user_agent}
   */
   readonly userAgent?: string;
   /**
   * Alias name
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.1.1/docs#alias DnsimpleProvider#alias}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.1.2/docs#alias DnsimpleProvider#alias}
   */
   readonly alias?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.1.1/docs dnsimple}
+* Represents a {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.1.2/docs dnsimple}
 */
 export class DnsimpleProvider extends cdktf.TerraformProvider {
 
@@ -60,7 +60,7 @@ export class DnsimpleProvider extends cdktf.TerraformProvider {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.1.1/docs dnsimple} Resource
+  * Create a new {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.1.2/docs dnsimple} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -71,7 +71,7 @@ export class DnsimpleProvider extends cdktf.TerraformProvider {
       terraformResourceType: 'dnsimple',
       terraformGeneratorMetadata: {
         providerName: 'dnsimple',
-        providerVersion: '1.1.1',
+        providerVersion: '1.1.2',
         providerVersionConstraint: '~> 1.0'
       },
       terraformProviderSource: 'dnsimple/dnsimple'

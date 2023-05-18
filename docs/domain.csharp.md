@@ -1,6 +1,6 @@
 # `dnsimple_domain`
 
-Refer to the Terraform Registory for docs: [`dnsimple_domain`](https://registry.terraform.io/providers/dnsimple/dnsimple/1.1.1/docs/resources/domain).
+Refer to the Terraform Registory for docs: [`dnsimple_domain`](https://registry.terraform.io/providers/dnsimple/dnsimple/1.1.2/docs/resources/domain).
 
 # `domain` Submodule <a name="`domain` Submodule" id="@cdktf/provider-dnsimple.domain"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`dnsimple_domain`](https://registry.
 
 ### Domain <a name="Domain" id="@cdktf/provider-dnsimple.domain.Domain"></a>
 
-Represents a {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.1.1/docs/resources/domain dnsimple_domain}.
+Represents a {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.1.2/docs/resources/domain dnsimple_domain}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-dnsimple.domain.Domain.Initializer"></a>
 
@@ -639,7 +639,7 @@ new DomainConfig {
 | <code><a href="#@cdktf/provider-dnsimple.domain.DomainConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-dnsimple.domain.DomainConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-dnsimple.domain.DomainConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-dnsimple.domain.DomainConfig.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.1.1/docs/resources/domain#name Domain#name}. |
+| <code><a href="#@cdktf/provider-dnsimple.domain.DomainConfig.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.1.2/docs/resources/domain#name Domain#name}. |
 
 ---
 
@@ -721,7 +721,7 @@ public string Name { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.1.1/docs/resources/domain#name Domain#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.1.2/docs/resources/domain#name Domain#name}.
 
 ---
 
