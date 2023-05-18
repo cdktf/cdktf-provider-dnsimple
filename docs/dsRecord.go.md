@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.
 #### Initializers <a name="Initializers" id="@cdktf/provider-dnsimple.dsRecord.DsRecord.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-dnsimple-go/dnsimple/dsrecord"
+import "github.com/cdktf/cdktf-provider-dnsimple-go/dnsimple/v5/dsrecord"
 
 dsrecord.NewDsRecord(scope Construct, id *string, config DsRecordConfig) DsRecord
 ```
@@ -298,7 +298,7 @@ func ResetPublicKey()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-dnsimple.dsRecord.DsRecord.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-dnsimple-go/dnsimple/dsrecord"
+import "github.com/cdktf/cdktf-provider-dnsimple-go/dnsimple/v5/dsrecord"
 
 dsrecord.DsRecord_IsConstruct(x interface{}) *bool
 ```
@@ -330,7 +330,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-dnsimple.dsRecord.DsRecord.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-dnsimple-go/dnsimple/dsrecord"
+import "github.com/cdktf/cdktf-provider-dnsimple-go/dnsimple/v5/dsrecord"
 
 dsrecord.DsRecord_IsTerraformElement(x interface{}) *bool
 ```
@@ -344,7 +344,7 @@ dsrecord.DsRecord_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-dnsimple.dsRecord.DsRecord.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-dnsimple-go/dnsimple/dsrecord"
+import "github.com/cdktf/cdktf-provider-dnsimple-go/dnsimple/v5/dsrecord"
 
 dsrecord.DsRecord_IsTerraformResource(x interface{}) *bool
 ```
@@ -708,7 +708,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-dnsimple.dsRecord.DsRecordConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-dnsimple-go/dnsimple/dsrecord"
+import "github.com/cdktf/cdktf-provider-dnsimple-go/dnsimple/v5/dsrecord"
 
 &dsrecord.DsRecordConfig {
 	Connection: interface{},
