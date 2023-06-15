@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.
 #### Initializers <a name="Initializers" id="@cdktf/provider-dnsimple.zoneRecord.ZoneRecord.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-dnsimple-go/dnsimple/zonerecord"
+import "github.com/cdktf/cdktf-provider-dnsimple-go/dnsimple/v6/zonerecord"
 
 zonerecord.NewZoneRecord(scope Construct, id *string, config ZoneRecordConfig) ZoneRecord
 ```
@@ -284,7 +284,7 @@ func ResetTtl()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-dnsimple.zoneRecord.ZoneRecord.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-dnsimple-go/dnsimple/zonerecord"
+import "github.com/cdktf/cdktf-provider-dnsimple-go/dnsimple/v6/zonerecord"
 
 zonerecord.ZoneRecord_IsConstruct(x interface{}) *bool
 ```
@@ -316,7 +316,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-dnsimple.zoneRecord.ZoneRecord.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-dnsimple-go/dnsimple/zonerecord"
+import "github.com/cdktf/cdktf-provider-dnsimple-go/dnsimple/v6/zonerecord"
 
 zonerecord.ZoneRecord_IsTerraformElement(x interface{}) *bool
 ```
@@ -330,7 +330,7 @@ zonerecord.ZoneRecord_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-dnsimple.zoneRecord.ZoneRecord.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-dnsimple-go/dnsimple/zonerecord"
+import "github.com/cdktf/cdktf-provider-dnsimple-go/dnsimple/v6/zonerecord"
 
 zonerecord.ZoneRecord_IsTerraformResource(x interface{}) *bool
 ```
@@ -694,7 +694,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-dnsimple.zoneRecord.ZoneRecordConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-dnsimple-go/dnsimple/zonerecord"
+import "github.com/cdktf/cdktf-provider-dnsimple-go/dnsimple/v6/zonerecord"
 
 &zonerecord.ZoneRecordConfig {
 	Connection: interface{},
