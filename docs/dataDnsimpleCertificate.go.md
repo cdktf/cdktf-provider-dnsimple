@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.
 #### Initializers <a name="Initializers" id="@cdktf/provider-dnsimple.dataDnsimpleCertificate.DataDnsimpleCertificate.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-dnsimple-go/dnsimple/datadnsimplecertificate"
+import "github.com/cdktf/cdktf-provider-dnsimple-go/dnsimple/v7/datadnsimplecertificate"
 
 datadnsimplecertificate.NewDataDnsimpleCertificate(scope Construct, id *string, config DataDnsimpleCertificateConfig) DataDnsimpleCertificate
 ```
@@ -270,7 +270,7 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-dnsimple.dataDnsimpleCertificate.DataDnsimpleCertificate.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-dnsimple-go/dnsimple/datadnsimplecertificate"
+import "github.com/cdktf/cdktf-provider-dnsimple-go/dnsimple/v7/datadnsimplecertificate"
 
 datadnsimplecertificate.DataDnsimpleCertificate_IsConstruct(x interface{}) *bool
 ```
@@ -302,7 +302,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-dnsimple.dataDnsimpleCertificate.DataDnsimpleCertificate.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-dnsimple-go/dnsimple/datadnsimplecertificate"
+import "github.com/cdktf/cdktf-provider-dnsimple-go/dnsimple/v7/datadnsimplecertificate"
 
 datadnsimplecertificate.DataDnsimpleCertificate_IsTerraformElement(x interface{}) *bool
 ```
@@ -316,7 +316,7 @@ datadnsimplecertificate.DataDnsimpleCertificate_IsTerraformElement(x interface{}
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-dnsimple.dataDnsimpleCertificate.DataDnsimpleCertificate.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-dnsimple-go/dnsimple/datadnsimplecertificate"
+import "github.com/cdktf/cdktf-provider-dnsimple-go/dnsimple/v7/datadnsimplecertificate"
 
 datadnsimplecertificate.DataDnsimpleCertificate_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -592,7 +592,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-dnsimple.dataDnsimpleCertificate.DataDnsimpleCertificateConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-dnsimple-go/dnsimple/datadnsimplecertificate"
+import "github.com/cdktf/cdktf-provider-dnsimple-go/dnsimple/v7/datadnsimplecertificate"
 
 &datadnsimplecertificate.DataDnsimpleCertificateConfig {
 	Connection: interface{},
