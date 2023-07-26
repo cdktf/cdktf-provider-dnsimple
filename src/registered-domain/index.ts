@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/dnsimple/dnsimple/1.1.2/docs/resources/registered_domain
 // generated from terraform resource schema
 
@@ -38,7 +33,7 @@ export interface RegisteredDomainConfig extends cdktf.TerraformMetaArguments {
   readonly premiumPrice?: string;
   /**
   * Timeouts for operations, given as a parsable string as in `10m` or `30s`.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.1.2/docs/resources/registered_domain#timeouts RegisteredDomain#timeouts}
   */
   readonly timeouts?: RegisteredDomainTimeouts;
@@ -125,19 +120,19 @@ export class RegisteredDomainDomainRegistrationOutputReference extends cdktf.Com
 export interface RegisteredDomainTimeouts {
   /**
   * Create timeout.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.1.2/docs/resources/registered_domain#create RegisteredDomain#create}
   */
   readonly create?: string;
   /**
   * Delete timeout (currently unused).
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.1.2/docs/resources/registered_domain#delete RegisteredDomain#delete}
   */
   readonly delete?: string;
   /**
   * Update timeout.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.1.2/docs/resources/registered_domain#update RegisteredDomain#update}
   */
   readonly update?: string;

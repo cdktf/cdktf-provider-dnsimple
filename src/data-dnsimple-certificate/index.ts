@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/dnsimple/dnsimple/1.1.2/docs/data-sources/certificate
 // generated from terraform resource schema
 
@@ -14,13 +9,13 @@ import * as cdktf from 'cdktf';
 export interface DataDnsimpleCertificateConfig extends cdktf.TerraformMetaArguments {
   /**
   * Certificate ID
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.1.2/docs/data-sources/certificate#certificate_id DataDnsimpleCertificate#certificate_id}
   */
   readonly certificateId: number;
   /**
   * Domain name
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.1.2/docs/data-sources/certificate#domain DataDnsimpleCertificate#domain}
   */
   readonly domain: string;

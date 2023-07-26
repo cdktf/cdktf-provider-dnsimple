@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/dnsimple/dnsimple/1.1.2/docs/data-sources/zone
 // generated from terraform resource schema
 
@@ -14,7 +9,7 @@ import * as cdktf from 'cdktf';
 export interface DataDnsimpleZoneConfig extends cdktf.TerraformMetaArguments {
   /**
   * Zone Name
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.1.2/docs/data-sources/zone#name DataDnsimpleZone#name}
   */
   readonly name: string;
