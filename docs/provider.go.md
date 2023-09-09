@@ -1,6 +1,6 @@
 # `provider`
 
-Refer to the Terraform Registory for docs: [`dnsimple`](https://registry.terraform.io/providers/dnsimple/dnsimple/1.1.2/docs).
+Refer to the Terraform Registory for docs: [`dnsimple`](https://registry.terraform.io/providers/dnsimple/dnsimple/1.2.0/docs).
 
 # `provider` Submodule <a name="`provider` Submodule" id="@cdktf/provider-dnsimple.provider"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`dnsimple`](https://registry.terrafo
 
 ### DnsimpleProvider <a name="DnsimpleProvider" id="@cdktf/provider-dnsimple.provider.DnsimpleProvider"></a>
 
-Represents a {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.1.2/docs dnsimple}.
+Represents a {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.2.0/docs dnsimple}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-dnsimple.provider.DnsimpleProvider.Initializer"></a>
 
@@ -528,7 +528,7 @@ Account *string
 
 The account for API operations.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.1.2/docs#account DnsimpleProvider#account}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.2.0/docs#account DnsimpleProvider#account}
 
 ---
 
@@ -542,7 +542,7 @@ Alias *string
 
 Alias name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.1.2/docs#alias DnsimpleProvider#alias}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.2.0/docs#alias DnsimpleProvider#alias}
 
 ---
 
@@ -556,7 +556,7 @@ Prefetch interface{}
 
 Flag to enable the prefetch of zone records.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.1.2/docs#prefetch DnsimpleProvider#prefetch}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.2.0/docs#prefetch DnsimpleProvider#prefetch}
 
 ---
 
@@ -570,7 +570,7 @@ Sandbox interface{}
 
 Flag to enable the sandbox API.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.1.2/docs#sandbox DnsimpleProvider#sandbox}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.2.0/docs#sandbox DnsimpleProvider#sandbox}
 
 ---
 
@@ -584,7 +584,7 @@ Token *string
 
 The API v2 token for API operations.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.1.2/docs#token DnsimpleProvider#token}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.2.0/docs#token DnsimpleProvider#token}
 
 ---
 
@@ -598,7 +598,7 @@ UserAgent *string
 
 Custom string to append to the user agent used for sending HTTP requests to the API.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.1.2/docs#user_agent DnsimpleProvider#user_agent}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.2.0/docs#user_agent DnsimpleProvider#user_agent}
 
 ---
 

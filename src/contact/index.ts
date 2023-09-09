@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/dnsimple/dnsimple/1.1.2/docs/resources/contact
+// https://registry.terraform.io/providers/dnsimple/dnsimple/1.2.0/docs/resources/contact
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,65 +13,65 @@ import * as cdktf from 'cdktf';
 
 export interface ContactConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.1.2/docs/resources/contact#address1 Contact#address1}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.2.0/docs/resources/contact#address1 Contact#address1}
   */
   readonly address1: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.1.2/docs/resources/contact#address2 Contact#address2}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.2.0/docs/resources/contact#address2 Contact#address2}
   */
   readonly address2?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.1.2/docs/resources/contact#city Contact#city}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.2.0/docs/resources/contact#city Contact#city}
   */
   readonly city: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.1.2/docs/resources/contact#country Contact#country}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.2.0/docs/resources/contact#country Contact#country}
   */
   readonly country: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.1.2/docs/resources/contact#email Contact#email}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.2.0/docs/resources/contact#email Contact#email}
   */
   readonly email: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.1.2/docs/resources/contact#fax Contact#fax}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.2.0/docs/resources/contact#fax Contact#fax}
   */
   readonly fax?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.1.2/docs/resources/contact#first_name Contact#first_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.2.0/docs/resources/contact#first_name Contact#first_name}
   */
   readonly firstName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.1.2/docs/resources/contact#job_title Contact#job_title}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.2.0/docs/resources/contact#job_title Contact#job_title}
   */
   readonly jobTitle?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.1.2/docs/resources/contact#label Contact#label}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.2.0/docs/resources/contact#label Contact#label}
   */
   readonly label?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.1.2/docs/resources/contact#last_name Contact#last_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.2.0/docs/resources/contact#last_name Contact#last_name}
   */
   readonly lastName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.1.2/docs/resources/contact#organization_name Contact#organization_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.2.0/docs/resources/contact#organization_name Contact#organization_name}
   */
   readonly organizationName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.1.2/docs/resources/contact#phone Contact#phone}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.2.0/docs/resources/contact#phone Contact#phone}
   */
   readonly phone: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.1.2/docs/resources/contact#postal_code Contact#postal_code}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.2.0/docs/resources/contact#postal_code Contact#postal_code}
   */
   readonly postalCode: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.1.2/docs/resources/contact#state_province Contact#state_province}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.2.0/docs/resources/contact#state_province Contact#state_province}
   */
   readonly stateProvince: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.1.2/docs/resources/contact dnsimple_contact}
+* Represents a {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.2.0/docs/resources/contact dnsimple_contact}
 */
 export class Contact extends cdktf.TerraformResource {
 
@@ -85,7 +85,7 @@ export class Contact extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.1.2/docs/resources/contact dnsimple_contact} Resource
+  * Create a new {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.2.0/docs/resources/contact dnsimple_contact} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -96,7 +96,7 @@ export class Contact extends cdktf.TerraformResource {
       terraformResourceType: 'dnsimple_contact',
       terraformGeneratorMetadata: {
         providerName: 'dnsimple',
-        providerVersion: '1.1.2',
+        providerVersion: '1.2.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,
