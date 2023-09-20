@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/dnsimple/dnsimple/1.2.0/docs/resources/email_forward
+// https://registry.terraform.io/providers/dnsimple/dnsimple/1.2.1/docs/resources/email_forward
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,21 +13,21 @@ import * as cdktf from 'cdktf';
 
 export interface EmailForwardConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.2.0/docs/resources/email_forward#alias_name EmailForward#alias_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.2.1/docs/resources/email_forward#alias_name EmailForward#alias_name}
   */
   readonly aliasName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.2.0/docs/resources/email_forward#destination_email EmailForward#destination_email}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.2.1/docs/resources/email_forward#destination_email EmailForward#destination_email}
   */
   readonly destinationEmail: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.2.0/docs/resources/email_forward#domain EmailForward#domain}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.2.1/docs/resources/email_forward#domain EmailForward#domain}
   */
   readonly domain: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.2.0/docs/resources/email_forward dnsimple_email_forward}
+* Represents a {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.2.1/docs/resources/email_forward dnsimple_email_forward}
 */
 export class EmailForward extends cdktf.TerraformResource {
 
@@ -41,7 +41,7 @@ export class EmailForward extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.2.0/docs/resources/email_forward dnsimple_email_forward} Resource
+  * Create a new {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.2.1/docs/resources/email_forward dnsimple_email_forward} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -52,7 +52,7 @@ export class EmailForward extends cdktf.TerraformResource {
       terraformResourceType: 'dnsimple_email_forward',
       terraformGeneratorMetadata: {
         providerName: 'dnsimple',
-        providerVersion: '1.2.0',
+        providerVersion: '1.2.1',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,
