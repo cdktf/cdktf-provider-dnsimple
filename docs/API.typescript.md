@@ -3,6 +3,7 @@
 The following submodules are available:
 - [contact](./contact.typescript.md)
 - [dataDnsimpleCertificate](./dataDnsimpleCertificate.typescript.md)
+- [dataDnsimpleRegistrantChangeCheck](./dataDnsimpleRegistrantChangeCheck.typescript.md)
 - [dataDnsimpleZone](./dataDnsimpleZone.typescript.md)
 - [domain](./domain.typescript.md)
 - [domainDelegation](./domainDelegation.typescript.md)

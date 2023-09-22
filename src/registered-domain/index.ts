@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/dnsimple/dnsimple/1.2.1/docs/resources/registered_domain
+// https://registry.terraform.io/providers/dnsimple/dnsimple/1.3.0/docs/resources/registered_domain
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,47 +8,47 @@ import * as cdktf from 'cdktf';
 
 export interface RegisteredDomainConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.2.1/docs/resources/registered_domain#auto_renew_enabled RegisteredDomain#auto_renew_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.3.0/docs/resources/registered_domain#auto_renew_enabled RegisteredDomain#auto_renew_enabled}
   */
   readonly autoRenewEnabled?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.2.1/docs/resources/registered_domain#contact_id RegisteredDomain#contact_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.3.0/docs/resources/registered_domain#contact_id RegisteredDomain#contact_id}
   */
   readonly contactId: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.2.1/docs/resources/registered_domain#dnssec_enabled RegisteredDomain#dnssec_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.3.0/docs/resources/registered_domain#dnssec_enabled RegisteredDomain#dnssec_enabled}
   */
   readonly dnssecEnabled?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.2.1/docs/resources/registered_domain#extended_attributes RegisteredDomain#extended_attributes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.3.0/docs/resources/registered_domain#extended_attributes RegisteredDomain#extended_attributes}
   */
   readonly extendedAttributes?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.2.1/docs/resources/registered_domain#name RegisteredDomain#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.3.0/docs/resources/registered_domain#name RegisteredDomain#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.2.1/docs/resources/registered_domain#premium_price RegisteredDomain#premium_price}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.3.0/docs/resources/registered_domain#premium_price RegisteredDomain#premium_price}
   */
   readonly premiumPrice?: string;
   /**
   * Timeouts for operations, given as a parsable string as in `10m` or `30s`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.2.1/docs/resources/registered_domain#timeouts RegisteredDomain#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.3.0/docs/resources/registered_domain#timeouts RegisteredDomain#timeouts}
   */
   readonly timeouts?: RegisteredDomainTimeouts;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.2.1/docs/resources/registered_domain#transfer_lock_enabled RegisteredDomain#transfer_lock_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.3.0/docs/resources/registered_domain#transfer_lock_enabled RegisteredDomain#transfer_lock_enabled}
   */
   readonly transferLockEnabled?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.2.1/docs/resources/registered_domain#whois_privacy_enabled RegisteredDomain#whois_privacy_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.3.0/docs/resources/registered_domain#whois_privacy_enabled RegisteredDomain#whois_privacy_enabled}
   */
   readonly whoisPrivacyEnabled?: boolean | cdktf.IResolvable;
 }
 export interface RegisteredDomainDomainRegistration {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.2.1/docs/resources/registered_domain#state RegisteredDomain#state}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.3.0/docs/resources/registered_domain#state RegisteredDomain#state}
   */
   readonly state?: string;
 }
@@ -126,23 +121,126 @@ export class RegisteredDomainDomainRegistrationOutputReference extends cdktf.Com
     return this._state;
   }
 }
+export interface RegisteredDomainRegistrantChange {
+  /**
+  * State of the registrant change
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.3.0/docs/resources/registered_domain#state RegisteredDomain#state}
+  */
+  readonly state?: string;
+}
+
+export function registeredDomainRegistrantChangeToTerraform(struct?: RegisteredDomainRegistrantChange): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    state: cdktf.stringToTerraform(struct!.state),
+  }
+}
+
+export class RegisteredDomainRegistrantChangeOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false);
+  }
+
+  public get internalValue(): RegisteredDomainRegistrantChange | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._state !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.state = this._state;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: RegisteredDomainRegistrantChange | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._state = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._state = value.state;
+    }
+  }
+
+  // account_id - computed: true, optional: false, required: false
+  public get accountId() {
+    return this.getNumberAttribute('account_id');
+  }
+
+  // contact_id - computed: true, optional: false, required: false
+  public get contactId() {
+    return this.getNumberAttribute('contact_id');
+  }
+
+  // domain_id - computed: true, optional: false, required: false
+  public get domainId() {
+    return this.getStringAttribute('domain_id');
+  }
+
+  // extended_attributes - computed: true, optional: false, required: false
+  private _extendedAttributes = new cdktf.StringMap(this, "extended_attributes");
+  public get extendedAttributes() {
+    return this._extendedAttributes;
+  }
+
+  // id - computed: true, optional: false, required: false
+  public get id() {
+    return this.getNumberAttribute('id');
+  }
+
+  // irt_lock_lifted_by - computed: true, optional: false, required: false
+  public get irtLockLiftedBy() {
+    return this.getStringAttribute('irt_lock_lifted_by');
+  }
+
+  // registry_owner_change - computed: true, optional: false, required: false
+  public get registryOwnerChange() {
+    return this.getBooleanAttribute('registry_owner_change');
+  }
+
+  // state - computed: true, optional: true, required: false
+  private _state?: string; 
+  public get state() {
+    return this.getStringAttribute('state');
+  }
+  public set state(value: string) {
+    this._state = value;
+  }
+  public resetState() {
+    this._state = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get stateInput() {
+    return this._state;
+  }
+}
 export interface RegisteredDomainTimeouts {
   /**
   * Create timeout.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.2.1/docs/resources/registered_domain#create RegisteredDomain#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.3.0/docs/resources/registered_domain#create RegisteredDomain#create}
   */
   readonly create?: string;
   /**
   * Delete timeout (currently unused).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.2.1/docs/resources/registered_domain#delete RegisteredDomain#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.3.0/docs/resources/registered_domain#delete RegisteredDomain#delete}
   */
   readonly delete?: string;
   /**
   * Update timeout.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.2.1/docs/resources/registered_domain#update RegisteredDomain#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.3.0/docs/resources/registered_domain#update RegisteredDomain#update}
   */
   readonly update?: string;
 }
@@ -263,7 +361,7 @@ export class RegisteredDomainTimeoutsOutputReference extends cdktf.ComplexObject
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.2.1/docs/resources/registered_domain dnsimple_registered_domain}
+* Represents a {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.3.0/docs/resources/registered_domain dnsimple_registered_domain}
 */
 export class RegisteredDomain extends cdktf.TerraformResource {
 
@@ -277,7 +375,7 @@ export class RegisteredDomain extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.2.1/docs/resources/registered_domain dnsimple_registered_domain} Resource
+  * Create a new {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.3.0/docs/resources/registered_domain dnsimple_registered_domain} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -288,7 +386,7 @@ export class RegisteredDomain extends cdktf.TerraformResource {
       terraformResourceType: 'dnsimple_registered_domain',
       terraformGeneratorMetadata: {
         providerName: 'dnsimple',
-        providerVersion: '1.2.1',
+        providerVersion: '1.3.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,
@@ -423,6 +521,12 @@ export class RegisteredDomain extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get premiumPriceInput() {
     return this._premiumPrice;
+  }
+
+  // registrant_change - computed: true, optional: false, required: false
+  private _registrantChange = new RegisteredDomainRegistrantChangeOutputReference(this, "registrant_change");
+  public get registrantChange() {
+    return this._registrantChange;
   }
 
   // state - computed: true, optional: false, required: false

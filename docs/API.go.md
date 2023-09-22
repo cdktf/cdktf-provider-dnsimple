@@ -3,6 +3,7 @@
 The following submodules are available:
 - [contact](./contact.go.md)
 - [dataDnsimpleCertificate](./dataDnsimpleCertificate.go.md)
+- [dataDnsimpleRegistrantChangeCheck](./dataDnsimpleRegistrantChangeCheck.go.md)
 - [dataDnsimpleZone](./dataDnsimpleZone.go.md)
 - [domain](./domain.go.md)
 - [domainDelegation](./domainDelegation.go.md)

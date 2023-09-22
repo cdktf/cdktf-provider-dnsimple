@@ -3,6 +3,7 @@
 The following submodules are available:
 - [contact](./contact.csharp.md)
 - [dataDnsimpleCertificate](./dataDnsimpleCertificate.csharp.md)
+- [dataDnsimpleRegistrantChangeCheck](./dataDnsimpleRegistrantChangeCheck.csharp.md)
 - [dataDnsimpleZone](./dataDnsimpleZone.csharp.md)
 - [domain](./domain.csharp.md)
 - [domainDelegation](./domainDelegation.csharp.md)

@@ -1,6 +1,6 @@
 # `provider`
 
-Refer to the Terraform Registory for docs: [`dnsimple`](https://registry.terraform.io/providers/dnsimple/dnsimple/1.2.1/docs).
+Refer to the Terraform Registory for docs: [`dnsimple`](https://registry.terraform.io/providers/dnsimple/dnsimple/1.3.0/docs).
 
 # `provider` Submodule <a name="`provider` Submodule" id="@cdktf/provider-dnsimple.provider"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`dnsimple`](https://registry.terrafo
 
 ### DnsimpleProvider <a name="DnsimpleProvider" id="@cdktf/provider-dnsimple.provider.DnsimpleProvider"></a>
 
-Represents a {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.2.1/docs dnsimple}.
+Represents a {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.3.0/docs dnsimple}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-dnsimple.provider.DnsimpleProvider.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-dnsimple-go/dnsimple/v7/provider"
+import "github.com/cdktf/cdktf-provider-dnsimple-go/dnsimple/provider"
 
 provider.NewDnsimpleProvider(scope Construct, id *string, config DnsimpleProviderConfig) DnsimpleProvider
 ```
@@ -182,7 +182,7 @@ func ResetUserAgent()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-dnsimple.provider.DnsimpleProvider.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-dnsimple-go/dnsimple/v7/provider"
+import "github.com/cdktf/cdktf-provider-dnsimple-go/dnsimple/provider"
 
 provider.DnsimpleProvider_IsConstruct(x interface{}) *bool
 ```
@@ -214,7 +214,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-dnsimple.provider.DnsimpleProvider.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-dnsimple-go/dnsimple/v7/provider"
+import "github.com/cdktf/cdktf-provider-dnsimple-go/dnsimple/provider"
 
 provider.DnsimpleProvider_IsTerraformElement(x interface{}) *bool
 ```
@@ -228,7 +228,7 @@ provider.DnsimpleProvider_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformProvider` <a name="IsTerraformProvider" id="@cdktf/provider-dnsimple.provider.DnsimpleProvider.isTerraformProvider"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-dnsimple-go/dnsimple/v7/provider"
+import "github.com/cdktf/cdktf-provider-dnsimple-go/dnsimple/provider"
 
 provider.DnsimpleProvider_IsTerraformProvider(x interface{}) *bool
 ```
@@ -493,7 +493,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-dnsimple.provider.DnsimpleProviderConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-dnsimple-go/dnsimple/v7/provider"
+import "github.com/cdktf/cdktf-provider-dnsimple-go/dnsimple/provider"
 
 &provider.DnsimpleProviderConfig {
 	Account: *string,
@@ -528,7 +528,7 @@ Account *string
 
 The account for API operations.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.2.1/docs#account DnsimpleProvider#account}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.3.0/docs#account DnsimpleProvider#account}
 
 ---
 
@@ -542,7 +542,7 @@ Alias *string
 
 Alias name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.2.1/docs#alias DnsimpleProvider#alias}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.3.0/docs#alias DnsimpleProvider#alias}
 
 ---
 
@@ -556,7 +556,7 @@ Prefetch interface{}
 
 Flag to enable the prefetch of zone records.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.2.1/docs#prefetch DnsimpleProvider#prefetch}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.3.0/docs#prefetch DnsimpleProvider#prefetch}
 
 ---
 
@@ -570,7 +570,7 @@ Sandbox interface{}
 
 Flag to enable the sandbox API.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.2.1/docs#sandbox DnsimpleProvider#sandbox}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.3.0/docs#sandbox DnsimpleProvider#sandbox}
 
 ---
 
@@ -584,7 +584,7 @@ Token *string
 
 The API v2 token for API operations.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.2.1/docs#token DnsimpleProvider#token}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.3.0/docs#token DnsimpleProvider#token}
 
 ---
 
@@ -598,7 +598,7 @@ UserAgent *string
 
 Custom string to append to the user agent used for sending HTTP requests to the API.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.2.1/docs#user_agent DnsimpleProvider#user_agent}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.3.0/docs#user_agent DnsimpleProvider#user_agent}
 
 ---
 
