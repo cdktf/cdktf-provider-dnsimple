@@ -3,6 +3,7 @@
 The following submodules are available:
 - [contact](./contact.python.md)
 - [dataDnsimpleCertificate](./dataDnsimpleCertificate.python.md)
+- [dataDnsimpleRegistrantChangeCheck](./dataDnsimpleRegistrantChangeCheck.python.md)
 - [dataDnsimpleZone](./dataDnsimpleZone.python.md)
 - [domain](./domain.python.md)
 - [domainDelegation](./domainDelegation.python.md)

@@ -1,6 +1,6 @@
 # `dnsimple_registered_domain`
 
-Refer to the Terraform Registory for docs: [`dnsimple_registered_domain`](https://registry.terraform.io/providers/dnsimple/dnsimple/1.2.1/docs/resources/registered_domain).
+Refer to the Terraform Registory for docs: [`dnsimple_registered_domain`](https://registry.terraform.io/providers/dnsimple/dnsimple/1.3.0/docs/resources/registered_domain).
 
 # `registeredDomain` Submodule <a name="`registeredDomain` Submodule" id="@cdktf/provider-dnsimple.registeredDomain"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`dnsimple_registered_domain`](https:
 
 ### RegisteredDomain <a name="RegisteredDomain" id="@cdktf/provider-dnsimple.registeredDomain.RegisteredDomain"></a>
 
-Represents a {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.2.1/docs/resources/registered_domain dnsimple_registered_domain}.
+Represents a {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.3.0/docs/resources/registered_domain dnsimple_registered_domain}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-dnsimple.registeredDomain.RegisteredDomain.Initializer"></a>
 
@@ -48,15 +48,15 @@ registeredDomain.RegisteredDomain(
 | <code><a href="#@cdktf/provider-dnsimple.registeredDomain.RegisteredDomain.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-dnsimple.registeredDomain.RegisteredDomain.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-dnsimple.registeredDomain.RegisteredDomain.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-dnsimple.registeredDomain.RegisteredDomain.Initializer.parameter.contactId">contact_id</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.2.1/docs/resources/registered_domain#contact_id RegisteredDomain#contact_id}. |
-| <code><a href="#@cdktf/provider-dnsimple.registeredDomain.RegisteredDomain.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.2.1/docs/resources/registered_domain#name RegisteredDomain#name}. |
-| <code><a href="#@cdktf/provider-dnsimple.registeredDomain.RegisteredDomain.Initializer.parameter.autoRenewEnabled">auto_renew_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.2.1/docs/resources/registered_domain#auto_renew_enabled RegisteredDomain#auto_renew_enabled}. |
-| <code><a href="#@cdktf/provider-dnsimple.registeredDomain.RegisteredDomain.Initializer.parameter.dnssecEnabled">dnssec_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.2.1/docs/resources/registered_domain#dnssec_enabled RegisteredDomain#dnssec_enabled}. |
-| <code><a href="#@cdktf/provider-dnsimple.registeredDomain.RegisteredDomain.Initializer.parameter.extendedAttributes">extended_attributes</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.2.1/docs/resources/registered_domain#extended_attributes RegisteredDomain#extended_attributes}. |
-| <code><a href="#@cdktf/provider-dnsimple.registeredDomain.RegisteredDomain.Initializer.parameter.premiumPrice">premium_price</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.2.1/docs/resources/registered_domain#premium_price RegisteredDomain#premium_price}. |
+| <code><a href="#@cdktf/provider-dnsimple.registeredDomain.RegisteredDomain.Initializer.parameter.contactId">contact_id</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.3.0/docs/resources/registered_domain#contact_id RegisteredDomain#contact_id}. |
+| <code><a href="#@cdktf/provider-dnsimple.registeredDomain.RegisteredDomain.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.3.0/docs/resources/registered_domain#name RegisteredDomain#name}. |
+| <code><a href="#@cdktf/provider-dnsimple.registeredDomain.RegisteredDomain.Initializer.parameter.autoRenewEnabled">auto_renew_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.3.0/docs/resources/registered_domain#auto_renew_enabled RegisteredDomain#auto_renew_enabled}. |
+| <code><a href="#@cdktf/provider-dnsimple.registeredDomain.RegisteredDomain.Initializer.parameter.dnssecEnabled">dnssec_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.3.0/docs/resources/registered_domain#dnssec_enabled RegisteredDomain#dnssec_enabled}. |
+| <code><a href="#@cdktf/provider-dnsimple.registeredDomain.RegisteredDomain.Initializer.parameter.extendedAttributes">extended_attributes</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.3.0/docs/resources/registered_domain#extended_attributes RegisteredDomain#extended_attributes}. |
+| <code><a href="#@cdktf/provider-dnsimple.registeredDomain.RegisteredDomain.Initializer.parameter.premiumPrice">premium_price</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.3.0/docs/resources/registered_domain#premium_price RegisteredDomain#premium_price}. |
 | <code><a href="#@cdktf/provider-dnsimple.registeredDomain.RegisteredDomain.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-dnsimple.registeredDomain.RegisteredDomainTimeouts">RegisteredDomainTimeouts</a></code> | Timeouts for operations, given as a parsable string as in `10m` or `30s`. |
-| <code><a href="#@cdktf/provider-dnsimple.registeredDomain.RegisteredDomain.Initializer.parameter.transferLockEnabled">transfer_lock_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.2.1/docs/resources/registered_domain#transfer_lock_enabled RegisteredDomain#transfer_lock_enabled}. |
-| <code><a href="#@cdktf/provider-dnsimple.registeredDomain.RegisteredDomain.Initializer.parameter.whoisPrivacyEnabled">whois_privacy_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.2.1/docs/resources/registered_domain#whois_privacy_enabled RegisteredDomain#whois_privacy_enabled}. |
+| <code><a href="#@cdktf/provider-dnsimple.registeredDomain.RegisteredDomain.Initializer.parameter.transferLockEnabled">transfer_lock_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.3.0/docs/resources/registered_domain#transfer_lock_enabled RegisteredDomain#transfer_lock_enabled}. |
+| <code><a href="#@cdktf/provider-dnsimple.registeredDomain.RegisteredDomain.Initializer.parameter.whoisPrivacyEnabled">whois_privacy_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.3.0/docs/resources/registered_domain#whois_privacy_enabled RegisteredDomain#whois_privacy_enabled}. |
 
 ---
 
@@ -124,7 +124,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.2.1/docs/resources/registered_domain#contact_id RegisteredDomain#contact_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.3.0/docs/resources/registered_domain#contact_id RegisteredDomain#contact_id}.
 
 ---
 
@@ -132,7 +132,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsim
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.2.1/docs/resources/registered_domain#name RegisteredDomain#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.3.0/docs/resources/registered_domain#name RegisteredDomain#name}.
 
 ---
 
@@ -140,7 +140,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsim
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.2.1/docs/resources/registered_domain#auto_renew_enabled RegisteredDomain#auto_renew_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.3.0/docs/resources/registered_domain#auto_renew_enabled RegisteredDomain#auto_renew_enabled}.
 
 ---
 
@@ -148,7 +148,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsim
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.2.1/docs/resources/registered_domain#dnssec_enabled RegisteredDomain#dnssec_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.3.0/docs/resources/registered_domain#dnssec_enabled RegisteredDomain#dnssec_enabled}.
 
 ---
 
@@ -156,7 +156,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsim
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.2.1/docs/resources/registered_domain#extended_attributes RegisteredDomain#extended_attributes}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.3.0/docs/resources/registered_domain#extended_attributes RegisteredDomain#extended_attributes}.
 
 ---
 
@@ -164,7 +164,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsim
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.2.1/docs/resources/registered_domain#premium_price RegisteredDomain#premium_price}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.3.0/docs/resources/registered_domain#premium_price RegisteredDomain#premium_price}.
 
 ---
 
@@ -174,7 +174,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsim
 
 Timeouts for operations, given as a parsable string as in `10m` or `30s`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.2.1/docs/resources/registered_domain#timeouts RegisteredDomain#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.3.0/docs/resources/registered_domain#timeouts RegisteredDomain#timeouts}
 
 ---
 
@@ -182,7 +182,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsim
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.2.1/docs/resources/registered_domain#transfer_lock_enabled RegisteredDomain#transfer_lock_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.3.0/docs/resources/registered_domain#transfer_lock_enabled RegisteredDomain#transfer_lock_enabled}.
 
 ---
 
@@ -190,7 +190,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsim
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.2.1/docs/resources/registered_domain#whois_privacy_enabled RegisteredDomain#whois_privacy_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.3.0/docs/resources/registered_domain#whois_privacy_enabled RegisteredDomain#whois_privacy_enabled}.
 
 ---
 
@@ -450,7 +450,7 @@ def put_timeouts(
 
 Create timeout.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.2.1/docs/resources/registered_domain#create RegisteredDomain#create}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.3.0/docs/resources/registered_domain#create RegisteredDomain#create}
 
 ---
 
@@ -460,7 +460,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsim
 
 Delete timeout (currently unused).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.2.1/docs/resources/registered_domain#delete RegisteredDomain#delete}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.3.0/docs/resources/registered_domain#delete RegisteredDomain#delete}
 
 ---
 
@@ -470,7 +470,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsim
 
 Update timeout.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.2.1/docs/resources/registered_domain#update RegisteredDomain#update}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.3.0/docs/resources/registered_domain#update RegisteredDomain#update}
 
 ---
 
@@ -614,6 +614,7 @@ registeredDomain.RegisteredDomain.is_terraform_resource(
 | <code><a href="#@cdktf/provider-dnsimple.registeredDomain.RegisteredDomain.property.domainRegistration">domain_registration</a></code> | <code><a href="#@cdktf/provider-dnsimple.registeredDomain.RegisteredDomainDomainRegistrationOutputReference">RegisteredDomainDomainRegistrationOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-dnsimple.registeredDomain.RegisteredDomain.property.expiresAt">expires_at</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-dnsimple.registeredDomain.RegisteredDomain.property.id">id</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-dnsimple.registeredDomain.RegisteredDomain.property.registrantChange">registrant_change</a></code> | <code><a href="#@cdktf/provider-dnsimple.registeredDomain.RegisteredDomainRegistrantChangeOutputReference">RegisteredDomainRegistrantChangeOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-dnsimple.registeredDomain.RegisteredDomain.property.state">state</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-dnsimple.registeredDomain.RegisteredDomain.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-dnsimple.registeredDomain.RegisteredDomainTimeoutsOutputReference">RegisteredDomainTimeoutsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-dnsimple.registeredDomain.RegisteredDomain.property.unicodeName">unicode_name</a></code> | <code>str</code> | *No description.* |
@@ -816,6 +817,16 @@ id: typing.Union[int, float]
 ```
 
 - *Type:* typing.Union[int, float]
+
+---
+
+##### `registrant_change`<sup>Required</sup> <a name="registrant_change" id="@cdktf/provider-dnsimple.registeredDomain.RegisteredDomain.property.registrantChange"></a>
+
+```python
+registrant_change: RegisteredDomainRegistrantChangeOutputReference
+```
+
+- *Type:* <a href="#@cdktf/provider-dnsimple.registeredDomain.RegisteredDomainRegistrantChangeOutputReference">RegisteredDomainRegistrantChangeOutputReference</a>
 
 ---
 
@@ -1077,15 +1088,15 @@ registeredDomain.RegisteredDomainConfig(
 | <code><a href="#@cdktf/provider-dnsimple.registeredDomain.RegisteredDomainConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-dnsimple.registeredDomain.RegisteredDomainConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-dnsimple.registeredDomain.RegisteredDomainConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-dnsimple.registeredDomain.RegisteredDomainConfig.property.contactId">contact_id</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.2.1/docs/resources/registered_domain#contact_id RegisteredDomain#contact_id}. |
-| <code><a href="#@cdktf/provider-dnsimple.registeredDomain.RegisteredDomainConfig.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.2.1/docs/resources/registered_domain#name RegisteredDomain#name}. |
-| <code><a href="#@cdktf/provider-dnsimple.registeredDomain.RegisteredDomainConfig.property.autoRenewEnabled">auto_renew_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.2.1/docs/resources/registered_domain#auto_renew_enabled RegisteredDomain#auto_renew_enabled}. |
-| <code><a href="#@cdktf/provider-dnsimple.registeredDomain.RegisteredDomainConfig.property.dnssecEnabled">dnssec_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.2.1/docs/resources/registered_domain#dnssec_enabled RegisteredDomain#dnssec_enabled}. |
-| <code><a href="#@cdktf/provider-dnsimple.registeredDomain.RegisteredDomainConfig.property.extendedAttributes">extended_attributes</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.2.1/docs/resources/registered_domain#extended_attributes RegisteredDomain#extended_attributes}. |
-| <code><a href="#@cdktf/provider-dnsimple.registeredDomain.RegisteredDomainConfig.property.premiumPrice">premium_price</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.2.1/docs/resources/registered_domain#premium_price RegisteredDomain#premium_price}. |
+| <code><a href="#@cdktf/provider-dnsimple.registeredDomain.RegisteredDomainConfig.property.contactId">contact_id</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.3.0/docs/resources/registered_domain#contact_id RegisteredDomain#contact_id}. |
+| <code><a href="#@cdktf/provider-dnsimple.registeredDomain.RegisteredDomainConfig.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.3.0/docs/resources/registered_domain#name RegisteredDomain#name}. |
+| <code><a href="#@cdktf/provider-dnsimple.registeredDomain.RegisteredDomainConfig.property.autoRenewEnabled">auto_renew_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.3.0/docs/resources/registered_domain#auto_renew_enabled RegisteredDomain#auto_renew_enabled}. |
+| <code><a href="#@cdktf/provider-dnsimple.registeredDomain.RegisteredDomainConfig.property.dnssecEnabled">dnssec_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.3.0/docs/resources/registered_domain#dnssec_enabled RegisteredDomain#dnssec_enabled}. |
+| <code><a href="#@cdktf/provider-dnsimple.registeredDomain.RegisteredDomainConfig.property.extendedAttributes">extended_attributes</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.3.0/docs/resources/registered_domain#extended_attributes RegisteredDomain#extended_attributes}. |
+| <code><a href="#@cdktf/provider-dnsimple.registeredDomain.RegisteredDomainConfig.property.premiumPrice">premium_price</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.3.0/docs/resources/registered_domain#premium_price RegisteredDomain#premium_price}. |
 | <code><a href="#@cdktf/provider-dnsimple.registeredDomain.RegisteredDomainConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-dnsimple.registeredDomain.RegisteredDomainTimeouts">RegisteredDomainTimeouts</a></code> | Timeouts for operations, given as a parsable string as in `10m` or `30s`. |
-| <code><a href="#@cdktf/provider-dnsimple.registeredDomain.RegisteredDomainConfig.property.transferLockEnabled">transfer_lock_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.2.1/docs/resources/registered_domain#transfer_lock_enabled RegisteredDomain#transfer_lock_enabled}. |
-| <code><a href="#@cdktf/provider-dnsimple.registeredDomain.RegisteredDomainConfig.property.whoisPrivacyEnabled">whois_privacy_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.2.1/docs/resources/registered_domain#whois_privacy_enabled RegisteredDomain#whois_privacy_enabled}. |
+| <code><a href="#@cdktf/provider-dnsimple.registeredDomain.RegisteredDomainConfig.property.transferLockEnabled">transfer_lock_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.3.0/docs/resources/registered_domain#transfer_lock_enabled RegisteredDomain#transfer_lock_enabled}. |
+| <code><a href="#@cdktf/provider-dnsimple.registeredDomain.RegisteredDomainConfig.property.whoisPrivacyEnabled">whois_privacy_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.3.0/docs/resources/registered_domain#whois_privacy_enabled RegisteredDomain#whois_privacy_enabled}. |
 
 ---
 
@@ -1167,7 +1178,7 @@ contact_id: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.2.1/docs/resources/registered_domain#contact_id RegisteredDomain#contact_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.3.0/docs/resources/registered_domain#contact_id RegisteredDomain#contact_id}.
 
 ---
 
@@ -1179,7 +1190,7 @@ name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.2.1/docs/resources/registered_domain#name RegisteredDomain#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.3.0/docs/resources/registered_domain#name RegisteredDomain#name}.
 
 ---
 
@@ -1191,7 +1202,7 @@ auto_renew_enabled: typing.Union[bool, IResolvable]
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.2.1/docs/resources/registered_domain#auto_renew_enabled RegisteredDomain#auto_renew_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.3.0/docs/resources/registered_domain#auto_renew_enabled RegisteredDomain#auto_renew_enabled}.
 
 ---
 
@@ -1203,7 +1214,7 @@ dnssec_enabled: typing.Union[bool, IResolvable]
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.2.1/docs/resources/registered_domain#dnssec_enabled RegisteredDomain#dnssec_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.3.0/docs/resources/registered_domain#dnssec_enabled RegisteredDomain#dnssec_enabled}.
 
 ---
 
@@ -1215,7 +1226,7 @@ extended_attributes: typing.Mapping[str]
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.2.1/docs/resources/registered_domain#extended_attributes RegisteredDomain#extended_attributes}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.3.0/docs/resources/registered_domain#extended_attributes RegisteredDomain#extended_attributes}.
 
 ---
 
@@ -1227,7 +1238,7 @@ premium_price: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.2.1/docs/resources/registered_domain#premium_price RegisteredDomain#premium_price}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.3.0/docs/resources/registered_domain#premium_price RegisteredDomain#premium_price}.
 
 ---
 
@@ -1241,7 +1252,7 @@ timeouts: RegisteredDomainTimeouts
 
 Timeouts for operations, given as a parsable string as in `10m` or `30s`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.2.1/docs/resources/registered_domain#timeouts RegisteredDomain#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.3.0/docs/resources/registered_domain#timeouts RegisteredDomain#timeouts}
 
 ---
 
@@ -1253,7 +1264,7 @@ transfer_lock_enabled: typing.Union[bool, IResolvable]
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.2.1/docs/resources/registered_domain#transfer_lock_enabled RegisteredDomain#transfer_lock_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.3.0/docs/resources/registered_domain#transfer_lock_enabled RegisteredDomain#transfer_lock_enabled}.
 
 ---
 
@@ -1265,7 +1276,7 @@ whois_privacy_enabled: typing.Union[bool, IResolvable]
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.2.1/docs/resources/registered_domain#whois_privacy_enabled RegisteredDomain#whois_privacy_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.3.0/docs/resources/registered_domain#whois_privacy_enabled RegisteredDomain#whois_privacy_enabled}.
 
 ---
 
@@ -1285,7 +1296,7 @@ registeredDomain.RegisteredDomainDomainRegistration(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-dnsimple.registeredDomain.RegisteredDomainDomainRegistration.property.state">state</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.2.1/docs/resources/registered_domain#state RegisteredDomain#state}. |
+| <code><a href="#@cdktf/provider-dnsimple.registeredDomain.RegisteredDomainDomainRegistration.property.state">state</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.3.0/docs/resources/registered_domain#state RegisteredDomain#state}. |
 
 ---
 
@@ -1297,7 +1308,41 @@ state: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.2.1/docs/resources/registered_domain#state RegisteredDomain#state}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.3.0/docs/resources/registered_domain#state RegisteredDomain#state}.
+
+---
+
+### RegisteredDomainRegistrantChange <a name="RegisteredDomainRegistrantChange" id="@cdktf/provider-dnsimple.registeredDomain.RegisteredDomainRegistrantChange"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-dnsimple.registeredDomain.RegisteredDomainRegistrantChange.Initializer"></a>
+
+```python
+from cdktf_cdktf_provider_dnsimple import registered_domain
+
+registeredDomain.RegisteredDomainRegistrantChange(
+  state: str = None
+)
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-dnsimple.registeredDomain.RegisteredDomainRegistrantChange.property.state">state</a></code> | <code>str</code> | State of the registrant change. |
+
+---
+
+##### `state`<sup>Optional</sup> <a name="state" id="@cdktf/provider-dnsimple.registeredDomain.RegisteredDomainRegistrantChange.property.state"></a>
+
+```python
+state: str
+```
+
+- *Type:* str
+
+State of the registrant change.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.3.0/docs/resources/registered_domain#state RegisteredDomain#state}
 
 ---
 
@@ -1335,7 +1380,7 @@ create: str
 
 Create timeout.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.2.1/docs/resources/registered_domain#create RegisteredDomain#create}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.3.0/docs/resources/registered_domain#create RegisteredDomain#create}
 
 ---
 
@@ -1349,7 +1394,7 @@ delete: str
 
 Delete timeout (currently unused).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.2.1/docs/resources/registered_domain#delete RegisteredDomain#delete}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.3.0/docs/resources/registered_domain#delete RegisteredDomain#delete}
 
 ---
 
@@ -1363,7 +1408,7 @@ update: str
 
 Update timeout.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.2.1/docs/resources/registered_domain#update RegisteredDomain#update}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.3.0/docs/resources/registered_domain#update RegisteredDomain#update}
 
 ---
 
@@ -1690,6 +1735,386 @@ internal_value: RegisteredDomainDomainRegistration
 ```
 
 - *Type:* <a href="#@cdktf/provider-dnsimple.registeredDomain.RegisteredDomainDomainRegistration">RegisteredDomainDomainRegistration</a>
+
+---
+
+
+### RegisteredDomainRegistrantChangeOutputReference <a name="RegisteredDomainRegistrantChangeOutputReference" id="@cdktf/provider-dnsimple.registeredDomain.RegisteredDomainRegistrantChangeOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-dnsimple.registeredDomain.RegisteredDomainRegistrantChangeOutputReference.Initializer"></a>
+
+```python
+from cdktf_cdktf_provider_dnsimple import registered_domain
+
+registeredDomain.RegisteredDomainRegistrantChangeOutputReference(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-dnsimple.registeredDomain.RegisteredDomainRegistrantChangeOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-dnsimple.registeredDomain.RegisteredDomainRegistrantChangeOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktf/provider-dnsimple.registeredDomain.RegisteredDomainRegistrantChangeOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-dnsimple.registeredDomain.RegisteredDomainRegistrantChangeOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-dnsimple.registeredDomain.RegisteredDomainRegistrantChangeOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-dnsimple.registeredDomain.RegisteredDomainRegistrantChangeOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-dnsimple.registeredDomain.RegisteredDomainRegistrantChangeOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-dnsimple.registeredDomain.RegisteredDomainRegistrantChangeOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-dnsimple.registeredDomain.RegisteredDomainRegistrantChangeOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-dnsimple.registeredDomain.RegisteredDomainRegistrantChangeOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-dnsimple.registeredDomain.RegisteredDomainRegistrantChangeOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-dnsimple.registeredDomain.RegisteredDomainRegistrantChangeOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-dnsimple.registeredDomain.RegisteredDomainRegistrantChangeOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-dnsimple.registeredDomain.RegisteredDomainRegistrantChangeOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-dnsimple.registeredDomain.RegisteredDomainRegistrantChangeOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-dnsimple.registeredDomain.RegisteredDomainRegistrantChangeOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-dnsimple.registeredDomain.RegisteredDomainRegistrantChangeOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-dnsimple.registeredDomain.RegisteredDomainRegistrantChangeOutputReference.resetState">reset_state</a></code> | *No description.* |
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktf/provider-dnsimple.registeredDomain.RegisteredDomainRegistrantChangeOutputReference.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktf/provider-dnsimple.registeredDomain.RegisteredDomainRegistrantChangeOutputReference.getAnyMapAttribute"></a>
+
+```python
+def get_any_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Any]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-dnsimple.registeredDomain.RegisteredDomainRegistrantChangeOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktf/provider-dnsimple.registeredDomain.RegisteredDomainRegistrantChangeOutputReference.getBooleanAttribute"></a>
+
+```python
+def get_boolean_attribute(
+  terraform_attribute: str
+) -> IResolvable
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-dnsimple.registeredDomain.RegisteredDomainRegistrantChangeOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktf/provider-dnsimple.registeredDomain.RegisteredDomainRegistrantChangeOutputReference.getBooleanMapAttribute"></a>
+
+```python
+def get_boolean_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[bool]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-dnsimple.registeredDomain.RegisteredDomainRegistrantChangeOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktf/provider-dnsimple.registeredDomain.RegisteredDomainRegistrantChangeOutputReference.getListAttribute"></a>
+
+```python
+def get_list_attribute(
+  terraform_attribute: str
+) -> typing.List[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-dnsimple.registeredDomain.RegisteredDomainRegistrantChangeOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktf/provider-dnsimple.registeredDomain.RegisteredDomainRegistrantChangeOutputReference.getNumberAttribute"></a>
+
+```python
+def get_number_attribute(
+  terraform_attribute: str
+) -> typing.Union[int, float]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-dnsimple.registeredDomain.RegisteredDomainRegistrantChangeOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktf/provider-dnsimple.registeredDomain.RegisteredDomainRegistrantChangeOutputReference.getNumberListAttribute"></a>
+
+```python
+def get_number_list_attribute(
+  terraform_attribute: str
+) -> typing.List[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-dnsimple.registeredDomain.RegisteredDomainRegistrantChangeOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktf/provider-dnsimple.registeredDomain.RegisteredDomainRegistrantChangeOutputReference.getNumberMapAttribute"></a>
+
+```python
+def get_number_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-dnsimple.registeredDomain.RegisteredDomainRegistrantChangeOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktf/provider-dnsimple.registeredDomain.RegisteredDomainRegistrantChangeOutputReference.getStringAttribute"></a>
+
+```python
+def get_string_attribute(
+  terraform_attribute: str
+) -> str
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-dnsimple.registeredDomain.RegisteredDomainRegistrantChangeOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktf/provider-dnsimple.registeredDomain.RegisteredDomainRegistrantChangeOutputReference.getStringMapAttribute"></a>
+
+```python
+def get_string_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-dnsimple.registeredDomain.RegisteredDomainRegistrantChangeOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktf/provider-dnsimple.registeredDomain.RegisteredDomainRegistrantChangeOutputReference.interpolationForAttribute"></a>
+
+```python
+def interpolation_for_attribute(
+  property: str
+) -> IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-dnsimple.registeredDomain.RegisteredDomainRegistrantChangeOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* str
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktf/provider-dnsimple.registeredDomain.RegisteredDomainRegistrantChangeOutputReference.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-dnsimple.registeredDomain.RegisteredDomainRegistrantChangeOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktf.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktf/provider-dnsimple.registeredDomain.RegisteredDomainRegistrantChangeOutputReference.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `reset_state` <a name="reset_state" id="@cdktf/provider-dnsimple.registeredDomain.RegisteredDomainRegistrantChangeOutputReference.resetState"></a>
+
+```python
+def reset_state() -> None
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-dnsimple.registeredDomain.RegisteredDomainRegistrantChangeOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-dnsimple.registeredDomain.RegisteredDomainRegistrantChangeOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-dnsimple.registeredDomain.RegisteredDomainRegistrantChangeOutputReference.property.accountId">account_id</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-dnsimple.registeredDomain.RegisteredDomainRegistrantChangeOutputReference.property.contactId">contact_id</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-dnsimple.registeredDomain.RegisteredDomainRegistrantChangeOutputReference.property.domainId">domain_id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-dnsimple.registeredDomain.RegisteredDomainRegistrantChangeOutputReference.property.extendedAttributes">extended_attributes</a></code> | <code>cdktf.StringMap</code> | *No description.* |
+| <code><a href="#@cdktf/provider-dnsimple.registeredDomain.RegisteredDomainRegistrantChangeOutputReference.property.id">id</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-dnsimple.registeredDomain.RegisteredDomainRegistrantChangeOutputReference.property.irtLockLiftedBy">irt_lock_lifted_by</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-dnsimple.registeredDomain.RegisteredDomainRegistrantChangeOutputReference.property.registryOwnerChange">registry_owner_change</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-dnsimple.registeredDomain.RegisteredDomainRegistrantChangeOutputReference.property.stateInput">state_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-dnsimple.registeredDomain.RegisteredDomainRegistrantChangeOutputReference.property.state">state</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-dnsimple.registeredDomain.RegisteredDomainRegistrantChangeOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktf/provider-dnsimple.registeredDomain.RegisteredDomainRegistrantChange">RegisteredDomainRegistrantChange</a></code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktf/provider-dnsimple.registeredDomain.RegisteredDomainRegistrantChangeOutputReference.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-dnsimple.registeredDomain.RegisteredDomainRegistrantChangeOutputReference.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+##### `account_id`<sup>Required</sup> <a name="account_id" id="@cdktf/provider-dnsimple.registeredDomain.RegisteredDomainRegistrantChangeOutputReference.property.accountId"></a>
+
+```python
+account_id: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+---
+
+##### `contact_id`<sup>Required</sup> <a name="contact_id" id="@cdktf/provider-dnsimple.registeredDomain.RegisteredDomainRegistrantChangeOutputReference.property.contactId"></a>
+
+```python
+contact_id: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+---
+
+##### `domain_id`<sup>Required</sup> <a name="domain_id" id="@cdktf/provider-dnsimple.registeredDomain.RegisteredDomainRegistrantChangeOutputReference.property.domainId"></a>
+
+```python
+domain_id: str
+```
+
+- *Type:* str
+
+---
+
+##### `extended_attributes`<sup>Required</sup> <a name="extended_attributes" id="@cdktf/provider-dnsimple.registeredDomain.RegisteredDomainRegistrantChangeOutputReference.property.extendedAttributes"></a>
+
+```python
+extended_attributes: StringMap
+```
+
+- *Type:* cdktf.StringMap
+
+---
+
+##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-dnsimple.registeredDomain.RegisteredDomainRegistrantChangeOutputReference.property.id"></a>
+
+```python
+id: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+---
+
+##### `irt_lock_lifted_by`<sup>Required</sup> <a name="irt_lock_lifted_by" id="@cdktf/provider-dnsimple.registeredDomain.RegisteredDomainRegistrantChangeOutputReference.property.irtLockLiftedBy"></a>
+
+```python
+irt_lock_lifted_by: str
+```
+
+- *Type:* str
+
+---
+
+##### `registry_owner_change`<sup>Required</sup> <a name="registry_owner_change" id="@cdktf/provider-dnsimple.registeredDomain.RegisteredDomainRegistrantChangeOutputReference.property.registryOwnerChange"></a>
+
+```python
+registry_owner_change: IResolvable
+```
+
+- *Type:* cdktf.IResolvable
+
+---
+
+##### `state_input`<sup>Optional</sup> <a name="state_input" id="@cdktf/provider-dnsimple.registeredDomain.RegisteredDomainRegistrantChangeOutputReference.property.stateInput"></a>
+
+```python
+state_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `state`<sup>Required</sup> <a name="state" id="@cdktf/provider-dnsimple.registeredDomain.RegisteredDomainRegistrantChangeOutputReference.property.state"></a>
+
+```python
+state: str
+```
+
+- *Type:* str
+
+---
+
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-dnsimple.registeredDomain.RegisteredDomainRegistrantChangeOutputReference.property.internalValue"></a>
+
+```python
+internal_value: RegisteredDomainRegistrantChange
+```
+
+- *Type:* <a href="#@cdktf/provider-dnsimple.registeredDomain.RegisteredDomainRegistrantChange">RegisteredDomainRegistrantChange</a>
 
 ---
 

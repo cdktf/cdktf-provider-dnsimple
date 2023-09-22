@@ -1,6 +1,6 @@
 # `dnsimple_registered_domain`
 
-Refer to the Terraform Registory for docs: [`dnsimple_registered_domain`](https://registry.terraform.io/providers/dnsimple/dnsimple/1.2.1/docs/resources/registered_domain).
+Refer to the Terraform Registory for docs: [`dnsimple_registered_domain`](https://registry.terraform.io/providers/dnsimple/dnsimple/1.3.0/docs/resources/registered_domain).
 
 # `registeredDomain` Submodule <a name="`registeredDomain` Submodule" id="@cdktf/provider-dnsimple.registeredDomain"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`dnsimple_registered_domain`](https:
 
 ### RegisteredDomain <a name="RegisteredDomain" id="@cdktf/provider-dnsimple.registeredDomain.RegisteredDomain"></a>
 
-Represents a {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.2.1/docs/resources/registered_domain dnsimple_registered_domain}.
+Represents a {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.3.0/docs/resources/registered_domain dnsimple_registered_domain}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-dnsimple.registeredDomain.RegisteredDomain.Initializer"></a>
 
@@ -411,6 +411,7 @@ RegisteredDomain.IsTerraformResource(object X);
 | <code><a href="#@cdktf/provider-dnsimple.registeredDomain.RegisteredDomain.property.domainRegistration">DomainRegistration</a></code> | <code><a href="#@cdktf/provider-dnsimple.registeredDomain.RegisteredDomainDomainRegistrationOutputReference">RegisteredDomainDomainRegistrationOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-dnsimple.registeredDomain.RegisteredDomain.property.expiresAt">ExpiresAt</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-dnsimple.registeredDomain.RegisteredDomain.property.id">Id</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktf/provider-dnsimple.registeredDomain.RegisteredDomain.property.registrantChange">RegistrantChange</a></code> | <code><a href="#@cdktf/provider-dnsimple.registeredDomain.RegisteredDomainRegistrantChangeOutputReference">RegisteredDomainRegistrantChangeOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-dnsimple.registeredDomain.RegisteredDomain.property.state">State</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-dnsimple.registeredDomain.RegisteredDomain.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-dnsimple.registeredDomain.RegisteredDomainTimeoutsOutputReference">RegisteredDomainTimeoutsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-dnsimple.registeredDomain.RegisteredDomain.property.unicodeName">UnicodeName</a></code> | <code>string</code> | *No description.* |
@@ -613,6 +614,16 @@ public double Id { get; }
 ```
 
 - *Type:* double
+
+---
+
+##### `RegistrantChange`<sup>Required</sup> <a name="RegistrantChange" id="@cdktf/provider-dnsimple.registeredDomain.RegisteredDomain.property.registrantChange"></a>
+
+```csharp
+public RegisteredDomainRegistrantChangeOutputReference RegistrantChange { get; }
+```
+
+- *Type:* <a href="#@cdktf/provider-dnsimple.registeredDomain.RegisteredDomainRegistrantChangeOutputReference">RegisteredDomainRegistrantChangeOutputReference</a>
 
 ---
 
@@ -874,15 +885,15 @@ new RegisteredDomainConfig {
 | <code><a href="#@cdktf/provider-dnsimple.registeredDomain.RegisteredDomainConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-dnsimple.registeredDomain.RegisteredDomainConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-dnsimple.registeredDomain.RegisteredDomainConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-dnsimple.registeredDomain.RegisteredDomainConfig.property.contactId">ContactId</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.2.1/docs/resources/registered_domain#contact_id RegisteredDomain#contact_id}. |
-| <code><a href="#@cdktf/provider-dnsimple.registeredDomain.RegisteredDomainConfig.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.2.1/docs/resources/registered_domain#name RegisteredDomain#name}. |
-| <code><a href="#@cdktf/provider-dnsimple.registeredDomain.RegisteredDomainConfig.property.autoRenewEnabled">AutoRenewEnabled</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.2.1/docs/resources/registered_domain#auto_renew_enabled RegisteredDomain#auto_renew_enabled}. |
-| <code><a href="#@cdktf/provider-dnsimple.registeredDomain.RegisteredDomainConfig.property.dnssecEnabled">DnssecEnabled</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.2.1/docs/resources/registered_domain#dnssec_enabled RegisteredDomain#dnssec_enabled}. |
-| <code><a href="#@cdktf/provider-dnsimple.registeredDomain.RegisteredDomainConfig.property.extendedAttributes">ExtendedAttributes</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.2.1/docs/resources/registered_domain#extended_attributes RegisteredDomain#extended_attributes}. |
-| <code><a href="#@cdktf/provider-dnsimple.registeredDomain.RegisteredDomainConfig.property.premiumPrice">PremiumPrice</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.2.1/docs/resources/registered_domain#premium_price RegisteredDomain#premium_price}. |
+| <code><a href="#@cdktf/provider-dnsimple.registeredDomain.RegisteredDomainConfig.property.contactId">ContactId</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.3.0/docs/resources/registered_domain#contact_id RegisteredDomain#contact_id}. |
+| <code><a href="#@cdktf/provider-dnsimple.registeredDomain.RegisteredDomainConfig.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.3.0/docs/resources/registered_domain#name RegisteredDomain#name}. |
+| <code><a href="#@cdktf/provider-dnsimple.registeredDomain.RegisteredDomainConfig.property.autoRenewEnabled">AutoRenewEnabled</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.3.0/docs/resources/registered_domain#auto_renew_enabled RegisteredDomain#auto_renew_enabled}. |
+| <code><a href="#@cdktf/provider-dnsimple.registeredDomain.RegisteredDomainConfig.property.dnssecEnabled">DnssecEnabled</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.3.0/docs/resources/registered_domain#dnssec_enabled RegisteredDomain#dnssec_enabled}. |
+| <code><a href="#@cdktf/provider-dnsimple.registeredDomain.RegisteredDomainConfig.property.extendedAttributes">ExtendedAttributes</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.3.0/docs/resources/registered_domain#extended_attributes RegisteredDomain#extended_attributes}. |
+| <code><a href="#@cdktf/provider-dnsimple.registeredDomain.RegisteredDomainConfig.property.premiumPrice">PremiumPrice</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.3.0/docs/resources/registered_domain#premium_price RegisteredDomain#premium_price}. |
 | <code><a href="#@cdktf/provider-dnsimple.registeredDomain.RegisteredDomainConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-dnsimple.registeredDomain.RegisteredDomainTimeouts">RegisteredDomainTimeouts</a></code> | Timeouts for operations, given as a parsable string as in `10m` or `30s`. |
-| <code><a href="#@cdktf/provider-dnsimple.registeredDomain.RegisteredDomainConfig.property.transferLockEnabled">TransferLockEnabled</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.2.1/docs/resources/registered_domain#transfer_lock_enabled RegisteredDomain#transfer_lock_enabled}. |
-| <code><a href="#@cdktf/provider-dnsimple.registeredDomain.RegisteredDomainConfig.property.whoisPrivacyEnabled">WhoisPrivacyEnabled</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.2.1/docs/resources/registered_domain#whois_privacy_enabled RegisteredDomain#whois_privacy_enabled}. |
+| <code><a href="#@cdktf/provider-dnsimple.registeredDomain.RegisteredDomainConfig.property.transferLockEnabled">TransferLockEnabled</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.3.0/docs/resources/registered_domain#transfer_lock_enabled RegisteredDomain#transfer_lock_enabled}. |
+| <code><a href="#@cdktf/provider-dnsimple.registeredDomain.RegisteredDomainConfig.property.whoisPrivacyEnabled">WhoisPrivacyEnabled</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.3.0/docs/resources/registered_domain#whois_privacy_enabled RegisteredDomain#whois_privacy_enabled}. |
 
 ---
 
@@ -964,7 +975,7 @@ public double ContactId { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.2.1/docs/resources/registered_domain#contact_id RegisteredDomain#contact_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.3.0/docs/resources/registered_domain#contact_id RegisteredDomain#contact_id}.
 
 ---
 
@@ -976,7 +987,7 @@ public string Name { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.2.1/docs/resources/registered_domain#name RegisteredDomain#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.3.0/docs/resources/registered_domain#name RegisteredDomain#name}.
 
 ---
 
@@ -988,7 +999,7 @@ public object AutoRenewEnabled { get; set; }
 
 - *Type:* object
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.2.1/docs/resources/registered_domain#auto_renew_enabled RegisteredDomain#auto_renew_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.3.0/docs/resources/registered_domain#auto_renew_enabled RegisteredDomain#auto_renew_enabled}.
 
 ---
 
@@ -1000,7 +1011,7 @@ public object DnssecEnabled { get; set; }
 
 - *Type:* object
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.2.1/docs/resources/registered_domain#dnssec_enabled RegisteredDomain#dnssec_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.3.0/docs/resources/registered_domain#dnssec_enabled RegisteredDomain#dnssec_enabled}.
 
 ---
 
@@ -1012,7 +1023,7 @@ public System.Collections.Generic.IDictionary<string, string> ExtendedAttributes
 
 - *Type:* System.Collections.Generic.IDictionary<string, string>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.2.1/docs/resources/registered_domain#extended_attributes RegisteredDomain#extended_attributes}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.3.0/docs/resources/registered_domain#extended_attributes RegisteredDomain#extended_attributes}.
 
 ---
 
@@ -1024,7 +1035,7 @@ public string PremiumPrice { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.2.1/docs/resources/registered_domain#premium_price RegisteredDomain#premium_price}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.3.0/docs/resources/registered_domain#premium_price RegisteredDomain#premium_price}.
 
 ---
 
@@ -1038,7 +1049,7 @@ public RegisteredDomainTimeouts Timeouts { get; set; }
 
 Timeouts for operations, given as a parsable string as in `10m` or `30s`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.2.1/docs/resources/registered_domain#timeouts RegisteredDomain#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.3.0/docs/resources/registered_domain#timeouts RegisteredDomain#timeouts}
 
 ---
 
@@ -1050,7 +1061,7 @@ public object TransferLockEnabled { get; set; }
 
 - *Type:* object
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.2.1/docs/resources/registered_domain#transfer_lock_enabled RegisteredDomain#transfer_lock_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.3.0/docs/resources/registered_domain#transfer_lock_enabled RegisteredDomain#transfer_lock_enabled}.
 
 ---
 
@@ -1062,7 +1073,7 @@ public object WhoisPrivacyEnabled { get; set; }
 
 - *Type:* object
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.2.1/docs/resources/registered_domain#whois_privacy_enabled RegisteredDomain#whois_privacy_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.3.0/docs/resources/registered_domain#whois_privacy_enabled RegisteredDomain#whois_privacy_enabled}.
 
 ---
 
@@ -1082,7 +1093,7 @@ new RegisteredDomainDomainRegistration {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-dnsimple.registeredDomain.RegisteredDomainDomainRegistration.property.state">State</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.2.1/docs/resources/registered_domain#state RegisteredDomain#state}. |
+| <code><a href="#@cdktf/provider-dnsimple.registeredDomain.RegisteredDomainDomainRegistration.property.state">State</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.3.0/docs/resources/registered_domain#state RegisteredDomain#state}. |
 
 ---
 
@@ -1094,7 +1105,41 @@ public string State { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.2.1/docs/resources/registered_domain#state RegisteredDomain#state}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.3.0/docs/resources/registered_domain#state RegisteredDomain#state}.
+
+---
+
+### RegisteredDomainRegistrantChange <a name="RegisteredDomainRegistrantChange" id="@cdktf/provider-dnsimple.registeredDomain.RegisteredDomainRegistrantChange"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-dnsimple.registeredDomain.RegisteredDomainRegistrantChange.Initializer"></a>
+
+```csharp
+using HashiCorp.Cdktf.Providers.Dnsimple;
+
+new RegisteredDomainRegistrantChange {
+    string State = null
+};
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-dnsimple.registeredDomain.RegisteredDomainRegistrantChange.property.state">State</a></code> | <code>string</code> | State of the registrant change. |
+
+---
+
+##### `State`<sup>Optional</sup> <a name="State" id="@cdktf/provider-dnsimple.registeredDomain.RegisteredDomainRegistrantChange.property.state"></a>
+
+```csharp
+public string State { get; set; }
+```
+
+- *Type:* string
+
+State of the registrant change.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.3.0/docs/resources/registered_domain#state RegisteredDomain#state}
 
 ---
 
@@ -1132,7 +1177,7 @@ public string Create { get; set; }
 
 Create timeout.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.2.1/docs/resources/registered_domain#create RegisteredDomain#create}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.3.0/docs/resources/registered_domain#create RegisteredDomain#create}
 
 ---
 
@@ -1146,7 +1191,7 @@ public string Delete { get; set; }
 
 Delete timeout (currently unused).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.2.1/docs/resources/registered_domain#delete RegisteredDomain#delete}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.3.0/docs/resources/registered_domain#delete RegisteredDomain#delete}
 
 ---
 
@@ -1160,7 +1205,7 @@ public string Update { get; set; }
 
 Update timeout.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.2.1/docs/resources/registered_domain#update RegisteredDomain#update}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.3.0/docs/resources/registered_domain#update RegisteredDomain#update}
 
 ---
 
@@ -1462,6 +1507,361 @@ public RegisteredDomainDomainRegistration InternalValue { get; }
 ```
 
 - *Type:* <a href="#@cdktf/provider-dnsimple.registeredDomain.RegisteredDomainDomainRegistration">RegisteredDomainDomainRegistration</a>
+
+---
+
+
+### RegisteredDomainRegistrantChangeOutputReference <a name="RegisteredDomainRegistrantChangeOutputReference" id="@cdktf/provider-dnsimple.registeredDomain.RegisteredDomainRegistrantChangeOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-dnsimple.registeredDomain.RegisteredDomainRegistrantChangeOutputReference.Initializer"></a>
+
+```csharp
+using HashiCorp.Cdktf.Providers.Dnsimple;
+
+new RegisteredDomainRegistrantChangeOutputReference(IInterpolatingParent TerraformResource, string TerraformAttribute);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-dnsimple.registeredDomain.RegisteredDomainRegistrantChangeOutputReference.Initializer.parameter.terraformResource">TerraformResource</a></code> | <code>HashiCorp.Cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-dnsimple.registeredDomain.RegisteredDomainRegistrantChangeOutputReference.Initializer.parameter.terraformAttribute">TerraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `TerraformResource`<sup>Required</sup> <a name="TerraformResource" id="@cdktf/provider-dnsimple.registeredDomain.RegisteredDomainRegistrantChangeOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* HashiCorp.Cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-dnsimple.registeredDomain.RegisteredDomainRegistrantChangeOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-dnsimple.registeredDomain.RegisteredDomainRegistrantChangeOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-dnsimple.registeredDomain.RegisteredDomainRegistrantChangeOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-dnsimple.registeredDomain.RegisteredDomainRegistrantChangeOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-dnsimple.registeredDomain.RegisteredDomainRegistrantChangeOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-dnsimple.registeredDomain.RegisteredDomainRegistrantChangeOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-dnsimple.registeredDomain.RegisteredDomainRegistrantChangeOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-dnsimple.registeredDomain.RegisteredDomainRegistrantChangeOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-dnsimple.registeredDomain.RegisteredDomainRegistrantChangeOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-dnsimple.registeredDomain.RegisteredDomainRegistrantChangeOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-dnsimple.registeredDomain.RegisteredDomainRegistrantChangeOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-dnsimple.registeredDomain.RegisteredDomainRegistrantChangeOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-dnsimple.registeredDomain.RegisteredDomainRegistrantChangeOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-dnsimple.registeredDomain.RegisteredDomainRegistrantChangeOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-dnsimple.registeredDomain.RegisteredDomainRegistrantChangeOutputReference.resetState">ResetState</a></code> | *No description.* |
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktf/provider-dnsimple.registeredDomain.RegisteredDomainRegistrantChangeOutputReference.computeFqn"></a>
+
+```csharp
+private string ComputeFqn()
+```
+
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktf/provider-dnsimple.registeredDomain.RegisteredDomainRegistrantChangeOutputReference.getAnyMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, object> GetAnyMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-dnsimple.registeredDomain.RegisteredDomainRegistrantChangeOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktf/provider-dnsimple.registeredDomain.RegisteredDomainRegistrantChangeOutputReference.getBooleanAttribute"></a>
+
+```csharp
+private IResolvable GetBooleanAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-dnsimple.registeredDomain.RegisteredDomainRegistrantChangeOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktf/provider-dnsimple.registeredDomain.RegisteredDomainRegistrantChangeOutputReference.getBooleanMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, bool> GetBooleanMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-dnsimple.registeredDomain.RegisteredDomainRegistrantChangeOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktf/provider-dnsimple.registeredDomain.RegisteredDomainRegistrantChangeOutputReference.getListAttribute"></a>
+
+```csharp
+private string[] GetListAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-dnsimple.registeredDomain.RegisteredDomainRegistrantChangeOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktf/provider-dnsimple.registeredDomain.RegisteredDomainRegistrantChangeOutputReference.getNumberAttribute"></a>
+
+```csharp
+private double GetNumberAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-dnsimple.registeredDomain.RegisteredDomainRegistrantChangeOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktf/provider-dnsimple.registeredDomain.RegisteredDomainRegistrantChangeOutputReference.getNumberListAttribute"></a>
+
+```csharp
+private double[] GetNumberListAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-dnsimple.registeredDomain.RegisteredDomainRegistrantChangeOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktf/provider-dnsimple.registeredDomain.RegisteredDomainRegistrantChangeOutputReference.getNumberMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, double> GetNumberMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-dnsimple.registeredDomain.RegisteredDomainRegistrantChangeOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktf/provider-dnsimple.registeredDomain.RegisteredDomainRegistrantChangeOutputReference.getStringAttribute"></a>
+
+```csharp
+private string GetStringAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-dnsimple.registeredDomain.RegisteredDomainRegistrantChangeOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktf/provider-dnsimple.registeredDomain.RegisteredDomainRegistrantChangeOutputReference.getStringMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, string> GetStringMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-dnsimple.registeredDomain.RegisteredDomainRegistrantChangeOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktf/provider-dnsimple.registeredDomain.RegisteredDomainRegistrantChangeOutputReference.interpolationForAttribute"></a>
+
+```csharp
+private IResolvable InterpolationForAttribute(string Property)
+```
+
+###### `Property`<sup>Required</sup> <a name="Property" id="@cdktf/provider-dnsimple.registeredDomain.RegisteredDomainRegistrantChangeOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `Resolve` <a name="Resolve" id="@cdktf/provider-dnsimple.registeredDomain.RegisteredDomainRegistrantChangeOutputReference.resolve"></a>
+
+```csharp
+private object Resolve(IResolveContext Context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `Context`<sup>Required</sup> <a name="Context" id="@cdktf/provider-dnsimple.registeredDomain.RegisteredDomainRegistrantChangeOutputReference.resolve.parameter._context"></a>
+
+- *Type:* HashiCorp.Cdktf.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktf/provider-dnsimple.registeredDomain.RegisteredDomainRegistrantChangeOutputReference.toString"></a>
+
+```csharp
+private string ToString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `ResetState` <a name="ResetState" id="@cdktf/provider-dnsimple.registeredDomain.RegisteredDomainRegistrantChangeOutputReference.resetState"></a>
+
+```csharp
+private void ResetState()
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-dnsimple.registeredDomain.RegisteredDomainRegistrantChangeOutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-dnsimple.registeredDomain.RegisteredDomainRegistrantChangeOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-dnsimple.registeredDomain.RegisteredDomainRegistrantChangeOutputReference.property.accountId">AccountId</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktf/provider-dnsimple.registeredDomain.RegisteredDomainRegistrantChangeOutputReference.property.contactId">ContactId</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktf/provider-dnsimple.registeredDomain.RegisteredDomainRegistrantChangeOutputReference.property.domainId">DomainId</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-dnsimple.registeredDomain.RegisteredDomainRegistrantChangeOutputReference.property.extendedAttributes">ExtendedAttributes</a></code> | <code>HashiCorp.Cdktf.StringMap</code> | *No description.* |
+| <code><a href="#@cdktf/provider-dnsimple.registeredDomain.RegisteredDomainRegistrantChangeOutputReference.property.id">Id</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktf/provider-dnsimple.registeredDomain.RegisteredDomainRegistrantChangeOutputReference.property.irtLockLiftedBy">IrtLockLiftedBy</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-dnsimple.registeredDomain.RegisteredDomainRegistrantChangeOutputReference.property.registryOwnerChange">RegistryOwnerChange</a></code> | <code>HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-dnsimple.registeredDomain.RegisteredDomainRegistrantChangeOutputReference.property.stateInput">StateInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-dnsimple.registeredDomain.RegisteredDomainRegistrantChangeOutputReference.property.state">State</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-dnsimple.registeredDomain.RegisteredDomainRegistrantChangeOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktf/provider-dnsimple.registeredDomain.RegisteredDomainRegistrantChange">RegisteredDomainRegistrantChange</a></code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktf/provider-dnsimple.registeredDomain.RegisteredDomainRegistrantChangeOutputReference.property.creationStack"></a>
+
+```csharp
+public string[] CreationStack { get; }
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktf/provider-dnsimple.registeredDomain.RegisteredDomainRegistrantChangeOutputReference.property.fqn"></a>
+
+```csharp
+public string Fqn { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `AccountId`<sup>Required</sup> <a name="AccountId" id="@cdktf/provider-dnsimple.registeredDomain.RegisteredDomainRegistrantChangeOutputReference.property.accountId"></a>
+
+```csharp
+public double AccountId { get; }
+```
+
+- *Type:* double
+
+---
+
+##### `ContactId`<sup>Required</sup> <a name="ContactId" id="@cdktf/provider-dnsimple.registeredDomain.RegisteredDomainRegistrantChangeOutputReference.property.contactId"></a>
+
+```csharp
+public double ContactId { get; }
+```
+
+- *Type:* double
+
+---
+
+##### `DomainId`<sup>Required</sup> <a name="DomainId" id="@cdktf/provider-dnsimple.registeredDomain.RegisteredDomainRegistrantChangeOutputReference.property.domainId"></a>
+
+```csharp
+public string DomainId { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `ExtendedAttributes`<sup>Required</sup> <a name="ExtendedAttributes" id="@cdktf/provider-dnsimple.registeredDomain.RegisteredDomainRegistrantChangeOutputReference.property.extendedAttributes"></a>
+
+```csharp
+public StringMap ExtendedAttributes { get; }
+```
+
+- *Type:* HashiCorp.Cdktf.StringMap
+
+---
+
+##### `Id`<sup>Required</sup> <a name="Id" id="@cdktf/provider-dnsimple.registeredDomain.RegisteredDomainRegistrantChangeOutputReference.property.id"></a>
+
+```csharp
+public double Id { get; }
+```
+
+- *Type:* double
+
+---
+
+##### `IrtLockLiftedBy`<sup>Required</sup> <a name="IrtLockLiftedBy" id="@cdktf/provider-dnsimple.registeredDomain.RegisteredDomainRegistrantChangeOutputReference.property.irtLockLiftedBy"></a>
+
+```csharp
+public string IrtLockLiftedBy { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `RegistryOwnerChange`<sup>Required</sup> <a name="RegistryOwnerChange" id="@cdktf/provider-dnsimple.registeredDomain.RegisteredDomainRegistrantChangeOutputReference.property.registryOwnerChange"></a>
+
+```csharp
+public IResolvable RegistryOwnerChange { get; }
+```
+
+- *Type:* HashiCorp.Cdktf.IResolvable
+
+---
+
+##### `StateInput`<sup>Optional</sup> <a name="StateInput" id="@cdktf/provider-dnsimple.registeredDomain.RegisteredDomainRegistrantChangeOutputReference.property.stateInput"></a>
+
+```csharp
+public string StateInput { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `State`<sup>Required</sup> <a name="State" id="@cdktf/provider-dnsimple.registeredDomain.RegisteredDomainRegistrantChangeOutputReference.property.state"></a>
+
+```csharp
+public string State { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-dnsimple.registeredDomain.RegisteredDomainRegistrantChangeOutputReference.property.internalValue"></a>
+
+```csharp
+public RegisteredDomainRegistrantChange InternalValue { get; }
+```
+
+- *Type:* <a href="#@cdktf/provider-dnsimple.registeredDomain.RegisteredDomainRegistrantChange">RegisteredDomainRegistrantChange</a>
 
 ---
 

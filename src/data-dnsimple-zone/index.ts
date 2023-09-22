@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/dnsimple/dnsimple/1.2.1/docs/data-sources/zone
+// https://registry.terraform.io/providers/dnsimple/dnsimple/1.3.0/docs/data-sources/zone
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,13 +15,13 @@ export interface DataDnsimpleZoneConfig extends cdktf.TerraformMetaArguments {
   /**
   * Zone Name
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.2.1/docs/data-sources/zone#name DataDnsimpleZone#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.3.0/docs/data-sources/zone#name DataDnsimpleZone#name}
   */
   readonly name: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.2.1/docs/data-sources/zone dnsimple_zone}
+* Represents a {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.3.0/docs/data-sources/zone dnsimple_zone}
 */
 export class DataDnsimpleZone extends cdktf.TerraformDataSource {
 
@@ -35,7 +35,7 @@ export class DataDnsimpleZone extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.2.1/docs/data-sources/zone dnsimple_zone} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.3.0/docs/data-sources/zone dnsimple_zone} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -46,7 +46,7 @@ export class DataDnsimpleZone extends cdktf.TerraformDataSource {
       terraformResourceType: 'dnsimple_zone',
       terraformGeneratorMetadata: {
         providerName: 'dnsimple',
-        providerVersion: '1.2.1',
+        providerVersion: '1.3.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,

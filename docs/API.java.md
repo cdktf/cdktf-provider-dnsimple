@@ -3,6 +3,7 @@
 The following submodules are available:
 - [contact](./contact.java.md)
 - [dataDnsimpleCertificate](./dataDnsimpleCertificate.java.md)
+- [dataDnsimpleRegistrantChangeCheck](./dataDnsimpleRegistrantChangeCheck.java.md)
 - [dataDnsimpleZone](./dataDnsimpleZone.java.md)
 - [domain](./domain.java.md)
 - [domainDelegation](./domainDelegation.java.md)
