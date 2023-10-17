@@ -30,6 +30,20 @@ export class DataDnsimpleZone extends cdktf.TerraformDataSource {
   // =================
   public static readonly tfResourceType = "dnsimple_zone";
 
+  // ==============
+  // STATIC Methods
+  // ==============
+  /**
+  * Generates CDKTF code for importing a DataDnsimpleZone resource upon running "cdktf plan <stack-name>"
+  * @param scope The scope in which to define this construct
+  * @param importToId The construct id used in the generated config for the DataDnsimpleZone to import
+  * @param importFromId The id of the existing DataDnsimpleZone that should be imported. Refer to the {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.3.0/docs/data-sources/zone#import import section} in the documentation of this resource for the id to use
+  * @param provider? Optional instance of the provider where the DataDnsimpleZone to import is found
+  */
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
+        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "dnsimple_zone", importId: importFromId, provider });
+      }
+
   // ===========
   // INITIALIZER
   // ===========
