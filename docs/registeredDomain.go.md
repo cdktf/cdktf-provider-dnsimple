@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.
 #### Initializers <a name="Initializers" id="@cdktf/provider-dnsimple.registeredDomain.RegisteredDomain.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-dnsimple-go/dnsimple/v8/registereddomain"
+import "github.com/cdktf/cdktf-provider-dnsimple-go/dnsimple/registereddomain"
 
 registereddomain.NewRegisteredDomain(scope Construct, id *string, config RegisteredDomainConfig) RegisteredDomain
 ```
@@ -60,6 +60,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-dnsimple.registeredDomain.RegisteredDomain.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
 | <code><a href="#@cdktf/provider-dnsimple.registeredDomain.RegisteredDomain.toMetadata">ToMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-dnsimple.registeredDomain.RegisteredDomain.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
+| <code><a href="#@cdktf/provider-dnsimple.registeredDomain.RegisteredDomain.addMoveTarget">AddMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
 | <code><a href="#@cdktf/provider-dnsimple.registeredDomain.RegisteredDomain.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-dnsimple.registeredDomain.RegisteredDomain.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-dnsimple.registeredDomain.RegisteredDomain.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
@@ -69,7 +70,9 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-dnsimple.registeredDomain.RegisteredDomain.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-dnsimple.registeredDomain.RegisteredDomain.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-dnsimple.registeredDomain.RegisteredDomain.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-dnsimple.registeredDomain.RegisteredDomain.importFrom">ImportFrom</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-dnsimple.registeredDomain.RegisteredDomain.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-dnsimple.registeredDomain.RegisteredDomain.moveTo">MoveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktf/provider-dnsimple.registeredDomain.RegisteredDomain.putTimeouts">PutTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-dnsimple.registeredDomain.RegisteredDomain.resetAutoRenewEnabled">ResetAutoRenewEnabled</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-dnsimple.registeredDomain.RegisteredDomain.resetDnssecEnabled">ResetDnssecEnabled</a></code> | *No description.* |
@@ -144,6 +147,22 @@ func ToTerraform() interface{}
 ```
 
 Adds this resource to the terraform JSON output.
+
+##### `AddMoveTarget` <a name="AddMoveTarget" id="@cdktf/provider-dnsimple.registeredDomain.RegisteredDomain.addMoveTarget"></a>
+
+```go
+func AddMoveTarget(moveTarget *string)
+```
+
+Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
+
+###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktf/provider-dnsimple.registeredDomain.RegisteredDomain.addMoveTarget.parameter.moveTarget"></a>
+
+- *Type:* *string
+
+The string move target that will correspond to this resource.
+
+---
 
 ##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktf/provider-dnsimple.registeredDomain.RegisteredDomain.getAnyMapAttribute"></a>
 
@@ -253,6 +272,24 @@ func GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 
 ---
 
+##### `ImportFrom` <a name="ImportFrom" id="@cdktf/provider-dnsimple.registeredDomain.RegisteredDomain.importFrom"></a>
+
+```go
+func ImportFrom(id *string, provider TerraformProvider)
+```
+
+###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-dnsimple.registeredDomain.RegisteredDomain.importFrom.parameter.id"></a>
+
+- *Type:* *string
+
+---
+
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-dnsimple.registeredDomain.RegisteredDomain.importFrom.parameter.provider"></a>
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider
+
+---
+
 ##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktf/provider-dnsimple.registeredDomain.RegisteredDomain.interpolationForAttribute"></a>
 
 ```go
@@ -262,6 +299,30 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-dnsimple.registeredDomain.RegisteredDomain.interpolationForAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
+
+---
+
+##### `MoveTo` <a name="MoveTo" id="@cdktf/provider-dnsimple.registeredDomain.RegisteredDomain.moveTo"></a>
+
+```go
+func MoveTo(moveTarget *string, index interface{})
+```
+
+Moves this resource to the target resource given by moveTarget.
+
+###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktf/provider-dnsimple.registeredDomain.RegisteredDomain.moveTo.parameter.moveTarget"></a>
+
+- *Type:* *string
+
+The previously set user defined string set by .addMoveTarget() corresponding to the resource to move to.
+
+---
+
+###### `index`<sup>Optional</sup> <a name="index" id="@cdktf/provider-dnsimple.registeredDomain.RegisteredDomain.moveTo.parameter.index"></a>
+
+- *Type:* interface{}
+
+Optional The index corresponding to the key the resource is to appear in the foreach of a resource to move to.
 
 ---
 
@@ -326,13 +387,14 @@ func ResetWhoisPrivacyEnabled()
 | <code><a href="#@cdktf/provider-dnsimple.registeredDomain.RegisteredDomain.isConstruct">IsConstruct</a></code> | Checks if `x` is a construct. |
 | <code><a href="#@cdktf/provider-dnsimple.registeredDomain.RegisteredDomain.isTerraformElement">IsTerraformElement</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-dnsimple.registeredDomain.RegisteredDomain.isTerraformResource">IsTerraformResource</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-dnsimple.registeredDomain.RegisteredDomain.generateConfigForImport">GenerateConfigForImport</a></code> | Generates CDKTF code for importing a RegisteredDomain resource upon running "cdktf plan <stack-name>". |
 
 ---
 
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-dnsimple.registeredDomain.RegisteredDomain.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-dnsimple-go/dnsimple/v8/registereddomain"
+import "github.com/cdktf/cdktf-provider-dnsimple-go/dnsimple/registereddomain"
 
 registereddomain.RegisteredDomain_IsConstruct(x interface{}) *bool
 ```
@@ -364,7 +426,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-dnsimple.registeredDomain.RegisteredDomain.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-dnsimple-go/dnsimple/v8/registereddomain"
+import "github.com/cdktf/cdktf-provider-dnsimple-go/dnsimple/registereddomain"
 
 registereddomain.RegisteredDomain_IsTerraformElement(x interface{}) *bool
 ```
@@ -378,7 +440,7 @@ registereddomain.RegisteredDomain_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-dnsimple.registeredDomain.RegisteredDomain.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-dnsimple-go/dnsimple/v8/registereddomain"
+import "github.com/cdktf/cdktf-provider-dnsimple-go/dnsimple/registereddomain"
 
 registereddomain.RegisteredDomain_IsTerraformResource(x interface{}) *bool
 ```
@@ -386,6 +448,50 @@ registereddomain.RegisteredDomain_IsTerraformResource(x interface{}) *bool
 ###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-dnsimple.registeredDomain.RegisteredDomain.isTerraformResource.parameter.x"></a>
 
 - *Type:* interface{}
+
+---
+
+##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-dnsimple.registeredDomain.RegisteredDomain.generateConfigForImport"></a>
+
+```go
+import "github.com/cdktf/cdktf-provider-dnsimple-go/dnsimple/registereddomain"
+
+registereddomain.RegisteredDomain_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
+```
+
+Generates CDKTF code for importing a RegisteredDomain resource upon running "cdktf plan <stack-name>".
+
+###### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-dnsimple.registeredDomain.RegisteredDomain.generateConfigForImport.parameter.scope"></a>
+
+- *Type:* github.com/aws/constructs-go/constructs/v10.Construct
+
+The scope in which to define this construct.
+
+---
+
+###### `importToId`<sup>Required</sup> <a name="importToId" id="@cdktf/provider-dnsimple.registeredDomain.RegisteredDomain.generateConfigForImport.parameter.importToId"></a>
+
+- *Type:* *string
+
+The construct id used in the generated config for the RegisteredDomain to import.
+
+---
+
+###### `importFromId`<sup>Required</sup> <a name="importFromId" id="@cdktf/provider-dnsimple.registeredDomain.RegisteredDomain.generateConfigForImport.parameter.importFromId"></a>
+
+- *Type:* *string
+
+The id of the existing RegisteredDomain that should be imported.
+
+Refer to the {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.3.0/docs/resources/registered_domain#import import section} in the documentation of this resource for the id to use
+
+---
+
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-dnsimple.registeredDomain.RegisteredDomain.generateConfigForImport.parameter.provider"></a>
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider
+
+? Optional instance of the provider where the RegisteredDomain to import is found.
 
 ---
 
@@ -852,7 +958,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-dnsimple.registeredDomain.RegisteredDomainConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-dnsimple-go/dnsimple/v8/registereddomain"
+import "github.com/cdktf/cdktf-provider-dnsimple-go/dnsimple/registereddomain"
 
 &registereddomain.RegisteredDomainConfig {
 	Connection: interface{},
@@ -868,7 +974,7 @@ import "github.com/cdktf/cdktf-provider-dnsimple-go/dnsimple/v8/registereddomain
 	DnssecEnabled: interface{},
 	ExtendedAttributes: *map[string]*string,
 	PremiumPrice: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-dnsimple-go/dnsimple/v8.registeredDomain.RegisteredDomainTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-dnsimple-go/dnsimple.registeredDomain.RegisteredDomainTimeouts,
 	TransferLockEnabled: interface{},
 	WhoisPrivacyEnabled: interface{},
 }
@@ -1082,7 +1188,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsim
 #### Initializer <a name="Initializer" id="@cdktf/provider-dnsimple.registeredDomain.RegisteredDomainDomainRegistration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-dnsimple-go/dnsimple/v8/registereddomain"
+import "github.com/cdktf/cdktf-provider-dnsimple-go/dnsimple/registereddomain"
 
 &registereddomain.RegisteredDomainDomainRegistration {
 	State: *string,
@@ -1114,7 +1220,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsim
 #### Initializer <a name="Initializer" id="@cdktf/provider-dnsimple.registeredDomain.RegisteredDomainRegistrantChange.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-dnsimple-go/dnsimple/v8/registereddomain"
+import "github.com/cdktf/cdktf-provider-dnsimple-go/dnsimple/registereddomain"
 
 &registereddomain.RegisteredDomainRegistrantChange {
 	State: *string,
@@ -1148,7 +1254,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsim
 #### Initializer <a name="Initializer" id="@cdktf/provider-dnsimple.registeredDomain.RegisteredDomainTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-dnsimple-go/dnsimple/v8/registereddomain"
+import "github.com/cdktf/cdktf-provider-dnsimple-go/dnsimple/registereddomain"
 
 &registereddomain.RegisteredDomainTimeouts {
 	Create: *string,
@@ -1216,7 +1322,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsim
 #### Initializers <a name="Initializers" id="@cdktf/provider-dnsimple.registeredDomain.RegisteredDomainDomainRegistrationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-dnsimple-go/dnsimple/v8/registereddomain"
+import "github.com/cdktf/cdktf-provider-dnsimple-go/dnsimple/registereddomain"
 
 registereddomain.NewRegisteredDomainDomainRegistrationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) RegisteredDomainDomainRegistrationOutputReference
 ```
@@ -1516,7 +1622,7 @@ func InternalValue() RegisteredDomainDomainRegistration
 #### Initializers <a name="Initializers" id="@cdktf/provider-dnsimple.registeredDomain.RegisteredDomainRegistrantChangeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-dnsimple-go/dnsimple/v8/registereddomain"
+import "github.com/cdktf/cdktf-provider-dnsimple-go/dnsimple/registereddomain"
 
 registereddomain.NewRegisteredDomainRegistrantChangeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) RegisteredDomainRegistrantChangeOutputReference
 ```
@@ -1871,7 +1977,7 @@ func InternalValue() RegisteredDomainRegistrantChange
 #### Initializers <a name="Initializers" id="@cdktf/provider-dnsimple.registeredDomain.RegisteredDomainTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-dnsimple-go/dnsimple/v8/registereddomain"
+import "github.com/cdktf/cdktf-provider-dnsimple-go/dnsimple/registereddomain"
 
 registereddomain.NewRegisteredDomainTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) RegisteredDomainTimeoutsOutputReference
 ```
