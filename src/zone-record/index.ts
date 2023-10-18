@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/dnsimple/dnsimple/1.3.0/docs/resources/zone_record
 // generated from terraform resource schema
 
