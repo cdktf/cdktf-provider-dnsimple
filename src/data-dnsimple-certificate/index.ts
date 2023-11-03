@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/dnsimple/dnsimple/1.3.0/docs/data-sources/certificate
+// https://registry.terraform.io/providers/dnsimple/dnsimple/1.3.1/docs/data-sources/certificate
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,19 +10,19 @@ export interface DataDnsimpleCertificateConfig extends cdktf.TerraformMetaArgume
   /**
   * Certificate ID
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.3.0/docs/data-sources/certificate#certificate_id DataDnsimpleCertificate#certificate_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.3.1/docs/data-sources/certificate#certificate_id DataDnsimpleCertificate#certificate_id}
   */
   readonly certificateId: number;
   /**
   * Domain name
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.3.0/docs/data-sources/certificate#domain DataDnsimpleCertificate#domain}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.3.1/docs/data-sources/certificate#domain DataDnsimpleCertificate#domain}
   */
   readonly domain: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.3.0/docs/data-sources/certificate dnsimple_certificate}
+* Represents a {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.3.1/docs/data-sources/certificate dnsimple_certificate}
 */
 export class DataDnsimpleCertificate extends cdktf.TerraformDataSource {
 
@@ -43,7 +38,7 @@ export class DataDnsimpleCertificate extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataDnsimpleCertificate resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataDnsimpleCertificate to import
-  * @param importFromId The id of the existing DataDnsimpleCertificate that should be imported. Refer to the {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.3.0/docs/data-sources/certificate#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataDnsimpleCertificate that should be imported. Refer to the {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.3.1/docs/data-sources/certificate#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataDnsimpleCertificate to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -55,7 +50,7 @@ export class DataDnsimpleCertificate extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.3.0/docs/data-sources/certificate dnsimple_certificate} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.3.1/docs/data-sources/certificate dnsimple_certificate} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -66,7 +61,7 @@ export class DataDnsimpleCertificate extends cdktf.TerraformDataSource {
       terraformResourceType: 'dnsimple_certificate',
       terraformGeneratorMetadata: {
         providerName: 'dnsimple',
-        providerVersion: '1.3.0',
+        providerVersion: '1.3.1',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,

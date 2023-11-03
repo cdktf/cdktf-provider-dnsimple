@@ -1,6 +1,6 @@
 # `dnsimple_domain_delegation`
 
-Refer to the Terraform Registory for docs: [`dnsimple_domain_delegation`](https://registry.terraform.io/providers/dnsimple/dnsimple/1.3.0/docs/resources/domain_delegation).
+Refer to the Terraform Registory for docs: [`dnsimple_domain_delegation`](https://registry.terraform.io/providers/dnsimple/dnsimple/1.3.1/docs/resources/domain_delegation).
 
 # `domainDelegation` Submodule <a name="`domainDelegation` Submodule" id="@cdktf/provider-dnsimple.domainDelegation"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`dnsimple_domain_delegation`](https:
 
 ### DomainDelegation <a name="DomainDelegation" id="@cdktf/provider-dnsimple.domainDelegation.DomainDelegation"></a>
 
-Represents a {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.3.0/docs/resources/domain_delegation dnsimple_domain_delegation}.
+Represents a {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.3.1/docs/resources/domain_delegation dnsimple_domain_delegation}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-dnsimple.domainDelegation.DomainDelegation.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-dnsimple-go/dnsimple/v8/domaindelegation"
+import "github.com/cdktf/cdktf-provider-dnsimple-go/dnsimple/domaindelegation"
 
 domaindelegation.NewDomainDelegation(scope Construct, id *string, config DomainDelegationConfig) DomainDelegation
 ```
@@ -332,7 +332,7 @@ Optional The index corresponding to the key the resource is to appear in the for
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-dnsimple.domainDelegation.DomainDelegation.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-dnsimple-go/dnsimple/v8/domaindelegation"
+import "github.com/cdktf/cdktf-provider-dnsimple-go/dnsimple/domaindelegation"
 
 domaindelegation.DomainDelegation_IsConstruct(x interface{}) *bool
 ```
@@ -364,7 +364,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-dnsimple.domainDelegation.DomainDelegation.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-dnsimple-go/dnsimple/v8/domaindelegation"
+import "github.com/cdktf/cdktf-provider-dnsimple-go/dnsimple/domaindelegation"
 
 domaindelegation.DomainDelegation_IsTerraformElement(x interface{}) *bool
 ```
@@ -378,7 +378,7 @@ domaindelegation.DomainDelegation_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-dnsimple.domainDelegation.DomainDelegation.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-dnsimple-go/dnsimple/v8/domaindelegation"
+import "github.com/cdktf/cdktf-provider-dnsimple-go/dnsimple/domaindelegation"
 
 domaindelegation.DomainDelegation_IsTerraformResource(x interface{}) *bool
 ```
@@ -392,7 +392,7 @@ domaindelegation.DomainDelegation_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-dnsimple.domainDelegation.DomainDelegation.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-dnsimple-go/dnsimple/v8/domaindelegation"
+import "github.com/cdktf/cdktf-provider-dnsimple-go/dnsimple/domaindelegation"
 
 domaindelegation.DomainDelegation_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -421,7 +421,7 @@ The construct id used in the generated config for the DomainDelegation to import
 
 The id of the existing DomainDelegation that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.3.0/docs/resources/domain_delegation#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.3.1/docs/resources/domain_delegation#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -676,7 +676,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-dnsimple.domainDelegation.DomainDelegationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-dnsimple-go/dnsimple/v8/domaindelegation"
+import "github.com/cdktf/cdktf-provider-dnsimple-go/dnsimple/domaindelegation"
 
 &domaindelegation.DomainDelegationConfig {
 	Connection: interface{},
@@ -702,8 +702,8 @@ import "github.com/cdktf/cdktf-provider-dnsimple-go/dnsimple/v8/domaindelegation
 | <code><a href="#@cdktf/provider-dnsimple.domainDelegation.DomainDelegationConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-dnsimple.domainDelegation.DomainDelegationConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-dnsimple.domainDelegation.DomainDelegationConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-dnsimple.domainDelegation.DomainDelegationConfig.property.domain">Domain</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.3.0/docs/resources/domain_delegation#domain DomainDelegation#domain}. |
-| <code><a href="#@cdktf/provider-dnsimple.domainDelegation.DomainDelegationConfig.property.nameServers">NameServers</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.3.0/docs/resources/domain_delegation#name_servers DomainDelegation#name_servers}. |
+| <code><a href="#@cdktf/provider-dnsimple.domainDelegation.DomainDelegationConfig.property.domain">Domain</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.3.1/docs/resources/domain_delegation#domain DomainDelegation#domain}. |
+| <code><a href="#@cdktf/provider-dnsimple.domainDelegation.DomainDelegationConfig.property.nameServers">NameServers</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.3.1/docs/resources/domain_delegation#name_servers DomainDelegation#name_servers}. |
 
 ---
 
@@ -785,7 +785,7 @@ Domain *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.3.0/docs/resources/domain_delegation#domain DomainDelegation#domain}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.3.1/docs/resources/domain_delegation#domain DomainDelegation#domain}.
 
 ---
 
@@ -797,7 +797,7 @@ NameServers *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.3.0/docs/resources/domain_delegation#name_servers DomainDelegation#name_servers}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.3.1/docs/resources/domain_delegation#name_servers DomainDelegation#name_servers}.
 
 ---
 
