@@ -1,6 +1,6 @@
 # `provider`
 
-Refer to the Terraform Registory for docs: [`dnsimple`](https://registry.terraform.io/providers/dnsimple/dnsimple/1.3.0/docs).
+Refer to the Terraform Registory for docs: [`dnsimple`](https://registry.terraform.io/providers/dnsimple/dnsimple/1.3.1/docs).
 
 # `provider` Submodule <a name="`provider` Submodule" id="@cdktf/provider-dnsimple.provider"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`dnsimple`](https://registry.terrafo
 
 ### DnsimpleProvider <a name="DnsimpleProvider" id="@cdktf/provider-dnsimple.provider.DnsimpleProvider"></a>
 
-Represents a {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.3.0/docs dnsimple}.
+Represents a {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.3.1/docs dnsimple}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-dnsimple.provider.DnsimpleProvider.Initializer"></a>
 
@@ -64,7 +64,7 @@ Must be unique amongst siblings in the same scope
 
 The account for API operations.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.3.0/docs#account DnsimpleProvider#account}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.3.1/docs#account DnsimpleProvider#account}
 
 ---
 
@@ -74,7 +74,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsim
 
 Alias name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.3.0/docs#alias DnsimpleProvider#alias}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.3.1/docs#alias DnsimpleProvider#alias}
 
 ---
 
@@ -84,7 +84,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsim
 
 Flag to enable the prefetch of zone records.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.3.0/docs#prefetch DnsimpleProvider#prefetch}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.3.1/docs#prefetch DnsimpleProvider#prefetch}
 
 ---
 
@@ -94,7 +94,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsim
 
 Flag to enable the sandbox API.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.3.0/docs#sandbox DnsimpleProvider#sandbox}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.3.1/docs#sandbox DnsimpleProvider#sandbox}
 
 ---
 
@@ -104,7 +104,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsim
 
 The API v2 token for API operations.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.3.0/docs#token DnsimpleProvider#token}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.3.1/docs#token DnsimpleProvider#token}
 
 ---
 
@@ -114,7 +114,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsim
 
 Custom string to append to the user agent used for sending HTTP requests to the API.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.3.0/docs#user_agent DnsimpleProvider#user_agent}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.3.1/docs#user_agent DnsimpleProvider#user_agent}
 
 ---
 
@@ -340,7 +340,7 @@ The construct id used in the generated config for the DnsimpleProvider to import
 
 The id of the existing DnsimpleProvider that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.3.0/docs#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.3.1/docs#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -643,7 +643,7 @@ public java.lang.String getAccount();
 
 The account for API operations.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.3.0/docs#account DnsimpleProvider#account}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.3.1/docs#account DnsimpleProvider#account}
 
 ---
 
@@ -657,7 +657,7 @@ public java.lang.String getAlias();
 
 Alias name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.3.0/docs#alias DnsimpleProvider#alias}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.3.1/docs#alias DnsimpleProvider#alias}
 
 ---
 
@@ -671,7 +671,7 @@ public java.lang.Object getPrefetch();
 
 Flag to enable the prefetch of zone records.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.3.0/docs#prefetch DnsimpleProvider#prefetch}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.3.1/docs#prefetch DnsimpleProvider#prefetch}
 
 ---
 
@@ -685,7 +685,7 @@ public java.lang.Object getSandbox();
 
 Flag to enable the sandbox API.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.3.0/docs#sandbox DnsimpleProvider#sandbox}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.3.1/docs#sandbox DnsimpleProvider#sandbox}
 
 ---
 
@@ -699,7 +699,7 @@ public java.lang.String getToken();
 
 The API v2 token for API operations.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.3.0/docs#token DnsimpleProvider#token}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.3.1/docs#token DnsimpleProvider#token}
 
 ---
 
@@ -713,7 +713,7 @@ public java.lang.String getUserAgent();
 
 Custom string to append to the user agent used for sending HTTP requests to the API.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.3.0/docs#user_agent DnsimpleProvider#user_agent}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.3.1/docs#user_agent DnsimpleProvider#user_agent}
 
 ---
 
