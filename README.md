@@ -1,7 +1,9 @@
 
-# Terraform CDK dnsimple Provider ~> 1.0
+# Terraform CDK dnsimple Provider tracks ~> 1.0
 
 This repo builds and publishes the Terraform dnsimple Provider bindings for [CDK for Terraform](https://cdk.tf).
+
+Is based directly on dnsimple 1.3.1
 
 ## Available Packages
 
@@ -61,7 +63,7 @@ This project is explicitly not tracking the Terraform dnsimple Provider version 
 These are the upstream dependencies:
 
 - [Terraform CDK](https://cdk.tf)
-- [Terraform dnsimple Provider](https://registry.terraform.io/providers/dnsimple/dnsimple/1.0.0)
+- [Terraform dnsimple Provider](https://registry.terraform.io/providers/dnsimple/dnsimple/1.3.1)
     - This links to the minimum version being tracked, you can find the latest released version [in our releases](https://github.com/cdktf/cdktf-provider-dnsimple/releases)
 - [Terraform Engine](https://terraform.io)
 
