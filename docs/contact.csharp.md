@@ -1,7 +1,3 @@
-# `dnsimple_contact`
-
-Refer to the Terraform Registory for docs: [`dnsimple_contact`](https://registry.terraform.io/providers/dnsimple/dnsimple/1.3.1/docs/resources/contact).
-
 # `contact` Submodule <a name="`contact` Submodule" id="@cdktf/provider-dnsimple.contact"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
