@@ -1,7 +1,3 @@
-# `data_dnsimple_zone`
-
-Refer to the Terraform Registory for docs: [`data_dnsimple_zone`](https://registry.terraform.io/providers/dnsimple/dnsimple/1.3.1/docs/data-sources/zone).
-
 # `dataDnsimpleZone` Submodule <a name="`dataDnsimpleZone` Submodule" id="@cdktf/provider-dnsimple.dataDnsimpleZone"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

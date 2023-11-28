@@ -1,7 +1,3 @@
-# `dnsimple_ds_record`
-
-Refer to the Terraform Registory for docs: [`dnsimple_ds_record`](https://registry.terraform.io/providers/dnsimple/dnsimple/1.3.1/docs/resources/ds_record).
-
 # `dsRecord` Submodule <a name="`dsRecord` Submodule" id="@cdktf/provider-dnsimple.dsRecord"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

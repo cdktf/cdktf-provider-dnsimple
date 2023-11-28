@@ -1,7 +1,3 @@
-# `data_dnsimple_certificate`
-
-Refer to the Terraform Registory for docs: [`data_dnsimple_certificate`](https://registry.terraform.io/providers/dnsimple/dnsimple/1.3.1/docs/data-sources/certificate).
-
 # `dataDnsimpleCertificate` Submodule <a name="`dataDnsimpleCertificate` Submodule" id="@cdktf/provider-dnsimple.dataDnsimpleCertificate"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

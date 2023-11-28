@@ -1,7 +1,3 @@
-# `dnsimple_domain_delegation`
-
-Refer to the Terraform Registory for docs: [`dnsimple_domain_delegation`](https://registry.terraform.io/providers/dnsimple/dnsimple/1.3.1/docs/resources/domain_delegation).
-
 # `domainDelegation` Submodule <a name="`domainDelegation` Submodule" id="@cdktf/provider-dnsimple.domainDelegation"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
