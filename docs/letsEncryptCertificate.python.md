@@ -168,9 +168,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsim
 | <code><a href="#@cdktf/provider-dnsimple.letsEncryptCertificate.LetsEncryptCertificate.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-dnsimple.letsEncryptCertificate.LetsEncryptCertificate.getStringAttribute">get_string_attribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-dnsimple.letsEncryptCertificate.LetsEncryptCertificate.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-dnsimple.letsEncryptCertificate.LetsEncryptCertificate.hasResourceMove">has_resource_move</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-dnsimple.letsEncryptCertificate.LetsEncryptCertificate.importFrom">import_from</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-dnsimple.letsEncryptCertificate.LetsEncryptCertificate.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-dnsimple.letsEncryptCertificate.LetsEncryptCertificate.moveFromId">move_from_id</a></code> | Move the resource corresponding to "id" to this resource. |
 | <code><a href="#@cdktf/provider-dnsimple.letsEncryptCertificate.LetsEncryptCertificate.moveTo">move_to</a></code> | Moves this resource to the target resource given by moveTarget. |
+| <code><a href="#@cdktf/provider-dnsimple.letsEncryptCertificate.LetsEncryptCertificate.moveToId">move_to_id</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktf/provider-dnsimple.letsEncryptCertificate.LetsEncryptCertificate.resetAlternateNames">reset_alternate_names</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-dnsimple.letsEncryptCertificate.LetsEncryptCertificate.resetSignatureAlgorithm">reset_signature_algorithm</a></code> | *No description.* |
 
@@ -389,6 +392,12 @@ def get_string_map_attribute(
 
 ---
 
+##### `has_resource_move` <a name="has_resource_move" id="@cdktf/provider-dnsimple.letsEncryptCertificate.LetsEncryptCertificate.hasResourceMove"></a>
+
+```python
+def has_resource_move() -> typing.Union[TerraformResourceMoveByTarget, TerraformResourceMoveById]
+```
+
 ##### `import_from` <a name="import_from" id="@cdktf/provider-dnsimple.letsEncryptCertificate.LetsEncryptCertificate.importFrom"></a>
 
 ```python
@@ -424,6 +433,26 @@ def interpolation_for_attribute(
 
 ---
 
+##### `move_from_id` <a name="move_from_id" id="@cdktf/provider-dnsimple.letsEncryptCertificate.LetsEncryptCertificate.moveFromId"></a>
+
+```python
+def move_from_id(
+  id: str
+) -> None
+```
+
+Move the resource corresponding to "id" to this resource.
+
+Note that the resource being moved from must be marked as moved using it's instance function.
+
+###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-dnsimple.letsEncryptCertificate.LetsEncryptCertificate.moveFromId.parameter.id"></a>
+
+- *Type:* str
+
+Full id of resource being moved from, e.g. "aws_s3_bucket.example".
+
+---
+
 ##### `move_to` <a name="move_to" id="@cdktf/provider-dnsimple.letsEncryptCertificate.LetsEncryptCertificate.moveTo"></a>
 
 ```python
@@ -448,6 +477,24 @@ The previously set user defined string set by .addMoveTarget() corresponding to 
 - *Type:* typing.Union[str, typing.Union[int, float]]
 
 Optional The index corresponding to the key the resource is to appear in the foreach of a resource to move to.
+
+---
+
+##### `move_to_id` <a name="move_to_id" id="@cdktf/provider-dnsimple.letsEncryptCertificate.LetsEncryptCertificate.moveToId"></a>
+
+```python
+def move_to_id(
+  id: str
+) -> None
+```
+
+Moves this resource to the resource corresponding to "id".
+
+###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-dnsimple.letsEncryptCertificate.LetsEncryptCertificate.moveToId.parameter.id"></a>
+
+- *Type:* str
+
+Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
