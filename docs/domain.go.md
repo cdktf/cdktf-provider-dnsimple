@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.
 #### Initializers <a name="Initializers" id="@cdktf/provider-dnsimple.domain.Domain.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-dnsimple-go/dnsimple/domain"
+import "github.com/cdktf/cdktf-provider-dnsimple-go/dnsimple/v8/domain"
 
 domain.NewDomain(scope Construct, id *string, config DomainConfig) Domain
 ```
@@ -371,7 +371,7 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-dnsimple.domain.Domain.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-dnsimple-go/dnsimple/domain"
+import "github.com/cdktf/cdktf-provider-dnsimple-go/dnsimple/v8/domain"
 
 domain.Domain_IsConstruct(x interface{}) *bool
 ```
@@ -403,7 +403,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-dnsimple.domain.Domain.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-dnsimple-go/dnsimple/domain"
+import "github.com/cdktf/cdktf-provider-dnsimple-go/dnsimple/v8/domain"
 
 domain.Domain_IsTerraformElement(x interface{}) *bool
 ```
@@ -417,7 +417,7 @@ domain.Domain_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-dnsimple.domain.Domain.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-dnsimple-go/dnsimple/domain"
+import "github.com/cdktf/cdktf-provider-dnsimple-go/dnsimple/v8/domain"
 
 domain.Domain_IsTerraformResource(x interface{}) *bool
 ```
@@ -431,7 +431,7 @@ domain.Domain_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-dnsimple.domain.Domain.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-dnsimple-go/dnsimple/domain"
+import "github.com/cdktf/cdktf-provider-dnsimple-go/dnsimple/v8/domain"
 
 domain.Domain_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -759,7 +759,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-dnsimple.domain.DomainConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-dnsimple-go/dnsimple/domain"
+import "github.com/cdktf/cdktf-provider-dnsimple-go/dnsimple/v8/domain"
 
 &domain.DomainConfig {
 	Connection: interface{},
