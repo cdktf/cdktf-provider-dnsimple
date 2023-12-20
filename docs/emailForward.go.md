@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.
 #### Initializers <a name="Initializers" id="@cdktf/provider-dnsimple.emailForward.EmailForward.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-dnsimple-go/dnsimple/emailforward"
+import "github.com/cdktf/cdktf-provider-dnsimple-go/dnsimple/v8/emailforward"
 
 emailforward.NewEmailForward(scope Construct, id *string, config EmailForwardConfig) EmailForward
 ```
@@ -371,7 +371,7 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-dnsimple.emailForward.EmailForward.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-dnsimple-go/dnsimple/emailforward"
+import "github.com/cdktf/cdktf-provider-dnsimple-go/dnsimple/v8/emailforward"
 
 emailforward.EmailForward_IsConstruct(x interface{}) *bool
 ```
@@ -403,7 +403,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-dnsimple.emailForward.EmailForward.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-dnsimple-go/dnsimple/emailforward"
+import "github.com/cdktf/cdktf-provider-dnsimple-go/dnsimple/v8/emailforward"
 
 emailforward.EmailForward_IsTerraformElement(x interface{}) *bool
 ```
@@ -417,7 +417,7 @@ emailforward.EmailForward_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-dnsimple.emailForward.EmailForward.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-dnsimple-go/dnsimple/emailforward"
+import "github.com/cdktf/cdktf-provider-dnsimple-go/dnsimple/v8/emailforward"
 
 emailforward.EmailForward_IsTerraformResource(x interface{}) *bool
 ```
@@ -431,7 +431,7 @@ emailforward.EmailForward_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-dnsimple.emailForward.EmailForward.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-dnsimple-go/dnsimple/emailforward"
+import "github.com/cdktf/cdktf-provider-dnsimple-go/dnsimple/v8/emailforward"
 
 emailforward.EmailForward_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -748,7 +748,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-dnsimple.emailForward.EmailForwardConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-dnsimple-go/dnsimple/emailforward"
+import "github.com/cdktf/cdktf-provider-dnsimple-go/dnsimple/v8/emailforward"
 
 &emailforward.EmailForwardConfig {
 	Connection: interface{},
