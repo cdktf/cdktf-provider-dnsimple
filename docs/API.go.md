@@ -1,6 +1,9 @@
-# Submodules <a name="Submodules" id="submodules"></a>
+# API Reference <a name="API Reference" id="api-reference"></a>
+
+## Submodules <a name="Submodules" id="submodules"></a>
 
 The following submodules are available:
+
 - [contact](./contact.go.md)
 - [dataDnsimpleCertificate](./dataDnsimpleCertificate.go.md)
 - [dataDnsimpleRegistrantChangeCheck](./dataDnsimpleRegistrantChangeCheck.go.md)
@@ -13,3 +16,8 @@ The following submodules are available:
 - [provider](./provider.go.md)
 - [registeredDomain](./registeredDomain.go.md)
 - [zoneRecord](./zoneRecord.go.md)
+
+
+
+
+

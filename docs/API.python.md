@@ -1,6 +1,9 @@
-# Submodules <a name="Submodules" id="submodules"></a>
+# API Reference <a name="API Reference" id="api-reference"></a>
+
+## Submodules <a name="Submodules" id="submodules"></a>
 
 The following submodules are available:
+
 - [contact](./contact.python.md)
 - [dataDnsimpleCertificate](./dataDnsimpleCertificate.python.md)
 - [dataDnsimpleRegistrantChangeCheck](./dataDnsimpleRegistrantChangeCheck.python.md)
@@ -13,3 +16,8 @@ The following submodules are available:
 - [provider](./provider.python.md)
 - [registeredDomain](./registeredDomain.python.md)
 - [zoneRecord](./zoneRecord.python.md)
+
+
+
+
+
