@@ -1,6 +1,9 @@
-# Submodules <a name="Submodules" id="submodules"></a>
+# API Reference <a name="API Reference" id="api-reference"></a>
+
+## Submodules <a name="Submodules" id="submodules"></a>
 
 The following submodules are available:
+
 - [contact](./contact.typescript.md)
 - [dataDnsimpleCertificate](./dataDnsimpleCertificate.typescript.md)
 - [dataDnsimpleRegistrantChangeCheck](./dataDnsimpleRegistrantChangeCheck.typescript.md)
@@ -13,3 +16,8 @@ The following submodules are available:
 - [provider](./provider.typescript.md)
 - [registeredDomain](./registeredDomain.typescript.md)
 - [zoneRecord](./zoneRecord.typescript.md)
+
+
+
+
+

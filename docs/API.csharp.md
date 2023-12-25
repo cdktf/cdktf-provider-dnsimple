@@ -1,6 +1,9 @@
-# Submodules <a name="Submodules" id="submodules"></a>
+# API Reference <a name="API Reference" id="api-reference"></a>
+
+## Submodules <a name="Submodules" id="submodules"></a>
 
 The following submodules are available:
+
 - [contact](./contact.csharp.md)
 - [dataDnsimpleCertificate](./dataDnsimpleCertificate.csharp.md)
 - [dataDnsimpleRegistrantChangeCheck](./dataDnsimpleRegistrantChangeCheck.csharp.md)
@@ -13,3 +16,8 @@ The following submodules are available:
 - [provider](./provider.csharp.md)
 - [registeredDomain](./registeredDomain.csharp.md)
 - [zoneRecord](./zoneRecord.csharp.md)
+
+
+
+
+
