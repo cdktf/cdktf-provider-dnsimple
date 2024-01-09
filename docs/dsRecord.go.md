@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.
 #### Initializers <a name="Initializers" id="@cdktf/provider-dnsimple.dsRecord.DsRecord.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-dnsimple-go/dnsimple/dsrecord"
+import "github.com/cdktf/cdktf-provider-dnsimple-go/dnsimple/v8/dsrecord"
 
 dsrecord.NewDsRecord(scope Construct, id *string, config DsRecordConfig) DsRecord
 ```
@@ -399,7 +399,7 @@ func ResetPublicKey()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-dnsimple.dsRecord.DsRecord.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-dnsimple-go/dnsimple/dsrecord"
+import "github.com/cdktf/cdktf-provider-dnsimple-go/dnsimple/v8/dsrecord"
 
 dsrecord.DsRecord_IsConstruct(x interface{}) *bool
 ```
@@ -431,7 +431,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-dnsimple.dsRecord.DsRecord.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-dnsimple-go/dnsimple/dsrecord"
+import "github.com/cdktf/cdktf-provider-dnsimple-go/dnsimple/v8/dsrecord"
 
 dsrecord.DsRecord_IsTerraformElement(x interface{}) *bool
 ```
@@ -445,7 +445,7 @@ dsrecord.DsRecord_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-dnsimple.dsRecord.DsRecord.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-dnsimple-go/dnsimple/dsrecord"
+import "github.com/cdktf/cdktf-provider-dnsimple-go/dnsimple/v8/dsrecord"
 
 dsrecord.DsRecord_IsTerraformResource(x interface{}) *bool
 ```
@@ -459,7 +459,7 @@ dsrecord.DsRecord_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-dnsimple.dsRecord.DsRecord.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-dnsimple-go/dnsimple/dsrecord"
+import "github.com/cdktf/cdktf-provider-dnsimple-go/dnsimple/v8/dsrecord"
 
 dsrecord.DsRecord_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -853,7 +853,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-dnsimple.dsRecord.DsRecordConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-dnsimple-go/dnsimple/dsrecord"
+import "github.com/cdktf/cdktf-provider-dnsimple-go/dnsimple/v8/dsrecord"
 
 &dsrecord.DsRecordConfig {
 	Connection: interface{},
