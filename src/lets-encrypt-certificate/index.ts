@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/dnsimple/dnsimple/1.3.1/docs/resources/lets_encrypt_certificate
 // generated from terraform resource schema
 
@@ -219,5 +214,43 @@ export class LetsEncryptCertificate extends cdktf.TerraformResource {
       name: cdktf.stringToTerraform(this._name),
       signature_algorithm: cdktf.stringToTerraform(this._signatureAlgorithm),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      alternate_names: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._alternateNames),
+        isBlock: false,
+        type: "list",
+        storageClassType: "stringList",
+      },
+      auto_renew: {
+        value: cdktf.booleanToHclTerraform(this._autoRenew),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      domain_id: {
+        value: cdktf.stringToHclTerraform(this._domainId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      signature_algorithm: {
+        value: cdktf.stringToHclTerraform(this._signatureAlgorithm),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

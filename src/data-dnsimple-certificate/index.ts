@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/dnsimple/dnsimple/1.3.1/docs/data-sources/certificate
 // generated from terraform resource schema
 
@@ -145,5 +140,25 @@ export class DataDnsimpleCertificate extends cdktf.TerraformDataSource {
       certificate_id: cdktf.numberToTerraform(this._certificateId),
       domain: cdktf.stringToTerraform(this._domain),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      certificate_id: {
+        value: cdktf.numberToHclTerraform(this._certificateId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      domain: {
+        value: cdktf.stringToHclTerraform(this._domain),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

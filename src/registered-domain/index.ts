@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/dnsimple/dnsimple/1.3.1/docs/resources/registered_domain
 // generated from terraform resource schema
 
@@ -66,6 +61,25 @@ export function registeredDomainDomainRegistrationToTerraform(struct?: Registere
   return {
     state: cdktf.stringToTerraform(struct!.state),
   }
+}
+
+
+export function registeredDomainDomainRegistrationToHclTerraform(struct?: RegisteredDomainDomainRegistration): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    state: {
+      value: cdktf.stringToHclTerraform(struct!.state),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class RegisteredDomainDomainRegistrationOutputReference extends cdktf.ComplexObject {
@@ -143,6 +157,25 @@ export function registeredDomainRegistrantChangeToTerraform(struct?: RegisteredD
   return {
     state: cdktf.stringToTerraform(struct!.state),
   }
+}
+
+
+export function registeredDomainRegistrantChangeToHclTerraform(struct?: RegisteredDomainRegistrantChange): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    state: {
+      value: cdktf.stringToHclTerraform(struct!.state),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class RegisteredDomainRegistrantChangeOutputReference extends cdktf.ComplexObject {
@@ -260,6 +293,37 @@ export function registeredDomainTimeoutsToTerraform(struct?: RegisteredDomainTim
     delete: cdktf.stringToTerraform(struct!.delete),
     update: cdktf.stringToTerraform(struct!.update),
   }
+}
+
+
+export function registeredDomainTimeoutsToHclTerraform(struct?: RegisteredDomainTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    create: {
+      value: cdktf.stringToHclTerraform(struct!.create),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    delete: {
+      value: cdktf.stringToHclTerraform(struct!.delete),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    update: {
+      value: cdktf.stringToHclTerraform(struct!.update),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class RegisteredDomainTimeoutsOutputReference extends cdktf.ComplexObject {
@@ -622,5 +686,67 @@ export class RegisteredDomain extends cdktf.TerraformResource {
       transfer_lock_enabled: cdktf.booleanToTerraform(this._transferLockEnabled),
       whois_privacy_enabled: cdktf.booleanToTerraform(this._whoisPrivacyEnabled),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      auto_renew_enabled: {
+        value: cdktf.booleanToHclTerraform(this._autoRenewEnabled),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      contact_id: {
+        value: cdktf.numberToHclTerraform(this._contactId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      dnssec_enabled: {
+        value: cdktf.booleanToHclTerraform(this._dnssecEnabled),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      extended_attributes: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._extendedAttributes),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      premium_price: {
+        value: cdktf.stringToHclTerraform(this._premiumPrice),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      timeouts: {
+        value: registeredDomainTimeoutsToHclTerraform(this._timeouts.internalValue),
+        isBlock: true,
+        type: "struct",
+        storageClassType: "RegisteredDomainTimeouts",
+      },
+      transfer_lock_enabled: {
+        value: cdktf.booleanToHclTerraform(this._transferLockEnabled),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      whois_privacy_enabled: {
+        value: cdktf.booleanToHclTerraform(this._whoisPrivacyEnabled),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

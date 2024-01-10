@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.
 #### Initializers <a name="Initializers" id="@cdktf/provider-dnsimple.dataDnsimpleRegistrantChangeCheck.DataDnsimpleRegistrantChangeCheck.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-dnsimple-go/dnsimple/v8/datadnsimpleregistrantchangecheck"
+import "github.com/cdktf/cdktf-provider-dnsimple-go/dnsimple/datadnsimpleregistrantchangecheck"
 
 datadnsimpleregistrantchangecheck.NewDataDnsimpleRegistrantChangeCheck(scope Construct, id *string, config DataDnsimpleRegistrantChangeCheckConfig) DataDnsimpleRegistrantChangeCheck
 ```
@@ -54,6 +54,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-dnsimple.dataDnsimpleRegistrantChangeCheck.DataDnsimpleRegistrantChangeCheck.addOverride">AddOverride</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-dnsimple.dataDnsimpleRegistrantChangeCheck.DataDnsimpleRegistrantChangeCheck.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
 | <code><a href="#@cdktf/provider-dnsimple.dataDnsimpleRegistrantChangeCheck.DataDnsimpleRegistrantChangeCheck.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktf/provider-dnsimple.dataDnsimpleRegistrantChangeCheck.DataDnsimpleRegistrantChangeCheck.toHclTerraform">ToHclTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-dnsimple.dataDnsimpleRegistrantChangeCheck.DataDnsimpleRegistrantChangeCheck.toMetadata">ToMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-dnsimple.dataDnsimpleRegistrantChangeCheck.DataDnsimpleRegistrantChangeCheck.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-dnsimple.dataDnsimpleRegistrantChangeCheck.DataDnsimpleRegistrantChangeCheck.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
@@ -118,6 +119,14 @@ func ResetOverrideLogicalId()
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
+
+##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktf/provider-dnsimple.dataDnsimpleRegistrantChangeCheck.DataDnsimpleRegistrantChangeCheck.toHclTerraform"></a>
+
+```go
+func ToHclTerraform() interface{}
+```
+
+Adds this resource to the terraform JSON output.
 
 ##### `ToMetadata` <a name="ToMetadata" id="@cdktf/provider-dnsimple.dataDnsimpleRegistrantChangeCheck.DataDnsimpleRegistrantChangeCheck.toMetadata"></a>
 
@@ -267,7 +276,7 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-dnsimple.dataDnsimpleRegistrantChangeCheck.DataDnsimpleRegistrantChangeCheck.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-dnsimple-go/dnsimple/v8/datadnsimpleregistrantchangecheck"
+import "github.com/cdktf/cdktf-provider-dnsimple-go/dnsimple/datadnsimpleregistrantchangecheck"
 
 datadnsimpleregistrantchangecheck.DataDnsimpleRegistrantChangeCheck_IsConstruct(x interface{}) *bool
 ```
@@ -299,7 +308,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-dnsimple.dataDnsimpleRegistrantChangeCheck.DataDnsimpleRegistrantChangeCheck.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-dnsimple-go/dnsimple/v8/datadnsimpleregistrantchangecheck"
+import "github.com/cdktf/cdktf-provider-dnsimple-go/dnsimple/datadnsimpleregistrantchangecheck"
 
 datadnsimpleregistrantchangecheck.DataDnsimpleRegistrantChangeCheck_IsTerraformElement(x interface{}) *bool
 ```
@@ -313,7 +322,7 @@ datadnsimpleregistrantchangecheck.DataDnsimpleRegistrantChangeCheck_IsTerraformE
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-dnsimple.dataDnsimpleRegistrantChangeCheck.DataDnsimpleRegistrantChangeCheck.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-dnsimple-go/dnsimple/v8/datadnsimpleregistrantchangecheck"
+import "github.com/cdktf/cdktf-provider-dnsimple-go/dnsimple/datadnsimpleregistrantchangecheck"
 
 datadnsimpleregistrantchangecheck.DataDnsimpleRegistrantChangeCheck_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -327,7 +336,7 @@ datadnsimpleregistrantchangecheck.DataDnsimpleRegistrantChangeCheck_IsTerraformD
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-dnsimple.dataDnsimpleRegistrantChangeCheck.DataDnsimpleRegistrantChangeCheck.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-dnsimple-go/dnsimple/v8/datadnsimpleregistrantchangecheck"
+import "github.com/cdktf/cdktf-provider-dnsimple-go/dnsimple/datadnsimpleregistrantchangecheck"
 
 datadnsimpleregistrantchangecheck.DataDnsimpleRegistrantChangeCheck_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -611,7 +620,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-dnsimple.dataDnsimpleRegistrantChangeCheck.DataDnsimpleRegistrantChangeCheckConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-dnsimple-go/dnsimple/v8/datadnsimpleregistrantchangecheck"
+import "github.com/cdktf/cdktf-provider-dnsimple-go/dnsimple/datadnsimpleregistrantchangecheck"
 
 &datadnsimpleregistrantchangecheck.DataDnsimpleRegistrantChangeCheckConfig {
 	Connection: interface{},
@@ -745,7 +754,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsim
 #### Initializer <a name="Initializer" id="@cdktf/provider-dnsimple.dataDnsimpleRegistrantChangeCheck.DataDnsimpleRegistrantChangeCheckExtendedAttributes.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-dnsimple-go/dnsimple/v8/datadnsimpleregistrantchangecheck"
+import "github.com/cdktf/cdktf-provider-dnsimple-go/dnsimple/datadnsimpleregistrantchangecheck"
 
 &datadnsimpleregistrantchangecheck.DataDnsimpleRegistrantChangeCheckExtendedAttributes {
 
@@ -758,7 +767,7 @@ import "github.com/cdktf/cdktf-provider-dnsimple-go/dnsimple/v8/datadnsimpleregi
 #### Initializer <a name="Initializer" id="@cdktf/provider-dnsimple.dataDnsimpleRegistrantChangeCheck.DataDnsimpleRegistrantChangeCheckExtendedAttributesOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-dnsimple-go/dnsimple/v8/datadnsimpleregistrantchangecheck"
+import "github.com/cdktf/cdktf-provider-dnsimple-go/dnsimple/datadnsimpleregistrantchangecheck"
 
 &datadnsimpleregistrantchangecheck.DataDnsimpleRegistrantChangeCheckExtendedAttributesOptions {
 
@@ -773,7 +782,7 @@ import "github.com/cdktf/cdktf-provider-dnsimple-go/dnsimple/v8/datadnsimpleregi
 #### Initializers <a name="Initializers" id="@cdktf/provider-dnsimple.dataDnsimpleRegistrantChangeCheck.DataDnsimpleRegistrantChangeCheckExtendedAttributesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-dnsimple-go/dnsimple/v8/datadnsimpleregistrantchangecheck"
+import "github.com/cdktf/cdktf-provider-dnsimple-go/dnsimple/datadnsimpleregistrantchangecheck"
 
 datadnsimpleregistrantchangecheck.NewDataDnsimpleRegistrantChangeCheckExtendedAttributesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDnsimpleRegistrantChangeCheckExtendedAttributesList
 ```
@@ -814,10 +823,27 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
+| <code><a href="#@cdktf/provider-dnsimple.dataDnsimpleRegistrantChangeCheck.DataDnsimpleRegistrantChangeCheckExtendedAttributesList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
 | <code><a href="#@cdktf/provider-dnsimple.dataDnsimpleRegistrantChangeCheck.DataDnsimpleRegistrantChangeCheckExtendedAttributesList.computeFqn">ComputeFqn</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-dnsimple.dataDnsimpleRegistrantChangeCheck.DataDnsimpleRegistrantChangeCheckExtendedAttributesList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-dnsimple.dataDnsimpleRegistrantChangeCheck.DataDnsimpleRegistrantChangeCheckExtendedAttributesList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-dnsimple.dataDnsimpleRegistrantChangeCheck.DataDnsimpleRegistrantChangeCheckExtendedAttributesList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktf/provider-dnsimple.dataDnsimpleRegistrantChangeCheck.DataDnsimpleRegistrantChangeCheckExtendedAttributesList.allWithMapKey"></a>
+
+```go
+func AllWithMapKey(mapKeyAttributeName *string) DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktf/provider-dnsimple.dataDnsimpleRegistrantChangeCheck.DataDnsimpleRegistrantChangeCheckExtendedAttributesList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* *string
 
 ---
 
@@ -905,7 +931,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-dnsimple.dataDnsimpleRegistrantChangeCheck.DataDnsimpleRegistrantChangeCheckExtendedAttributesOptionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-dnsimple-go/dnsimple/v8/datadnsimpleregistrantchangecheck"
+import "github.com/cdktf/cdktf-provider-dnsimple-go/dnsimple/datadnsimpleregistrantchangecheck"
 
 datadnsimpleregistrantchangecheck.NewDataDnsimpleRegistrantChangeCheckExtendedAttributesOptionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDnsimpleRegistrantChangeCheckExtendedAttributesOptionsList
 ```
@@ -946,10 +972,27 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
+| <code><a href="#@cdktf/provider-dnsimple.dataDnsimpleRegistrantChangeCheck.DataDnsimpleRegistrantChangeCheckExtendedAttributesOptionsList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
 | <code><a href="#@cdktf/provider-dnsimple.dataDnsimpleRegistrantChangeCheck.DataDnsimpleRegistrantChangeCheckExtendedAttributesOptionsList.computeFqn">ComputeFqn</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-dnsimple.dataDnsimpleRegistrantChangeCheck.DataDnsimpleRegistrantChangeCheckExtendedAttributesOptionsList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-dnsimple.dataDnsimpleRegistrantChangeCheck.DataDnsimpleRegistrantChangeCheckExtendedAttributesOptionsList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-dnsimple.dataDnsimpleRegistrantChangeCheck.DataDnsimpleRegistrantChangeCheckExtendedAttributesOptionsList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktf/provider-dnsimple.dataDnsimpleRegistrantChangeCheck.DataDnsimpleRegistrantChangeCheckExtendedAttributesOptionsList.allWithMapKey"></a>
+
+```go
+func AllWithMapKey(mapKeyAttributeName *string) DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktf/provider-dnsimple.dataDnsimpleRegistrantChangeCheck.DataDnsimpleRegistrantChangeCheckExtendedAttributesOptionsList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* *string
 
 ---
 
@@ -1037,7 +1080,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-dnsimple.dataDnsimpleRegistrantChangeCheck.DataDnsimpleRegistrantChangeCheckExtendedAttributesOptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-dnsimple-go/dnsimple/v8/datadnsimpleregistrantchangecheck"
+import "github.com/cdktf/cdktf-provider-dnsimple-go/dnsimple/datadnsimpleregistrantchangecheck"
 
 datadnsimpleregistrantchangecheck.NewDataDnsimpleRegistrantChangeCheckExtendedAttributesOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDnsimpleRegistrantChangeCheckExtendedAttributesOptionsOutputReference
 ```
@@ -1337,7 +1380,7 @@ func InternalValue() DataDnsimpleRegistrantChangeCheckExtendedAttributesOptions
 #### Initializers <a name="Initializers" id="@cdktf/provider-dnsimple.dataDnsimpleRegistrantChangeCheck.DataDnsimpleRegistrantChangeCheckExtendedAttributesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-dnsimple-go/dnsimple/v8/datadnsimpleregistrantchangecheck"
+import "github.com/cdktf/cdktf-provider-dnsimple-go/dnsimple/datadnsimpleregistrantchangecheck"
 
 datadnsimpleregistrantchangecheck.NewDataDnsimpleRegistrantChangeCheckExtendedAttributesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDnsimpleRegistrantChangeCheckExtendedAttributesOutputReference
 ```

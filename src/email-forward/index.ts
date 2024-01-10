@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/dnsimple/dnsimple/1.3.1/docs/resources/email_forward
 // generated from terraform resource schema
 
@@ -145,5 +140,31 @@ export class EmailForward extends cdktf.TerraformResource {
       destination_email: cdktf.stringToTerraform(this._destinationEmail),
       domain: cdktf.stringToTerraform(this._domain),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      alias_name: {
+        value: cdktf.stringToHclTerraform(this._aliasName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      destination_email: {
+        value: cdktf.stringToHclTerraform(this._destinationEmail),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      domain: {
+        value: cdktf.stringToHclTerraform(this._domain),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

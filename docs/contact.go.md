@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.
 #### Initializers <a name="Initializers" id="@cdktf/provider-dnsimple.contact.Contact.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-dnsimple-go/dnsimple/v8/contact"
+import "github.com/cdktf/cdktf-provider-dnsimple-go/dnsimple/contact"
 
 contact.NewContact(scope Construct, id *string, config ContactConfig) Contact
 ```
@@ -54,6 +54,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-dnsimple.contact.Contact.addOverride">AddOverride</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-dnsimple.contact.Contact.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
 | <code><a href="#@cdktf/provider-dnsimple.contact.Contact.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktf/provider-dnsimple.contact.Contact.toHclTerraform">ToHclTerraform</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-dnsimple.contact.Contact.toMetadata">ToMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-dnsimple.contact.Contact.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-dnsimple.contact.Contact.addMoveTarget">AddMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
@@ -129,6 +130,12 @@ func ResetOverrideLogicalId()
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
+
+##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktf/provider-dnsimple.contact.Contact.toHclTerraform"></a>
+
+```go
+func ToHclTerraform() interface{}
+```
 
 ##### `ToMetadata` <a name="ToMetadata" id="@cdktf/provider-dnsimple.contact.Contact.toMetadata"></a>
 
@@ -406,7 +413,7 @@ func ResetOrganizationName()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-dnsimple.contact.Contact.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-dnsimple-go/dnsimple/v8/contact"
+import "github.com/cdktf/cdktf-provider-dnsimple-go/dnsimple/contact"
 
 contact.Contact_IsConstruct(x interface{}) *bool
 ```
@@ -438,7 +445,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-dnsimple.contact.Contact.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-dnsimple-go/dnsimple/v8/contact"
+import "github.com/cdktf/cdktf-provider-dnsimple-go/dnsimple/contact"
 
 contact.Contact_IsTerraformElement(x interface{}) *bool
 ```
@@ -452,7 +459,7 @@ contact.Contact_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-dnsimple.contact.Contact.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-dnsimple-go/dnsimple/v8/contact"
+import "github.com/cdktf/cdktf-provider-dnsimple-go/dnsimple/contact"
 
 contact.Contact_IsTerraformResource(x interface{}) *bool
 ```
@@ -466,7 +473,7 @@ contact.Contact_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-dnsimple.contact.Contact.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-dnsimple-go/dnsimple/v8/contact"
+import "github.com/cdktf/cdktf-provider-dnsimple-go/dnsimple/contact"
 
 contact.Contact_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1069,7 +1076,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-dnsimple.contact.ContactConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-dnsimple-go/dnsimple/v8/contact"
+import "github.com/cdktf/cdktf-provider-dnsimple-go/dnsimple/contact"
 
 &contact.ContactConfig {
 	Connection: interface{},

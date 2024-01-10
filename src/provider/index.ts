@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/dnsimple/dnsimple/1.3.1/docs
 // generated from terraform resource schema
 
@@ -216,5 +211,49 @@ export class DnsimpleProvider extends cdktf.TerraformProvider {
       user_agent: cdktf.stringToTerraform(this._userAgent),
       alias: cdktf.stringToTerraform(this._alias),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      account: {
+        value: cdktf.stringToHclTerraform(this._account),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      prefetch: {
+        value: cdktf.booleanToHclTerraform(this._prefetch),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      sandbox: {
+        value: cdktf.booleanToHclTerraform(this._sandbox),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      token: {
+        value: cdktf.stringToHclTerraform(this._token),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      user_agent: {
+        value: cdktf.stringToHclTerraform(this._userAgent),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      alias: {
+        value: cdktf.stringToHclTerraform(this._alias),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }
