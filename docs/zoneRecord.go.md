@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.
 #### Initializers <a name="Initializers" id="@cdktf/provider-dnsimple.zoneRecord.ZoneRecord.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-dnsimple-go/dnsimple/v8/zonerecord"
+import "github.com/cdktf/cdktf-provider-dnsimple-go/dnsimple/v9/zonerecord"
 
 zonerecord.NewZoneRecord(scope Construct, id *string, config ZoneRecordConfig) ZoneRecord
 ```
@@ -54,6 +54,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-dnsimple.zoneRecord.ZoneRecord.addOverride">AddOverride</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-dnsimple.zoneRecord.ZoneRecord.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
 | <code><a href="#@cdktf/provider-dnsimple.zoneRecord.ZoneRecord.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktf/provider-dnsimple.zoneRecord.ZoneRecord.toHclTerraform">ToHclTerraform</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-dnsimple.zoneRecord.ZoneRecord.toMetadata">ToMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-dnsimple.zoneRecord.ZoneRecord.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-dnsimple.zoneRecord.ZoneRecord.addMoveTarget">AddMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
@@ -127,6 +128,12 @@ func ResetOverrideLogicalId()
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
+
+##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktf/provider-dnsimple.zoneRecord.ZoneRecord.toHclTerraform"></a>
+
+```go
+func ToHclTerraform() interface{}
+```
 
 ##### `ToMetadata` <a name="ToMetadata" id="@cdktf/provider-dnsimple.zoneRecord.ZoneRecord.toMetadata"></a>
 
@@ -392,7 +399,7 @@ func ResetTtl()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-dnsimple.zoneRecord.ZoneRecord.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-dnsimple-go/dnsimple/v8/zonerecord"
+import "github.com/cdktf/cdktf-provider-dnsimple-go/dnsimple/v9/zonerecord"
 
 zonerecord.ZoneRecord_IsConstruct(x interface{}) *bool
 ```
@@ -424,7 +431,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-dnsimple.zoneRecord.ZoneRecord.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-dnsimple-go/dnsimple/v8/zonerecord"
+import "github.com/cdktf/cdktf-provider-dnsimple-go/dnsimple/v9/zonerecord"
 
 zonerecord.ZoneRecord_IsTerraformElement(x interface{}) *bool
 ```
@@ -438,7 +445,7 @@ zonerecord.ZoneRecord_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-dnsimple.zoneRecord.ZoneRecord.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-dnsimple-go/dnsimple/v8/zonerecord"
+import "github.com/cdktf/cdktf-provider-dnsimple-go/dnsimple/v9/zonerecord"
 
 zonerecord.ZoneRecord_IsTerraformResource(x interface{}) *bool
 ```
@@ -452,7 +459,7 @@ zonerecord.ZoneRecord_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-dnsimple.zoneRecord.ZoneRecord.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-dnsimple-go/dnsimple/v8/zonerecord"
+import "github.com/cdktf/cdktf-provider-dnsimple-go/dnsimple/v9/zonerecord"
 
 zonerecord.ZoneRecord_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -879,7 +886,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-dnsimple.zoneRecord.ZoneRecordConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-dnsimple-go/dnsimple/v8/zonerecord"
+import "github.com/cdktf/cdktf-provider-dnsimple-go/dnsimple/v9/zonerecord"
 
 &zonerecord.ZoneRecordConfig {
 	Connection: interface{},

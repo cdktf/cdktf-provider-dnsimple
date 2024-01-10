@@ -220,4 +220,48 @@ export class DsRecord extends cdktf.TerraformResource {
       public_key: cdktf.stringToTerraform(this._publicKey),
     };
   }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      algorithm: {
+        value: cdktf.stringToHclTerraform(this._algorithm),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      digest: {
+        value: cdktf.stringToHclTerraform(this._digest),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      digest_type: {
+        value: cdktf.stringToHclTerraform(this._digestType),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      domain: {
+        value: cdktf.stringToHclTerraform(this._domain),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      keytag: {
+        value: cdktf.stringToHclTerraform(this._keytag),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      public_key: {
+        value: cdktf.stringToHclTerraform(this._publicKey),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
+  }
 }

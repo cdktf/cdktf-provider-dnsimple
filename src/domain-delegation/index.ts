@@ -122,4 +122,24 @@ export class DomainDelegation extends cdktf.TerraformResource {
       name_servers: cdktf.listMapper(cdktf.stringToTerraform, false)(this._nameServers),
     };
   }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      domain: {
+        value: cdktf.stringToHclTerraform(this._domain),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name_servers: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._nameServers),
+        isBlock: false,
+        type: "list",
+        storageClassType: "stringList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
+  }
 }

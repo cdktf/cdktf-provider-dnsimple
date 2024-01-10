@@ -146,4 +146,24 @@ export class DataDnsimpleCertificate extends cdktf.TerraformDataSource {
       domain: cdktf.stringToTerraform(this._domain),
     };
   }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      certificate_id: {
+        value: cdktf.numberToHclTerraform(this._certificateId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      domain: {
+        value: cdktf.stringToHclTerraform(this._domain),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
+  }
 }

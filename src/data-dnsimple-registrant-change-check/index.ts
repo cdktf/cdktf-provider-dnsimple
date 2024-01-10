@@ -37,6 +37,17 @@ export function dataDnsimpleRegistrantChangeCheckExtendedAttributesOptionsToTerr
   }
 }
 
+
+export function dataDnsimpleRegistrantChangeCheckExtendedAttributesOptionsToHclTerraform(struct?: DataDnsimpleRegistrantChangeCheckExtendedAttributesOptions): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class DataDnsimpleRegistrantChangeCheckExtendedAttributesOptionsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -109,6 +120,17 @@ export function dataDnsimpleRegistrantChangeCheckExtendedAttributesToTerraform(s
   }
   return {
   }
+}
+
+
+export function dataDnsimpleRegistrantChangeCheckExtendedAttributesToHclTerraform(struct?: DataDnsimpleRegistrantChangeCheckExtendedAttributes): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class DataDnsimpleRegistrantChangeCheckExtendedAttributesOutputReference extends cdktf.ComplexObject {
@@ -290,5 +312,25 @@ export class DataDnsimpleRegistrantChangeCheck extends cdktf.TerraformDataSource
       contact_id: cdktf.stringToTerraform(this._contactId),
       domain_id: cdktf.stringToTerraform(this._domainId),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      contact_id: {
+        value: cdktf.stringToHclTerraform(this._contactId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      domain_id: {
+        value: cdktf.stringToHclTerraform(this._domainId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

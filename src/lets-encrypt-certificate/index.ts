@@ -220,4 +220,42 @@ export class LetsEncryptCertificate extends cdktf.TerraformResource {
       signature_algorithm: cdktf.stringToTerraform(this._signatureAlgorithm),
     };
   }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      alternate_names: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._alternateNames),
+        isBlock: false,
+        type: "list",
+        storageClassType: "stringList",
+      },
+      auto_renew: {
+        value: cdktf.booleanToHclTerraform(this._autoRenew),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      domain_id: {
+        value: cdktf.stringToHclTerraform(this._domainId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      signature_algorithm: {
+        value: cdktf.stringToHclTerraform(this._signatureAlgorithm),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
+  }
 }

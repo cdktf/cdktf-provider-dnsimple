@@ -54,6 +54,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-dnsimple.provider.DnsimpleProvider.addOverride">addOverride</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-dnsimple.provider.DnsimpleProvider.overrideLogicalId">overrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
 | <code><a href="#@cdktf/provider-dnsimple.provider.DnsimpleProvider.resetOverrideLogicalId">resetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktf/provider-dnsimple.provider.DnsimpleProvider.toHclTerraform">toHclTerraform</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-dnsimple.provider.DnsimpleProvider.toMetadata">toMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-dnsimple.provider.DnsimpleProvider.toTerraform">toTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-dnsimple.provider.DnsimpleProvider.resetAccount">resetAccount</a></code> | *No description.* |
@@ -114,6 +115,12 @@ public resetOverrideLogicalId(): void
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
+
+##### `toHclTerraform` <a name="toHclTerraform" id="@cdktf/provider-dnsimple.provider.DnsimpleProvider.toHclTerraform"></a>
+
+```typescript
+public toHclTerraform(): any
+```
 
 ##### `toMetadata` <a name="toMetadata" id="@cdktf/provider-dnsimple.provider.DnsimpleProvider.toMetadata"></a>
 

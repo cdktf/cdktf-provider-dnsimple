@@ -390,4 +390,96 @@ export class Contact extends cdktf.TerraformResource {
       state_province: cdktf.stringToTerraform(this._stateProvince),
     };
   }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      address1: {
+        value: cdktf.stringToHclTerraform(this._address1),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      address2: {
+        value: cdktf.stringToHclTerraform(this._address2),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      city: {
+        value: cdktf.stringToHclTerraform(this._city),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      country: {
+        value: cdktf.stringToHclTerraform(this._country),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      email: {
+        value: cdktf.stringToHclTerraform(this._email),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      fax: {
+        value: cdktf.stringToHclTerraform(this._fax),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      first_name: {
+        value: cdktf.stringToHclTerraform(this._firstName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      job_title: {
+        value: cdktf.stringToHclTerraform(this._jobTitle),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      label: {
+        value: cdktf.stringToHclTerraform(this._label),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      last_name: {
+        value: cdktf.stringToHclTerraform(this._lastName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      organization_name: {
+        value: cdktf.stringToHclTerraform(this._organizationName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      phone: {
+        value: cdktf.stringToHclTerraform(this._phone),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      postal_code: {
+        value: cdktf.stringToHclTerraform(this._postalCode),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      state_province: {
+        value: cdktf.stringToHclTerraform(this._stateProvince),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
+  }
 }
