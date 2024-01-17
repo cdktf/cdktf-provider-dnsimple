@@ -15,6 +15,7 @@ The following submodules are available:
 - [letsEncryptCertificate](./letsEncryptCertificate.csharp.md)
 - [provider](./provider.csharp.md)
 - [registeredDomain](./registeredDomain.csharp.md)
+- [zone](./zone.csharp.md)
 - [zoneRecord](./zoneRecord.csharp.md)
 
 

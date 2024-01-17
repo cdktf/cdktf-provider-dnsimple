@@ -1,4 +1,4 @@
-// https://registry.terraform.io/providers/dnsimple/dnsimple/1.4.0/docs/data-sources/zone
+// https://registry.terraform.io/providers/dnsimple/dnsimple/1.4.0/docs/resources/zone
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -6,19 +6,21 @@ import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface DataDnsimpleZoneConfig extends cdktf.TerraformMetaArguments {
+export interface ZoneConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Zone Name
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.4.0/docs/data-sources/zone#name DataDnsimpleZone#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.4.0/docs/resources/zone#active Zone#active}
+  */
+  readonly active?: boolean | cdktf.IResolvable;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.4.0/docs/resources/zone#name Zone#name}
   */
   readonly name: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.4.0/docs/data-sources/zone dnsimple_zone}
+* Represents a {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.4.0/docs/resources/zone dnsimple_zone}
 */
-export class DataDnsimpleZone extends cdktf.TerraformDataSource {
+export class Zone extends cdktf.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -29,11 +31,11 @@ export class DataDnsimpleZone extends cdktf.TerraformDataSource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataDnsimpleZone resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTF code for importing a Zone resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
-  * @param importToId The construct id used in the generated config for the DataDnsimpleZone to import
-  * @param importFromId The id of the existing DataDnsimpleZone that should be imported. Refer to the {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.4.0/docs/data-sources/zone#import import section} in the documentation of this resource for the id to use
-  * @param provider? Optional instance of the provider where the DataDnsimpleZone to import is found
+  * @param importToId The construct id used in the generated config for the Zone to import
+  * @param importFromId The id of the existing Zone that should be imported. Refer to the {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.4.0/docs/resources/zone#import import section} in the documentation of this resource for the id to use
+  * @param provider? Optional instance of the provider where the Zone to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
         return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "dnsimple_zone", importId: importFromId, provider });
@@ -44,13 +46,13 @@ export class DataDnsimpleZone extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.4.0/docs/data-sources/zone dnsimple_zone} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.4.0/docs/resources/zone dnsimple_zone} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
-  * @param options DataDnsimpleZoneConfig
+  * @param options ZoneConfig
   */
-  public constructor(scope: Construct, id: string, config: DataDnsimpleZoneConfig) {
+  public constructor(scope: Construct, id: string, config: ZoneConfig) {
     super(scope, id, {
       terraformResourceType: 'dnsimple_zone',
       terraformGeneratorMetadata: {
@@ -66,6 +68,7 @@ export class DataDnsimpleZone extends cdktf.TerraformDataSource {
       connection: config.connection,
       forEach: config.forEach
     });
+    this._active = config.active;
     this._name = config.name;
   }
 
@@ -78,9 +81,30 @@ export class DataDnsimpleZone extends cdktf.TerraformDataSource {
     return this.getNumberAttribute('account_id');
   }
 
+  // active - computed: true, optional: true, required: false
+  private _active?: boolean | cdktf.IResolvable; 
+  public get active() {
+    return this.getBooleanAttribute('active');
+  }
+  public set active(value: boolean | cdktf.IResolvable) {
+    this._active = value;
+  }
+  public resetActive() {
+    this._active = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get activeInput() {
+    return this._active;
+  }
+
   // id - computed: true, optional: false, required: false
   public get id() {
     return this.getNumberAttribute('id');
+  }
+
+  // last_transferred_at - computed: true, optional: false, required: false
+  public get lastTransferredAt() {
+    return this.getStringAttribute('last_transferred_at');
   }
 
   // name - computed: false, optional: false, required: true
@@ -101,18 +125,30 @@ export class DataDnsimpleZone extends cdktf.TerraformDataSource {
     return this.getBooleanAttribute('reverse');
   }
 
+  // secondary - computed: true, optional: false, required: false
+  public get secondary() {
+    return this.getBooleanAttribute('secondary');
+  }
+
   // =========
   // SYNTHESIS
   // =========
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
+      active: cdktf.booleanToTerraform(this._active),
       name: cdktf.stringToTerraform(this._name),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
+      active: {
+        value: cdktf.booleanToHclTerraform(this._active),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
       name: {
         value: cdktf.stringToHclTerraform(this._name),
         isBlock: false,

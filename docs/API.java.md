@@ -15,6 +15,7 @@ The following submodules are available:
 - [letsEncryptCertificate](./letsEncryptCertificate.java.md)
 - [provider](./provider.java.md)
 - [registeredDomain](./registeredDomain.java.md)
+- [zone](./zone.java.md)
 - [zoneRecord](./zoneRecord.java.md)
 
 

@@ -4,12 +4,12 @@
 
 ### DataDnsimpleZone <a name="DataDnsimpleZone" id="@cdktf/provider-dnsimple.dataDnsimpleZone.DataDnsimpleZone"></a>
 
-Represents a {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.3.1/docs/data-sources/zone dnsimple_zone}.
+Represents a {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.4.0/docs/data-sources/zone dnsimple_zone}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-dnsimple.dataDnsimpleZone.DataDnsimpleZone.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-dnsimple-go/dnsimple/v9/datadnsimplezone"
+import "github.com/cdktf/cdktf-provider-dnsimple-go/dnsimple/datadnsimplezone"
 
 datadnsimplezone.NewDataDnsimpleZone(scope Construct, id *string, config DataDnsimpleZoneConfig) DataDnsimpleZone
 ```
@@ -276,7 +276,7 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-dnsimple.dataDnsimpleZone.DataDnsimpleZone.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-dnsimple-go/dnsimple/v9/datadnsimplezone"
+import "github.com/cdktf/cdktf-provider-dnsimple-go/dnsimple/datadnsimplezone"
 
 datadnsimplezone.DataDnsimpleZone_IsConstruct(x interface{}) *bool
 ```
@@ -308,7 +308,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-dnsimple.dataDnsimpleZone.DataDnsimpleZone.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-dnsimple-go/dnsimple/v9/datadnsimplezone"
+import "github.com/cdktf/cdktf-provider-dnsimple-go/dnsimple/datadnsimplezone"
 
 datadnsimplezone.DataDnsimpleZone_IsTerraformElement(x interface{}) *bool
 ```
@@ -322,7 +322,7 @@ datadnsimplezone.DataDnsimpleZone_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-dnsimple.dataDnsimpleZone.DataDnsimpleZone.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-dnsimple-go/dnsimple/v9/datadnsimplezone"
+import "github.com/cdktf/cdktf-provider-dnsimple-go/dnsimple/datadnsimplezone"
 
 datadnsimplezone.DataDnsimpleZone_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -336,7 +336,7 @@ datadnsimplezone.DataDnsimpleZone_IsTerraformDataSource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-dnsimple.dataDnsimpleZone.DataDnsimpleZone.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-dnsimple-go/dnsimple/v9/datadnsimplezone"
+import "github.com/cdktf/cdktf-provider-dnsimple-go/dnsimple/datadnsimplezone"
 
 datadnsimplezone.DataDnsimpleZone_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -365,7 +365,7 @@ The construct id used in the generated config for the DataDnsimpleZone to import
 
 The id of the existing DataDnsimpleZone that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.3.1/docs/data-sources/zone#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.4.0/docs/data-sources/zone#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -598,7 +598,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-dnsimple.dataDnsimpleZone.DataDnsimpleZoneConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-dnsimple-go/dnsimple/v9/datadnsimplezone"
+import "github.com/cdktf/cdktf-provider-dnsimple-go/dnsimple/datadnsimplezone"
 
 &datadnsimplezone.DataDnsimpleZoneConfig {
 	Connection: interface{},
@@ -707,7 +707,7 @@ Name *string
 
 Zone Name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.3.1/docs/data-sources/zone#name DataDnsimpleZone#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.4.0/docs/data-sources/zone#name DataDnsimpleZone#name}
 
 ---
 
