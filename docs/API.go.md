@@ -15,6 +15,7 @@ The following submodules are available:
 - [letsEncryptCertificate](./letsEncryptCertificate.go.md)
 - [provider](./provider.go.md)
 - [registeredDomain](./registeredDomain.go.md)
+- [zone](./zone.go.md)
 - [zoneRecord](./zoneRecord.go.md)
 
 

@@ -15,6 +15,7 @@ The following submodules are available:
 - [letsEncryptCertificate](./letsEncryptCertificate.python.md)
 - [provider](./provider.python.md)
 - [registeredDomain](./registeredDomain.python.md)
+- [zone](./zone.python.md)
 - [zoneRecord](./zoneRecord.python.md)
 
 

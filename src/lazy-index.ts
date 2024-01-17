@@ -11,6 +11,7 @@ Object.defineProperty(exports, 'dsRecord', { get: function () { return require('
 Object.defineProperty(exports, 'emailForward', { get: function () { return require('./email-forward'); } });
 Object.defineProperty(exports, 'letsEncryptCertificate', { get: function () { return require('./lets-encrypt-certificate'); } });
 Object.defineProperty(exports, 'registeredDomain', { get: function () { return require('./registered-domain'); } });
+Object.defineProperty(exports, 'zone', { get: function () { return require('./zone'); } });
 Object.defineProperty(exports, 'zoneRecord', { get: function () { return require('./zone-record'); } });
 Object.defineProperty(exports, 'dataDnsimpleCertificate', { get: function () { return require('./data-dnsimple-certificate'); } });
 Object.defineProperty(exports, 'dataDnsimpleRegistrantChangeCheck', { get: function () { return require('./data-dnsimple-registrant-change-check'); } });

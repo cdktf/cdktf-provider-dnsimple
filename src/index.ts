@@ -11,6 +11,7 @@ export * as dsRecord from './ds-record';
 export * as emailForward from './email-forward';
 export * as letsEncryptCertificate from './lets-encrypt-certificate';
 export * as registeredDomain from './registered-domain';
+export * as zone from './zone';
 export * as zoneRecord from './zone-record';
 export * as dataDnsimpleCertificate from './data-dnsimple-certificate';
 export * as dataDnsimpleRegistrantChangeCheck from './data-dnsimple-registrant-change-check';

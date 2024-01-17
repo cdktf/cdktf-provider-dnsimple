@@ -15,6 +15,7 @@ The following submodules are available:
 - [letsEncryptCertificate](./letsEncryptCertificate.typescript.md)
 - [provider](./provider.typescript.md)
 - [registeredDomain](./registeredDomain.typescript.md)
+- [zone](./zone.typescript.md)
 - [zoneRecord](./zoneRecord.typescript.md)
 
 
