@@ -4,7 +4,7 @@
 
 ### Contact <a name="Contact" id="@cdktf/provider-dnsimple.contact.Contact"></a>
 
-Represents a {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.4.0/docs/resources/contact dnsimple_contact}.
+Represents a {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.5.0/docs/resources/contact dnsimple_contact}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-dnsimple.contact.Contact.Initializer"></a>
 
@@ -502,7 +502,7 @@ The construct id used in the generated config for the Contact to import.
 
 The id of the existing Contact that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.4.0/docs/resources/contact#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.5.0/docs/resources/contact#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1092,20 +1092,20 @@ const contactConfig: contact.ContactConfig = { ... }
 | <code><a href="#@cdktf/provider-dnsimple.contact.ContactConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-dnsimple.contact.ContactConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-dnsimple.contact.ContactConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-dnsimple.contact.ContactConfig.property.address1">address1</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.4.0/docs/resources/contact#address1 Contact#address1}. |
-| <code><a href="#@cdktf/provider-dnsimple.contact.ContactConfig.property.city">city</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.4.0/docs/resources/contact#city Contact#city}. |
-| <code><a href="#@cdktf/provider-dnsimple.contact.ContactConfig.property.country">country</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.4.0/docs/resources/contact#country Contact#country}. |
-| <code><a href="#@cdktf/provider-dnsimple.contact.ContactConfig.property.email">email</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.4.0/docs/resources/contact#email Contact#email}. |
-| <code><a href="#@cdktf/provider-dnsimple.contact.ContactConfig.property.firstName">firstName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.4.0/docs/resources/contact#first_name Contact#first_name}. |
-| <code><a href="#@cdktf/provider-dnsimple.contact.ContactConfig.property.lastName">lastName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.4.0/docs/resources/contact#last_name Contact#last_name}. |
-| <code><a href="#@cdktf/provider-dnsimple.contact.ContactConfig.property.phone">phone</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.4.0/docs/resources/contact#phone Contact#phone}. |
-| <code><a href="#@cdktf/provider-dnsimple.contact.ContactConfig.property.postalCode">postalCode</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.4.0/docs/resources/contact#postal_code Contact#postal_code}. |
-| <code><a href="#@cdktf/provider-dnsimple.contact.ContactConfig.property.stateProvince">stateProvince</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.4.0/docs/resources/contact#state_province Contact#state_province}. |
-| <code><a href="#@cdktf/provider-dnsimple.contact.ContactConfig.property.address2">address2</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.4.0/docs/resources/contact#address2 Contact#address2}. |
-| <code><a href="#@cdktf/provider-dnsimple.contact.ContactConfig.property.fax">fax</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.4.0/docs/resources/contact#fax Contact#fax}. |
-| <code><a href="#@cdktf/provider-dnsimple.contact.ContactConfig.property.jobTitle">jobTitle</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.4.0/docs/resources/contact#job_title Contact#job_title}. |
-| <code><a href="#@cdktf/provider-dnsimple.contact.ContactConfig.property.label">label</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.4.0/docs/resources/contact#label Contact#label}. |
-| <code><a href="#@cdktf/provider-dnsimple.contact.ContactConfig.property.organizationName">organizationName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.4.0/docs/resources/contact#organization_name Contact#organization_name}. |
+| <code><a href="#@cdktf/provider-dnsimple.contact.ContactConfig.property.address1">address1</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.5.0/docs/resources/contact#address1 Contact#address1}. |
+| <code><a href="#@cdktf/provider-dnsimple.contact.ContactConfig.property.city">city</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.5.0/docs/resources/contact#city Contact#city}. |
+| <code><a href="#@cdktf/provider-dnsimple.contact.ContactConfig.property.country">country</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.5.0/docs/resources/contact#country Contact#country}. |
+| <code><a href="#@cdktf/provider-dnsimple.contact.ContactConfig.property.email">email</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.5.0/docs/resources/contact#email Contact#email}. |
+| <code><a href="#@cdktf/provider-dnsimple.contact.ContactConfig.property.firstName">firstName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.5.0/docs/resources/contact#first_name Contact#first_name}. |
+| <code><a href="#@cdktf/provider-dnsimple.contact.ContactConfig.property.lastName">lastName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.5.0/docs/resources/contact#last_name Contact#last_name}. |
+| <code><a href="#@cdktf/provider-dnsimple.contact.ContactConfig.property.phone">phone</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.5.0/docs/resources/contact#phone Contact#phone}. |
+| <code><a href="#@cdktf/provider-dnsimple.contact.ContactConfig.property.postalCode">postalCode</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.5.0/docs/resources/contact#postal_code Contact#postal_code}. |
+| <code><a href="#@cdktf/provider-dnsimple.contact.ContactConfig.property.stateProvince">stateProvince</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.5.0/docs/resources/contact#state_province Contact#state_province}. |
+| <code><a href="#@cdktf/provider-dnsimple.contact.ContactConfig.property.address2">address2</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.5.0/docs/resources/contact#address2 Contact#address2}. |
+| <code><a href="#@cdktf/provider-dnsimple.contact.ContactConfig.property.fax">fax</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.5.0/docs/resources/contact#fax Contact#fax}. |
+| <code><a href="#@cdktf/provider-dnsimple.contact.ContactConfig.property.jobTitle">jobTitle</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.5.0/docs/resources/contact#job_title Contact#job_title}. |
+| <code><a href="#@cdktf/provider-dnsimple.contact.ContactConfig.property.label">label</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.5.0/docs/resources/contact#label Contact#label}. |
+| <code><a href="#@cdktf/provider-dnsimple.contact.ContactConfig.property.organizationName">organizationName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.5.0/docs/resources/contact#organization_name Contact#organization_name}. |
 
 ---
 
@@ -1187,7 +1187,7 @@ public readonly address1: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.4.0/docs/resources/contact#address1 Contact#address1}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.5.0/docs/resources/contact#address1 Contact#address1}.
 
 ---
 
@@ -1199,7 +1199,7 @@ public readonly city: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.4.0/docs/resources/contact#city Contact#city}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.5.0/docs/resources/contact#city Contact#city}.
 
 ---
 
@@ -1211,7 +1211,7 @@ public readonly country: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.4.0/docs/resources/contact#country Contact#country}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.5.0/docs/resources/contact#country Contact#country}.
 
 ---
 
@@ -1223,7 +1223,7 @@ public readonly email: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.4.0/docs/resources/contact#email Contact#email}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.5.0/docs/resources/contact#email Contact#email}.
 
 ---
 
@@ -1235,7 +1235,7 @@ public readonly firstName: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.4.0/docs/resources/contact#first_name Contact#first_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.5.0/docs/resources/contact#first_name Contact#first_name}.
 
 ---
 
@@ -1247,7 +1247,7 @@ public readonly lastName: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.4.0/docs/resources/contact#last_name Contact#last_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.5.0/docs/resources/contact#last_name Contact#last_name}.
 
 ---
 
@@ -1259,7 +1259,7 @@ public readonly phone: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.4.0/docs/resources/contact#phone Contact#phone}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.5.0/docs/resources/contact#phone Contact#phone}.
 
 ---
 
@@ -1271,7 +1271,7 @@ public readonly postalCode: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.4.0/docs/resources/contact#postal_code Contact#postal_code}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.5.0/docs/resources/contact#postal_code Contact#postal_code}.
 
 ---
 
@@ -1283,7 +1283,7 @@ public readonly stateProvince: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.4.0/docs/resources/contact#state_province Contact#state_province}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.5.0/docs/resources/contact#state_province Contact#state_province}.
 
 ---
 
@@ -1295,7 +1295,7 @@ public readonly address2: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.4.0/docs/resources/contact#address2 Contact#address2}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.5.0/docs/resources/contact#address2 Contact#address2}.
 
 ---
 
@@ -1307,7 +1307,7 @@ public readonly fax: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.4.0/docs/resources/contact#fax Contact#fax}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.5.0/docs/resources/contact#fax Contact#fax}.
 
 ---
 
@@ -1319,7 +1319,7 @@ public readonly jobTitle: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.4.0/docs/resources/contact#job_title Contact#job_title}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.5.0/docs/resources/contact#job_title Contact#job_title}.
 
 ---
 
@@ -1331,7 +1331,7 @@ public readonly label: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.4.0/docs/resources/contact#label Contact#label}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.5.0/docs/resources/contact#label Contact#label}.
 
 ---
 
@@ -1343,7 +1343,7 @@ public readonly organizationName: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.4.0/docs/resources/contact#organization_name Contact#organization_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.5.0/docs/resources/contact#organization_name Contact#organization_name}.
 
 ---
 
