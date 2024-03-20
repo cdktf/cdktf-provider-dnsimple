@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/dnsimple/dnsimple/1.4.0/docs/data-sources/certificate
+// https://registry.terraform.io/providers/dnsimple/dnsimple/1.5.0/docs/data-sources/certificate
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,19 +15,121 @@ export interface DataDnsimpleCertificateConfig extends cdktf.TerraformMetaArgume
   /**
   * Certificate ID
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.4.0/docs/data-sources/certificate#certificate_id DataDnsimpleCertificate#certificate_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.5.0/docs/data-sources/certificate#certificate_id DataDnsimpleCertificate#certificate_id}
   */
   readonly certificateId: number;
   /**
   * Domain name
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.4.0/docs/data-sources/certificate#domain DataDnsimpleCertificate#domain}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.5.0/docs/data-sources/certificate#domain DataDnsimpleCertificate#domain}
   */
   readonly domain: string;
+  /**
+  * timeouts block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.5.0/docs/data-sources/certificate#timeouts DataDnsimpleCertificate#timeouts}
+  */
+  readonly timeouts?: DataDnsimpleCertificateTimeouts;
+}
+export interface DataDnsimpleCertificateTimeouts {
+  /**
+  * A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours).
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.5.0/docs/data-sources/certificate#read DataDnsimpleCertificate#read}
+  */
+  readonly read?: string;
+}
+
+export function dataDnsimpleCertificateTimeoutsToTerraform(struct?: DataDnsimpleCertificateTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    read: cdktf.stringToTerraform(struct!.read),
+  }
+}
+
+
+export function dataDnsimpleCertificateTimeoutsToHclTerraform(struct?: DataDnsimpleCertificateTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    read: {
+      value: cdktf.stringToHclTerraform(struct!.read),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class DataDnsimpleCertificateTimeoutsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false);
+  }
+
+  public get internalValue(): DataDnsimpleCertificateTimeouts | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._read !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.read = this._read;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataDnsimpleCertificateTimeouts | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._read = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._read = value.read;
+    }
+  }
+
+  // read - computed: false, optional: true, required: false
+  private _read?: string; 
+  public get read() {
+    return this.getStringAttribute('read');
+  }
+  public set read(value: string) {
+    this._read = value;
+  }
+  public resetRead() {
+    this._read = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get readInput() {
+    return this._read;
+  }
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.4.0/docs/data-sources/certificate dnsimple_certificate}
+* Represents a {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.5.0/docs/data-sources/certificate dnsimple_certificate}
 */
 export class DataDnsimpleCertificate extends cdktf.TerraformDataSource {
 
@@ -43,7 +145,7 @@ export class DataDnsimpleCertificate extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataDnsimpleCertificate resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataDnsimpleCertificate to import
-  * @param importFromId The id of the existing DataDnsimpleCertificate that should be imported. Refer to the {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.4.0/docs/data-sources/certificate#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataDnsimpleCertificate that should be imported. Refer to the {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.5.0/docs/data-sources/certificate#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataDnsimpleCertificate to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -55,7 +157,7 @@ export class DataDnsimpleCertificate extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.4.0/docs/data-sources/certificate dnsimple_certificate} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.5.0/docs/data-sources/certificate dnsimple_certificate} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -66,7 +168,7 @@ export class DataDnsimpleCertificate extends cdktf.TerraformDataSource {
       terraformResourceType: 'dnsimple_certificate',
       terraformGeneratorMetadata: {
         providerName: 'dnsimple',
-        providerVersion: '1.4.0',
+        providerVersion: '1.5.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,
@@ -79,6 +181,7 @@ export class DataDnsimpleCertificate extends cdktf.TerraformDataSource {
     });
     this._certificateId = config.certificateId;
     this._domain = config.domain;
+    this._timeouts.internalValue = config.timeouts;
   }
 
   // ==========
@@ -136,6 +239,22 @@ export class DataDnsimpleCertificate extends cdktf.TerraformDataSource {
     return this.getStringAttribute('server_certificate');
   }
 
+  // timeouts - computed: false, optional: true, required: false
+  private _timeouts = new DataDnsimpleCertificateTimeoutsOutputReference(this, "timeouts");
+  public get timeouts() {
+    return this._timeouts;
+  }
+  public putTimeouts(value: DataDnsimpleCertificateTimeouts) {
+    this._timeouts.internalValue = value;
+  }
+  public resetTimeouts() {
+    this._timeouts.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get timeoutsInput() {
+    return this._timeouts.internalValue;
+  }
+
   // =========
   // SYNTHESIS
   // =========
@@ -144,6 +263,7 @@ export class DataDnsimpleCertificate extends cdktf.TerraformDataSource {
     return {
       certificate_id: cdktf.numberToTerraform(this._certificateId),
       domain: cdktf.stringToTerraform(this._domain),
+      timeouts: dataDnsimpleCertificateTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
 
@@ -160,6 +280,12 @@ export class DataDnsimpleCertificate extends cdktf.TerraformDataSource {
         isBlock: false,
         type: "simple",
         storageClassType: "string",
+      },
+      timeouts: {
+        value: dataDnsimpleCertificateTimeoutsToHclTerraform(this._timeouts.internalValue),
+        isBlock: true,
+        type: "struct",
+        storageClassType: "DataDnsimpleCertificateTimeouts",
       },
     };
 
