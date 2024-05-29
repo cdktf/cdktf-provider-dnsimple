@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/dnsimple/dnsimple/1.5.0/docs/resources/ds_record
+// https://registry.terraform.io/providers/dnsimple/dnsimple/1.6.0/docs/resources/ds_record
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,33 +8,33 @@ import * as cdktf from 'cdktf';
 
 export interface DsRecordConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.5.0/docs/resources/ds_record#algorithm DsRecord#algorithm}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.6.0/docs/resources/ds_record#algorithm DsRecord#algorithm}
   */
   readonly algorithm: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.5.0/docs/resources/ds_record#digest DsRecord#digest}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.6.0/docs/resources/ds_record#digest DsRecord#digest}
   */
   readonly digest?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.5.0/docs/resources/ds_record#digest_type DsRecord#digest_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.6.0/docs/resources/ds_record#digest_type DsRecord#digest_type}
   */
   readonly digestType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.5.0/docs/resources/ds_record#domain DsRecord#domain}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.6.0/docs/resources/ds_record#domain DsRecord#domain}
   */
   readonly domain: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.5.0/docs/resources/ds_record#keytag DsRecord#keytag}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.6.0/docs/resources/ds_record#keytag DsRecord#keytag}
   */
   readonly keytag?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.5.0/docs/resources/ds_record#public_key DsRecord#public_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.6.0/docs/resources/ds_record#public_key DsRecord#public_key}
   */
   readonly publicKey?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.5.0/docs/resources/ds_record dnsimple_ds_record}
+* Represents a {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.6.0/docs/resources/ds_record dnsimple_ds_record}
 */
 export class DsRecord extends cdktf.TerraformResource {
 
@@ -55,7 +50,7 @@ export class DsRecord extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a DsRecord resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DsRecord to import
-  * @param importFromId The id of the existing DsRecord that should be imported. Refer to the {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.5.0/docs/resources/ds_record#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DsRecord that should be imported. Refer to the {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.6.0/docs/resources/ds_record#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DsRecord to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -67,7 +62,7 @@ export class DsRecord extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.5.0/docs/resources/ds_record dnsimple_ds_record} Resource
+  * Create a new {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.6.0/docs/resources/ds_record dnsimple_ds_record} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -78,7 +73,7 @@ export class DsRecord extends cdktf.TerraformResource {
       terraformResourceType: 'dnsimple_ds_record',
       terraformGeneratorMetadata: {
         providerName: 'dnsimple',
-        providerVersion: '1.5.0',
+        providerVersion: '1.6.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,
