@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.
 #### Initializers <a name="Initializers" id="@cdktf/provider-dnsimple.dataDnsimpleCertificate.DataDnsimpleCertificate.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-dnsimple-go/dnsimple/v9/datadnsimplecertificate"
+import "github.com/cdktf/cdktf-provider-dnsimple-go/dnsimple/datadnsimplecertificate"
 
 datadnsimplecertificate.NewDataDnsimpleCertificate(scope Construct, id *string, config DataDnsimpleCertificateConfig) DataDnsimpleCertificate
 ```
@@ -296,7 +296,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-dnsimple.dataDnsimpleCertificate.DataDnsimpleCertificate.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-dnsimple-go/dnsimple/v9/datadnsimplecertificate"
+import "github.com/cdktf/cdktf-provider-dnsimple-go/dnsimple/datadnsimplecertificate"
 
 datadnsimplecertificate.DataDnsimpleCertificate_IsConstruct(x interface{}) *bool
 ```
@@ -328,7 +328,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-dnsimple.dataDnsimpleCertificate.DataDnsimpleCertificate.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-dnsimple-go/dnsimple/v9/datadnsimplecertificate"
+import "github.com/cdktf/cdktf-provider-dnsimple-go/dnsimple/datadnsimplecertificate"
 
 datadnsimplecertificate.DataDnsimpleCertificate_IsTerraformElement(x interface{}) *bool
 ```
@@ -342,7 +342,7 @@ datadnsimplecertificate.DataDnsimpleCertificate_IsTerraformElement(x interface{}
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-dnsimple.dataDnsimpleCertificate.DataDnsimpleCertificate.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-dnsimple-go/dnsimple/v9/datadnsimplecertificate"
+import "github.com/cdktf/cdktf-provider-dnsimple-go/dnsimple/datadnsimplecertificate"
 
 datadnsimplecertificate.DataDnsimpleCertificate_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -356,7 +356,7 @@ datadnsimplecertificate.DataDnsimpleCertificate_IsTerraformDataSource(x interfac
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-dnsimple.dataDnsimpleCertificate.DataDnsimpleCertificate.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-dnsimple-go/dnsimple/v9/datadnsimplecertificate"
+import "github.com/cdktf/cdktf-provider-dnsimple-go/dnsimple/datadnsimplecertificate"
 
 datadnsimplecertificate.DataDnsimpleCertificate_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -684,7 +684,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-dnsimple.dataDnsimpleCertificate.DataDnsimpleCertificateConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-dnsimple-go/dnsimple/v9/datadnsimplecertificate"
+import "github.com/cdktf/cdktf-provider-dnsimple-go/dnsimple/datadnsimplecertificate"
 
 &datadnsimplecertificate.DataDnsimpleCertificateConfig {
 	Connection: interface{},
@@ -696,7 +696,7 @@ import "github.com/cdktf/cdktf-provider-dnsimple-go/dnsimple/v9/datadnsimplecert
 	Provisioners: *[]interface{},
 	CertificateId: *f64,
 	Domain: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-dnsimple-go/dnsimple/v9.dataDnsimpleCertificate.DataDnsimpleCertificateTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-dnsimple-go/dnsimple.dataDnsimpleCertificate.DataDnsimpleCertificateTimeouts,
 }
 ```
 
@@ -834,7 +834,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsim
 #### Initializer <a name="Initializer" id="@cdktf/provider-dnsimple.dataDnsimpleCertificate.DataDnsimpleCertificateTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-dnsimple-go/dnsimple/v9/datadnsimplecertificate"
+import "github.com/cdktf/cdktf-provider-dnsimple-go/dnsimple/datadnsimplecertificate"
 
 &datadnsimplecertificate.DataDnsimpleCertificateTimeouts {
 	Read: *string,
@@ -870,7 +870,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsim
 #### Initializers <a name="Initializers" id="@cdktf/provider-dnsimple.dataDnsimpleCertificate.DataDnsimpleCertificateTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-dnsimple-go/dnsimple/v9/datadnsimplecertificate"
+import "github.com/cdktf/cdktf-provider-dnsimple-go/dnsimple/datadnsimplecertificate"
 
 datadnsimplecertificate.NewDataDnsimpleCertificateTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDnsimpleCertificateTimeoutsOutputReference
 ```
