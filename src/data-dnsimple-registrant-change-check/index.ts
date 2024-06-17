@@ -1,3 +1,8 @@
+/**
+ * Copyright (c) HashiCorp, Inc.
+ * SPDX-License-Identifier: MPL-2.0
+ */
+
 // https://registry.terraform.io/providers/dnsimple/dnsimple/1.6.0/docs/data-sources/registrant_change_check
 // generated from terraform resource schema
 
