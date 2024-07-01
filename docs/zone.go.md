@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.
 #### Initializers <a name="Initializers" id="@cdktf/provider-dnsimple.zone.Zone.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-dnsimple-go/dnsimple/zone"
+import "github.com/cdktf/cdktf-provider-dnsimple-go/dnsimple/v9/zone"
 
 zone.NewZone(scope Construct, id *string, config ZoneConfig) Zone
 ```
@@ -385,7 +385,7 @@ func ResetActive()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-dnsimple.zone.Zone.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-dnsimple-go/dnsimple/zone"
+import "github.com/cdktf/cdktf-provider-dnsimple-go/dnsimple/v9/zone"
 
 zone.Zone_IsConstruct(x interface{}) *bool
 ```
@@ -417,7 +417,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-dnsimple.zone.Zone.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-dnsimple-go/dnsimple/zone"
+import "github.com/cdktf/cdktf-provider-dnsimple-go/dnsimple/v9/zone"
 
 zone.Zone_IsTerraformElement(x interface{}) *bool
 ```
@@ -431,7 +431,7 @@ zone.Zone_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-dnsimple.zone.Zone.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-dnsimple-go/dnsimple/zone"
+import "github.com/cdktf/cdktf-provider-dnsimple-go/dnsimple/v9/zone"
 
 zone.Zone_IsTerraformResource(x interface{}) *bool
 ```
@@ -445,7 +445,7 @@ zone.Zone_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-dnsimple.zone.Zone.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-dnsimple-go/dnsimple/zone"
+import "github.com/cdktf/cdktf-provider-dnsimple-go/dnsimple/v9/zone"
 
 zone.Zone_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -773,7 +773,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-dnsimple.zone.ZoneConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-dnsimple-go/dnsimple/zone"
+import "github.com/cdktf/cdktf-provider-dnsimple-go/dnsimple/v9/zone"
 
 &zone.ZoneConfig {
 	Connection: interface{},
