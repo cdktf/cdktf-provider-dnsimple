@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/dnsimple/dnsimple/1.6.0/docs/data-sources/registrant_change_check
+// https://registry.terraform.io/providers/dnsimple/dnsimple/1.7.0/docs/data-sources/registrant_change_check
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,13 +15,13 @@ export interface DataDnsimpleRegistrantChangeCheckConfig extends cdktf.Terraform
   /**
   * DNSimple contact ID for which the registrant change check is being performed
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.6.0/docs/data-sources/registrant_change_check#contact_id DataDnsimpleRegistrantChangeCheck#contact_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.7.0/docs/data-sources/registrant_change_check#contact_id DataDnsimpleRegistrantChangeCheck#contact_id}
   */
   readonly contactId: string;
   /**
   * DNSimple domain ID for which the registrant change check is being performed
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.6.0/docs/data-sources/registrant_change_check#domain_id DataDnsimpleRegistrantChangeCheck#domain_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.7.0/docs/data-sources/registrant_change_check#domain_id DataDnsimpleRegistrantChangeCheck#domain_id}
   */
   readonly domainId: string;
 }
@@ -203,7 +203,7 @@ export class DataDnsimpleRegistrantChangeCheckExtendedAttributesList extends cdk
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.6.0/docs/data-sources/registrant_change_check dnsimple_registrant_change_check}
+* Represents a {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.7.0/docs/data-sources/registrant_change_check dnsimple_registrant_change_check}
 */
 export class DataDnsimpleRegistrantChangeCheck extends cdktf.TerraformDataSource {
 
@@ -219,7 +219,7 @@ export class DataDnsimpleRegistrantChangeCheck extends cdktf.TerraformDataSource
   * Generates CDKTF code for importing a DataDnsimpleRegistrantChangeCheck resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataDnsimpleRegistrantChangeCheck to import
-  * @param importFromId The id of the existing DataDnsimpleRegistrantChangeCheck that should be imported. Refer to the {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.6.0/docs/data-sources/registrant_change_check#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataDnsimpleRegistrantChangeCheck that should be imported. Refer to the {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.7.0/docs/data-sources/registrant_change_check#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataDnsimpleRegistrantChangeCheck to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -231,7 +231,7 @@ export class DataDnsimpleRegistrantChangeCheck extends cdktf.TerraformDataSource
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.6.0/docs/data-sources/registrant_change_check dnsimple_registrant_change_check} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.7.0/docs/data-sources/registrant_change_check dnsimple_registrant_change_check} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -242,7 +242,7 @@ export class DataDnsimpleRegistrantChangeCheck extends cdktf.TerraformDataSource
       terraformResourceType: 'dnsimple_registrant_change_check',
       terraformGeneratorMetadata: {
         providerName: 'dnsimple',
-        providerVersion: '1.6.0',
+        providerVersion: '1.7.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,
