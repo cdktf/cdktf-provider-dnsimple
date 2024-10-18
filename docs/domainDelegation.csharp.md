@@ -4,7 +4,7 @@
 
 ### DomainDelegation <a name="DomainDelegation" id="@cdktf/provider-dnsimple.domainDelegation.DomainDelegation"></a>
 
-Represents a {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.7.0/docs/resources/domain_delegation dnsimple_domain_delegation}.
+Represents a {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.8.0/docs/resources/domain_delegation dnsimple_domain_delegation}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-dnsimple.domainDelegation.DomainDelegation.Initializer"></a>
 
@@ -467,7 +467,7 @@ The construct id used in the generated config for the DomainDelegation to import
 
 The id of the existing DomainDelegation that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.7.0/docs/resources/domain_delegation#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.8.0/docs/resources/domain_delegation#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -748,8 +748,8 @@ new DomainDelegationConfig {
 | <code><a href="#@cdktf/provider-dnsimple.domainDelegation.DomainDelegationConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-dnsimple.domainDelegation.DomainDelegationConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-dnsimple.domainDelegation.DomainDelegationConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-dnsimple.domainDelegation.DomainDelegationConfig.property.domain">Domain</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.7.0/docs/resources/domain_delegation#domain DomainDelegation#domain}. |
-| <code><a href="#@cdktf/provider-dnsimple.domainDelegation.DomainDelegationConfig.property.nameServers">NameServers</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.7.0/docs/resources/domain_delegation#name_servers DomainDelegation#name_servers}. |
+| <code><a href="#@cdktf/provider-dnsimple.domainDelegation.DomainDelegationConfig.property.domain">Domain</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.8.0/docs/resources/domain_delegation#domain DomainDelegation#domain}. |
+| <code><a href="#@cdktf/provider-dnsimple.domainDelegation.DomainDelegationConfig.property.nameServers">NameServers</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.8.0/docs/resources/domain_delegation#name_servers DomainDelegation#name_servers}. |
 
 ---
 
@@ -831,7 +831,7 @@ public string Domain { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.7.0/docs/resources/domain_delegation#domain DomainDelegation#domain}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.8.0/docs/resources/domain_delegation#domain DomainDelegation#domain}.
 
 ---
 
@@ -843,7 +843,7 @@ public string[] NameServers { get; set; }
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.7.0/docs/resources/domain_delegation#name_servers DomainDelegation#name_servers}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.8.0/docs/resources/domain_delegation#name_servers DomainDelegation#name_servers}.
 
 ---
 

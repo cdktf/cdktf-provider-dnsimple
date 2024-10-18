@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/dnsimple/dnsimple/1.7.0/docs/resources/zone
+// https://registry.terraform.io/providers/dnsimple/dnsimple/1.8.0/docs/resources/zone
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,17 +13,17 @@ import * as cdktf from 'cdktf';
 
 export interface ZoneConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.7.0/docs/resources/zone#active Zone#active}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.8.0/docs/resources/zone#active Zone#active}
   */
   readonly active?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.7.0/docs/resources/zone#name Zone#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.8.0/docs/resources/zone#name Zone#name}
   */
   readonly name: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.7.0/docs/resources/zone dnsimple_zone}
+* Represents a {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.8.0/docs/resources/zone dnsimple_zone}
 */
 export class Zone extends cdktf.TerraformResource {
 
@@ -39,7 +39,7 @@ export class Zone extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a Zone resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the Zone to import
-  * @param importFromId The id of the existing Zone that should be imported. Refer to the {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.7.0/docs/resources/zone#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing Zone that should be imported. Refer to the {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.8.0/docs/resources/zone#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the Zone to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -51,7 +51,7 @@ export class Zone extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.7.0/docs/resources/zone dnsimple_zone} Resource
+  * Create a new {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.8.0/docs/resources/zone dnsimple_zone} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -62,7 +62,7 @@ export class Zone extends cdktf.TerraformResource {
       terraformResourceType: 'dnsimple_zone',
       terraformGeneratorMetadata: {
         providerName: 'dnsimple',
-        providerVersion: '1.7.0',
+        providerVersion: '1.8.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,
