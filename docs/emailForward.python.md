@@ -4,7 +4,7 @@
 
 ### EmailForward <a name="EmailForward" id="@cdktf/provider-dnsimple.emailForward.EmailForward"></a>
 
-Represents a {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.7.0/docs/resources/email_forward dnsimple_email_forward}.
+Represents a {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.8.0/docs/resources/email_forward dnsimple_email_forward}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-dnsimple.emailForward.EmailForward.Initializer"></a>
 
@@ -38,9 +38,9 @@ emailForward.EmailForward(
 | <code><a href="#@cdktf/provider-dnsimple.emailForward.EmailForward.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-dnsimple.emailForward.EmailForward.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-dnsimple.emailForward.EmailForward.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-dnsimple.emailForward.EmailForward.Initializer.parameter.aliasName">alias_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.7.0/docs/resources/email_forward#alias_name EmailForward#alias_name}. |
-| <code><a href="#@cdktf/provider-dnsimple.emailForward.EmailForward.Initializer.parameter.destinationEmail">destination_email</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.7.0/docs/resources/email_forward#destination_email EmailForward#destination_email}. |
-| <code><a href="#@cdktf/provider-dnsimple.emailForward.EmailForward.Initializer.parameter.domain">domain</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.7.0/docs/resources/email_forward#domain EmailForward#domain}. |
+| <code><a href="#@cdktf/provider-dnsimple.emailForward.EmailForward.Initializer.parameter.aliasName">alias_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.8.0/docs/resources/email_forward#alias_name EmailForward#alias_name}. |
+| <code><a href="#@cdktf/provider-dnsimple.emailForward.EmailForward.Initializer.parameter.destinationEmail">destination_email</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.8.0/docs/resources/email_forward#destination_email EmailForward#destination_email}. |
+| <code><a href="#@cdktf/provider-dnsimple.emailForward.EmailForward.Initializer.parameter.domain">domain</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.8.0/docs/resources/email_forward#domain EmailForward#domain}. |
 
 ---
 
@@ -108,7 +108,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.7.0/docs/resources/email_forward#alias_name EmailForward#alias_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.8.0/docs/resources/email_forward#alias_name EmailForward#alias_name}.
 
 ---
 
@@ -116,7 +116,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsim
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.7.0/docs/resources/email_forward#destination_email EmailForward#destination_email}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.8.0/docs/resources/email_forward#destination_email EmailForward#destination_email}.
 
 ---
 
@@ -124,7 +124,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsim
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.7.0/docs/resources/email_forward#domain EmailForward#domain}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.8.0/docs/resources/email_forward#domain EmailForward#domain}.
 
 ---
 
@@ -597,7 +597,7 @@ The construct id used in the generated config for the EmailForward to import.
 
 The id of the existing EmailForward that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.7.0/docs/resources/email_forward#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.8.0/docs/resources/email_forward#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -912,9 +912,9 @@ emailForward.EmailForwardConfig(
 | <code><a href="#@cdktf/provider-dnsimple.emailForward.EmailForwardConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-dnsimple.emailForward.EmailForwardConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-dnsimple.emailForward.EmailForwardConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-dnsimple.emailForward.EmailForwardConfig.property.aliasName">alias_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.7.0/docs/resources/email_forward#alias_name EmailForward#alias_name}. |
-| <code><a href="#@cdktf/provider-dnsimple.emailForward.EmailForwardConfig.property.destinationEmail">destination_email</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.7.0/docs/resources/email_forward#destination_email EmailForward#destination_email}. |
-| <code><a href="#@cdktf/provider-dnsimple.emailForward.EmailForwardConfig.property.domain">domain</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.7.0/docs/resources/email_forward#domain EmailForward#domain}. |
+| <code><a href="#@cdktf/provider-dnsimple.emailForward.EmailForwardConfig.property.aliasName">alias_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.8.0/docs/resources/email_forward#alias_name EmailForward#alias_name}. |
+| <code><a href="#@cdktf/provider-dnsimple.emailForward.EmailForwardConfig.property.destinationEmail">destination_email</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.8.0/docs/resources/email_forward#destination_email EmailForward#destination_email}. |
+| <code><a href="#@cdktf/provider-dnsimple.emailForward.EmailForwardConfig.property.domain">domain</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.8.0/docs/resources/email_forward#domain EmailForward#domain}. |
 
 ---
 
@@ -996,7 +996,7 @@ alias_name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.7.0/docs/resources/email_forward#alias_name EmailForward#alias_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.8.0/docs/resources/email_forward#alias_name EmailForward#alias_name}.
 
 ---
 
@@ -1008,7 +1008,7 @@ destination_email: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.7.0/docs/resources/email_forward#destination_email EmailForward#destination_email}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.8.0/docs/resources/email_forward#destination_email EmailForward#destination_email}.
 
 ---
 
@@ -1020,7 +1020,7 @@ domain: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.7.0/docs/resources/email_forward#domain EmailForward#domain}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.8.0/docs/resources/email_forward#domain EmailForward#domain}.
 
 ---
 
