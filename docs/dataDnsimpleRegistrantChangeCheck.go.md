@@ -4,7 +4,7 @@
 
 ### DataDnsimpleRegistrantChangeCheck <a name="DataDnsimpleRegistrantChangeCheck" id="@cdktf/provider-dnsimple.dataDnsimpleRegistrantChangeCheck.DataDnsimpleRegistrantChangeCheck"></a>
 
-Represents a {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.8.0/docs/data-sources/registrant_change_check dnsimple_registrant_change_check}.
+Represents a {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.9.0/docs/data-sources/registrant_change_check dnsimple_registrant_change_check}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-dnsimple.dataDnsimpleRegistrantChangeCheck.DataDnsimpleRegistrantChangeCheck.Initializer"></a>
 
@@ -365,7 +365,7 @@ The construct id used in the generated config for the DataDnsimpleRegistrantChan
 
 The id of the existing DataDnsimpleRegistrantChangeCheck that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.8.0/docs/data-sources/registrant_change_check#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.9.0/docs/data-sources/registrant_change_check#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -731,7 +731,7 @@ ContactId *string
 
 DNSimple contact ID for which the registrant change check is being performed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.8.0/docs/data-sources/registrant_change_check#contact_id DataDnsimpleRegistrantChangeCheck#contact_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.9.0/docs/data-sources/registrant_change_check#contact_id DataDnsimpleRegistrantChangeCheck#contact_id}
 
 ---
 
@@ -745,7 +745,7 @@ DomainId *string
 
 DNSimple domain ID for which the registrant change check is being performed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.8.0/docs/data-sources/registrant_change_check#domain_id DataDnsimpleRegistrantChangeCheck#domain_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.9.0/docs/data-sources/registrant_change_check#domain_id DataDnsimpleRegistrantChangeCheck#domain_id}
 
 ---
 

@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/dnsimple/dnsimple/1.8.0/docs/resources/domain_delegation
+// https://registry.terraform.io/providers/dnsimple/dnsimple/1.9.0/docs/resources/domain_delegation
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,17 +13,17 @@ import * as cdktf from 'cdktf';
 
 export interface DomainDelegationConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.8.0/docs/resources/domain_delegation#domain DomainDelegation#domain}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.9.0/docs/resources/domain_delegation#domain DomainDelegation#domain}
   */
   readonly domain: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.8.0/docs/resources/domain_delegation#name_servers DomainDelegation#name_servers}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.9.0/docs/resources/domain_delegation#name_servers DomainDelegation#name_servers}
   */
   readonly nameServers: string[];
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.8.0/docs/resources/domain_delegation dnsimple_domain_delegation}
+* Represents a {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.9.0/docs/resources/domain_delegation dnsimple_domain_delegation}
 */
 export class DomainDelegation extends cdktf.TerraformResource {
 
@@ -39,7 +39,7 @@ export class DomainDelegation extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a DomainDelegation resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DomainDelegation to import
-  * @param importFromId The id of the existing DomainDelegation that should be imported. Refer to the {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.8.0/docs/resources/domain_delegation#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DomainDelegation that should be imported. Refer to the {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.9.0/docs/resources/domain_delegation#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DomainDelegation to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -51,7 +51,7 @@ export class DomainDelegation extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.8.0/docs/resources/domain_delegation dnsimple_domain_delegation} Resource
+  * Create a new {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.9.0/docs/resources/domain_delegation dnsimple_domain_delegation} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -62,7 +62,7 @@ export class DomainDelegation extends cdktf.TerraformResource {
       terraformResourceType: 'dnsimple_domain_delegation',
       terraformGeneratorMetadata: {
         providerName: 'dnsimple',
-        providerVersion: '1.8.0',
+        providerVersion: '1.9.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,
