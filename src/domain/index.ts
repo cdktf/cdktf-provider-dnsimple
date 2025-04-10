@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/dnsimple/dnsimple/1.8.0/docs/resources/domain
+// https://registry.terraform.io/providers/dnsimple/dnsimple/1.9.0/docs/resources/domain
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,13 +8,13 @@ import * as cdktf from 'cdktf';
 
 export interface DomainConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.8.0/docs/resources/domain#name Domain#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.9.0/docs/resources/domain#name Domain#name}
   */
   readonly name: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.8.0/docs/resources/domain dnsimple_domain}
+* Represents a {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.9.0/docs/resources/domain dnsimple_domain}
 */
 export class Domain extends cdktf.TerraformResource {
 
@@ -35,7 +30,7 @@ export class Domain extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a Domain resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the Domain to import
-  * @param importFromId The id of the existing Domain that should be imported. Refer to the {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.8.0/docs/resources/domain#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing Domain that should be imported. Refer to the {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.9.0/docs/resources/domain#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the Domain to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -47,7 +42,7 @@ export class Domain extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.8.0/docs/resources/domain dnsimple_domain} Resource
+  * Create a new {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.9.0/docs/resources/domain dnsimple_domain} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -58,7 +53,7 @@ export class Domain extends cdktf.TerraformResource {
       terraformResourceType: 'dnsimple_domain',
       terraformGeneratorMetadata: {
         providerName: 'dnsimple',
-        providerVersion: '1.8.0',
+        providerVersion: '1.9.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,
