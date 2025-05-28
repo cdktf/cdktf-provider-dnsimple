@@ -4,7 +4,7 @@
 
 ### Zone <a name="Zone" id="@cdktf/provider-dnsimple.zone.Zone"></a>
 
-Represents a {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.9.0/docs/resources/zone dnsimple_zone}.
+Represents a {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.9.1/docs/resources/zone dnsimple_zone}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-dnsimple.zone.Zone.Initializer"></a>
 
@@ -474,7 +474,7 @@ The construct id used in the generated config for the Zone to import.
 
 The id of the existing Zone that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.9.0/docs/resources/zone#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.9.1/docs/resources/zone#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -799,8 +799,8 @@ new ZoneConfig {
 | <code><a href="#@cdktf/provider-dnsimple.zone.ZoneConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-dnsimple.zone.ZoneConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-dnsimple.zone.ZoneConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-dnsimple.zone.ZoneConfig.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.9.0/docs/resources/zone#name Zone#name}. |
-| <code><a href="#@cdktf/provider-dnsimple.zone.ZoneConfig.property.active">Active</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.9.0/docs/resources/zone#active Zone#active}. |
+| <code><a href="#@cdktf/provider-dnsimple.zone.ZoneConfig.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.9.1/docs/resources/zone#name Zone#name}. |
+| <code><a href="#@cdktf/provider-dnsimple.zone.ZoneConfig.property.active">Active</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.9.1/docs/resources/zone#active Zone#active}. |
 
 ---
 
@@ -882,7 +882,7 @@ public string Name { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.9.0/docs/resources/zone#name Zone#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.9.1/docs/resources/zone#name Zone#name}.
 
 ---
 
@@ -894,7 +894,7 @@ public object Active { get; set; }
 
 - *Type:* object
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.9.0/docs/resources/zone#active Zone#active}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.9.1/docs/resources/zone#active Zone#active}.
 
 ---
 
