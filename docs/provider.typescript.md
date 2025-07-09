@@ -4,7 +4,7 @@
 
 ### DnsimpleProvider <a name="DnsimpleProvider" id="@cdktf/provider-dnsimple.provider.DnsimpleProvider"></a>
 
-Represents a {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.9.1/docs dnsimple}.
+Represents a {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.10.0/docs dnsimple}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-dnsimple.provider.DnsimpleProvider.Initializer"></a>
 
@@ -275,7 +275,7 @@ The construct id used in the generated config for the DnsimpleProvider to import
 
 The id of the existing DnsimpleProvider that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.9.1/docs#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.10.0/docs#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -569,7 +569,7 @@ public readonly account: string;
 
 The account for API operations.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.9.1/docs#account DnsimpleProvider#account}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.10.0/docs#account DnsimpleProvider#account}
 
 ---
 
@@ -583,7 +583,7 @@ public readonly alias: string;
 
 Alias name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.9.1/docs#alias DnsimpleProvider#alias}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.10.0/docs#alias DnsimpleProvider#alias}
 
 ---
 
@@ -597,7 +597,7 @@ public readonly prefetch: boolean | IResolvable;
 
 Flag to enable the prefetch of zone records.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.9.1/docs#prefetch DnsimpleProvider#prefetch}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.10.0/docs#prefetch DnsimpleProvider#prefetch}
 
 ---
 
@@ -611,7 +611,7 @@ public readonly sandbox: boolean | IResolvable;
 
 Flag to enable the sandbox API.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.9.1/docs#sandbox DnsimpleProvider#sandbox}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.10.0/docs#sandbox DnsimpleProvider#sandbox}
 
 ---
 
@@ -625,7 +625,7 @@ public readonly token: string;
 
 The API v2 token for API operations.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.9.1/docs#token DnsimpleProvider#token}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.10.0/docs#token DnsimpleProvider#token}
 
 ---
 
@@ -639,7 +639,7 @@ public readonly userAgent: string;
 
 Custom string to append to the user agent used for sending HTTP requests to the API.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.9.1/docs#user_agent DnsimpleProvider#user_agent}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.10.0/docs#user_agent DnsimpleProvider#user_agent}
 
 ---
 
