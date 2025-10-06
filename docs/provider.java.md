@@ -14,10 +14,8 @@ import com.hashicorp.cdktf.providers.dnsimple.provider.DnsimpleProvider;
 DnsimpleProvider.Builder.create(Construct scope, java.lang.String id)
 //  .account(java.lang.String)
 //  .alias(java.lang.String)
-//  .prefetch(java.lang.Boolean)
-//  .prefetch(IResolvable)
-//  .sandbox(java.lang.Boolean)
-//  .sandbox(IResolvable)
+//  .prefetch(java.lang.Boolean|IResolvable)
+//  .sandbox(java.lang.Boolean|IResolvable)
 //  .token(java.lang.String)
 //  .userAgent(java.lang.String)
     .build();
@@ -29,8 +27,8 @@ DnsimpleProvider.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-dnsimple.provider.DnsimpleProvider.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | The scoped construct ID. |
 | <code><a href="#@cdktf/provider-dnsimple.provider.DnsimpleProvider.Initializer.parameter.account">account</a></code> | <code>java.lang.String</code> | The account for API operations. |
 | <code><a href="#@cdktf/provider-dnsimple.provider.DnsimpleProvider.Initializer.parameter.alias">alias</a></code> | <code>java.lang.String</code> | Alias name. |
-| <code><a href="#@cdktf/provider-dnsimple.provider.DnsimpleProvider.Initializer.parameter.prefetch">prefetch</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Flag to enable the prefetch of zone records. |
-| <code><a href="#@cdktf/provider-dnsimple.provider.DnsimpleProvider.Initializer.parameter.sandbox">sandbox</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Flag to enable the sandbox API. |
+| <code><a href="#@cdktf/provider-dnsimple.provider.DnsimpleProvider.Initializer.parameter.prefetch">prefetch</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Flag to enable the prefetch of zone records. |
+| <code><a href="#@cdktf/provider-dnsimple.provider.DnsimpleProvider.Initializer.parameter.sandbox">sandbox</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Flag to enable the sandbox API. |
 | <code><a href="#@cdktf/provider-dnsimple.provider.DnsimpleProvider.Initializer.parameter.token">token</a></code> | <code>java.lang.String</code> | The API v2 token for API operations. |
 | <code><a href="#@cdktf/provider-dnsimple.provider.DnsimpleProvider.Initializer.parameter.userAgent">userAgent</a></code> | <code>java.lang.String</code> | Custom string to append to the user agent used for sending HTTP requests to the API. |
 
@@ -76,7 +74,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsim
 
 ##### `prefetch`<sup>Optional</sup> <a name="prefetch" id="@cdktf/provider-dnsimple.provider.DnsimpleProvider.Initializer.parameter.prefetch"></a>
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Flag to enable the prefetch of zone records.
 
@@ -86,7 +84,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsim
 
 ##### `sandbox`<sup>Optional</sup> <a name="sandbox" id="@cdktf/provider-dnsimple.provider.DnsimpleProvider.Initializer.parameter.sandbox"></a>
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Flag to enable the sandbox API.
 
@@ -370,13 +368,13 @@ Refer to the {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.
 | <code><a href="#@cdktf/provider-dnsimple.provider.DnsimpleProvider.property.alias">alias</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-dnsimple.provider.DnsimpleProvider.property.accountInput">accountInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-dnsimple.provider.DnsimpleProvider.property.aliasInput">aliasInput</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-dnsimple.provider.DnsimpleProvider.property.prefetchInput">prefetchInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-dnsimple.provider.DnsimpleProvider.property.sandboxInput">sandboxInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-dnsimple.provider.DnsimpleProvider.property.prefetchInput">prefetchInput</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-dnsimple.provider.DnsimpleProvider.property.sandboxInput">sandboxInput</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-dnsimple.provider.DnsimpleProvider.property.tokenInput">tokenInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-dnsimple.provider.DnsimpleProvider.property.userAgentInput">userAgentInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-dnsimple.provider.DnsimpleProvider.property.account">account</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-dnsimple.provider.DnsimpleProvider.property.prefetch">prefetch</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-dnsimple.provider.DnsimpleProvider.property.sandbox">sandbox</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-dnsimple.provider.DnsimpleProvider.property.prefetch">prefetch</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-dnsimple.provider.DnsimpleProvider.property.sandbox">sandbox</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-dnsimple.provider.DnsimpleProvider.property.token">token</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-dnsimple.provider.DnsimpleProvider.property.userAgent">userAgent</a></code> | <code>java.lang.String</code> | *No description.* |
 
@@ -497,20 +495,20 @@ public java.lang.String getAliasInput();
 ##### `prefetchInput`<sup>Optional</sup> <a name="prefetchInput" id="@cdktf/provider-dnsimple.provider.DnsimpleProvider.property.prefetchInput"></a>
 
 ```java
-public java.lang.Object getPrefetchInput();
+public java.lang.Boolean|IResolvable getPrefetchInput();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
 ##### `sandboxInput`<sup>Optional</sup> <a name="sandboxInput" id="@cdktf/provider-dnsimple.provider.DnsimpleProvider.property.sandboxInput"></a>
 
 ```java
-public java.lang.Object getSandboxInput();
+public java.lang.Boolean|IResolvable getSandboxInput();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -547,20 +545,20 @@ public java.lang.String getAccount();
 ##### `prefetch`<sup>Optional</sup> <a name="prefetch" id="@cdktf/provider-dnsimple.provider.DnsimpleProvider.property.prefetch"></a>
 
 ```java
-public java.lang.Object getPrefetch();
+public java.lang.Boolean|IResolvable getPrefetch();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
 ##### `sandbox`<sup>Optional</sup> <a name="sandbox" id="@cdktf/provider-dnsimple.provider.DnsimpleProvider.property.sandbox"></a>
 
 ```java
-public java.lang.Object getSandbox();
+public java.lang.Boolean|IResolvable getSandbox();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -614,10 +612,8 @@ import com.hashicorp.cdktf.providers.dnsimple.provider.DnsimpleProviderConfig;
 DnsimpleProviderConfig.builder()
 //  .account(java.lang.String)
 //  .alias(java.lang.String)
-//  .prefetch(java.lang.Boolean)
-//  .prefetch(IResolvable)
-//  .sandbox(java.lang.Boolean)
-//  .sandbox(IResolvable)
+//  .prefetch(java.lang.Boolean|IResolvable)
+//  .sandbox(java.lang.Boolean|IResolvable)
 //  .token(java.lang.String)
 //  .userAgent(java.lang.String)
     .build();
@@ -629,8 +625,8 @@ DnsimpleProviderConfig.builder()
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-dnsimple.provider.DnsimpleProviderConfig.property.account">account</a></code> | <code>java.lang.String</code> | The account for API operations. |
 | <code><a href="#@cdktf/provider-dnsimple.provider.DnsimpleProviderConfig.property.alias">alias</a></code> | <code>java.lang.String</code> | Alias name. |
-| <code><a href="#@cdktf/provider-dnsimple.provider.DnsimpleProviderConfig.property.prefetch">prefetch</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Flag to enable the prefetch of zone records. |
-| <code><a href="#@cdktf/provider-dnsimple.provider.DnsimpleProviderConfig.property.sandbox">sandbox</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Flag to enable the sandbox API. |
+| <code><a href="#@cdktf/provider-dnsimple.provider.DnsimpleProviderConfig.property.prefetch">prefetch</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Flag to enable the prefetch of zone records. |
+| <code><a href="#@cdktf/provider-dnsimple.provider.DnsimpleProviderConfig.property.sandbox">sandbox</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Flag to enable the sandbox API. |
 | <code><a href="#@cdktf/provider-dnsimple.provider.DnsimpleProviderConfig.property.token">token</a></code> | <code>java.lang.String</code> | The API v2 token for API operations. |
 | <code><a href="#@cdktf/provider-dnsimple.provider.DnsimpleProviderConfig.property.userAgent">userAgent</a></code> | <code>java.lang.String</code> | Custom string to append to the user agent used for sending HTTP requests to the API. |
 
@@ -667,10 +663,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsim
 ##### `prefetch`<sup>Optional</sup> <a name="prefetch" id="@cdktf/provider-dnsimple.provider.DnsimpleProviderConfig.property.prefetch"></a>
 
 ```java
-public java.lang.Object getPrefetch();
+public java.lang.Boolean|IResolvable getPrefetch();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Flag to enable the prefetch of zone records.
 
@@ -681,10 +677,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsim
 ##### `sandbox`<sup>Optional</sup> <a name="sandbox" id="@cdktf/provider-dnsimple.provider.DnsimpleProviderConfig.property.sandbox"></a>
 
 ```java
-public java.lang.Object getSandbox();
+public java.lang.Boolean|IResolvable getSandbox();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Flag to enable the sandbox API.
 

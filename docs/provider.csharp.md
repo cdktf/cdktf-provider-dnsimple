@@ -302,13 +302,13 @@ Refer to the {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.
 | <code><a href="#@cdktf/provider-dnsimple.provider.DnsimpleProvider.property.alias">Alias</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-dnsimple.provider.DnsimpleProvider.property.accountInput">AccountInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-dnsimple.provider.DnsimpleProvider.property.aliasInput">AliasInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-dnsimple.provider.DnsimpleProvider.property.prefetchInput">PrefetchInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-dnsimple.provider.DnsimpleProvider.property.sandboxInput">SandboxInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-dnsimple.provider.DnsimpleProvider.property.prefetchInput">PrefetchInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-dnsimple.provider.DnsimpleProvider.property.sandboxInput">SandboxInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-dnsimple.provider.DnsimpleProvider.property.tokenInput">TokenInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-dnsimple.provider.DnsimpleProvider.property.userAgentInput">UserAgentInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-dnsimple.provider.DnsimpleProvider.property.account">Account</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-dnsimple.provider.DnsimpleProvider.property.prefetch">Prefetch</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-dnsimple.provider.DnsimpleProvider.property.sandbox">Sandbox</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-dnsimple.provider.DnsimpleProvider.property.prefetch">Prefetch</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-dnsimple.provider.DnsimpleProvider.property.sandbox">Sandbox</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-dnsimple.provider.DnsimpleProvider.property.token">Token</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-dnsimple.provider.DnsimpleProvider.property.userAgent">UserAgent</a></code> | <code>string</code> | *No description.* |
 
@@ -429,20 +429,20 @@ public string AliasInput { get; }
 ##### `PrefetchInput`<sup>Optional</sup> <a name="PrefetchInput" id="@cdktf/provider-dnsimple.provider.DnsimpleProvider.property.prefetchInput"></a>
 
 ```csharp
-public object PrefetchInput { get; }
+public bool|IResolvable PrefetchInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `SandboxInput`<sup>Optional</sup> <a name="SandboxInput" id="@cdktf/provider-dnsimple.provider.DnsimpleProvider.property.sandboxInput"></a>
 
 ```csharp
-public object SandboxInput { get; }
+public bool|IResolvable SandboxInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -479,20 +479,20 @@ public string Account { get; }
 ##### `Prefetch`<sup>Optional</sup> <a name="Prefetch" id="@cdktf/provider-dnsimple.provider.DnsimpleProvider.property.prefetch"></a>
 
 ```csharp
-public object Prefetch { get; }
+public bool|IResolvable Prefetch { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `Sandbox`<sup>Optional</sup> <a name="Sandbox" id="@cdktf/provider-dnsimple.provider.DnsimpleProvider.property.sandbox"></a>
 
 ```csharp
-public object Sandbox { get; }
+public bool|IResolvable Sandbox { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -546,8 +546,8 @@ using HashiCorp.Cdktf.Providers.Dnsimple;
 new DnsimpleProviderConfig {
     string Account = null,
     string Alias = null,
-    object Prefetch = null,
-    object Sandbox = null,
+    bool|IResolvable Prefetch = null,
+    bool|IResolvable Sandbox = null,
     string Token = null,
     string UserAgent = null
 };
@@ -559,8 +559,8 @@ new DnsimpleProviderConfig {
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-dnsimple.provider.DnsimpleProviderConfig.property.account">Account</a></code> | <code>string</code> | The account for API operations. |
 | <code><a href="#@cdktf/provider-dnsimple.provider.DnsimpleProviderConfig.property.alias">Alias</a></code> | <code>string</code> | Alias name. |
-| <code><a href="#@cdktf/provider-dnsimple.provider.DnsimpleProviderConfig.property.prefetch">Prefetch</a></code> | <code>object</code> | Flag to enable the prefetch of zone records. |
-| <code><a href="#@cdktf/provider-dnsimple.provider.DnsimpleProviderConfig.property.sandbox">Sandbox</a></code> | <code>object</code> | Flag to enable the sandbox API. |
+| <code><a href="#@cdktf/provider-dnsimple.provider.DnsimpleProviderConfig.property.prefetch">Prefetch</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Flag to enable the prefetch of zone records. |
+| <code><a href="#@cdktf/provider-dnsimple.provider.DnsimpleProviderConfig.property.sandbox">Sandbox</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Flag to enable the sandbox API. |
 | <code><a href="#@cdktf/provider-dnsimple.provider.DnsimpleProviderConfig.property.token">Token</a></code> | <code>string</code> | The API v2 token for API operations. |
 | <code><a href="#@cdktf/provider-dnsimple.provider.DnsimpleProviderConfig.property.userAgent">UserAgent</a></code> | <code>string</code> | Custom string to append to the user agent used for sending HTTP requests to the API. |
 
@@ -597,10 +597,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsim
 ##### `Prefetch`<sup>Optional</sup> <a name="Prefetch" id="@cdktf/provider-dnsimple.provider.DnsimpleProviderConfig.property.prefetch"></a>
 
 ```csharp
-public object Prefetch { get; set; }
+public bool|IResolvable Prefetch { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Flag to enable the prefetch of zone records.
 
@@ -611,10 +611,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsim
 ##### `Sandbox`<sup>Optional</sup> <a name="Sandbox" id="@cdktf/provider-dnsimple.provider.DnsimpleProviderConfig.property.sandbox"></a>
 
 ```csharp
-public object Sandbox { get; set; }
+public bool|IResolvable Sandbox { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Flag to enable the sandbox API.
 

@@ -16,8 +16,8 @@ provider.DnsimpleProvider(
   id: str,
   account: str = None,
   alias: str = None,
-  prefetch: typing.Union[bool, IResolvable] = None,
-  sandbox: typing.Union[bool, IResolvable] = None,
+  prefetch: bool | IResolvable = None,
+  sandbox: bool | IResolvable = None,
   token: str = None,
   user_agent: str = None
 )
@@ -29,8 +29,8 @@ provider.DnsimpleProvider(
 | <code><a href="#@cdktf/provider-dnsimple.provider.DnsimpleProvider.Initializer.parameter.id">id</a></code> | <code>str</code> | The scoped construct ID. |
 | <code><a href="#@cdktf/provider-dnsimple.provider.DnsimpleProvider.Initializer.parameter.account">account</a></code> | <code>str</code> | The account for API operations. |
 | <code><a href="#@cdktf/provider-dnsimple.provider.DnsimpleProvider.Initializer.parameter.alias">alias</a></code> | <code>str</code> | Alias name. |
-| <code><a href="#@cdktf/provider-dnsimple.provider.DnsimpleProvider.Initializer.parameter.prefetch">prefetch</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Flag to enable the prefetch of zone records. |
-| <code><a href="#@cdktf/provider-dnsimple.provider.DnsimpleProvider.Initializer.parameter.sandbox">sandbox</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Flag to enable the sandbox API. |
+| <code><a href="#@cdktf/provider-dnsimple.provider.DnsimpleProvider.Initializer.parameter.prefetch">prefetch</a></code> | <code>bool \| cdktf.IResolvable</code> | Flag to enable the prefetch of zone records. |
+| <code><a href="#@cdktf/provider-dnsimple.provider.DnsimpleProvider.Initializer.parameter.sandbox">sandbox</a></code> | <code>bool \| cdktf.IResolvable</code> | Flag to enable the sandbox API. |
 | <code><a href="#@cdktf/provider-dnsimple.provider.DnsimpleProvider.Initializer.parameter.token">token</a></code> | <code>str</code> | The API v2 token for API operations. |
 | <code><a href="#@cdktf/provider-dnsimple.provider.DnsimpleProvider.Initializer.parameter.userAgent">user_agent</a></code> | <code>str</code> | Custom string to append to the user agent used for sending HTTP requests to the API. |
 
@@ -76,7 +76,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsim
 
 ##### `prefetch`<sup>Optional</sup> <a name="prefetch" id="@cdktf/provider-dnsimple.provider.DnsimpleProvider.Initializer.parameter.prefetch"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Flag to enable the prefetch of zone records.
 
@@ -86,7 +86,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsim
 
 ##### `sandbox`<sup>Optional</sup> <a name="sandbox" id="@cdktf/provider-dnsimple.provider.DnsimpleProvider.Initializer.parameter.sandbox"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Flag to enable the sandbox API.
 
@@ -386,13 +386,13 @@ Refer to the {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.
 | <code><a href="#@cdktf/provider-dnsimple.provider.DnsimpleProvider.property.alias">alias</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-dnsimple.provider.DnsimpleProvider.property.accountInput">account_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-dnsimple.provider.DnsimpleProvider.property.aliasInput">alias_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-dnsimple.provider.DnsimpleProvider.property.prefetchInput">prefetch_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-dnsimple.provider.DnsimpleProvider.property.sandboxInput">sandbox_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-dnsimple.provider.DnsimpleProvider.property.prefetchInput">prefetch_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-dnsimple.provider.DnsimpleProvider.property.sandboxInput">sandbox_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-dnsimple.provider.DnsimpleProvider.property.tokenInput">token_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-dnsimple.provider.DnsimpleProvider.property.userAgentInput">user_agent_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-dnsimple.provider.DnsimpleProvider.property.account">account</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-dnsimple.provider.DnsimpleProvider.property.prefetch">prefetch</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-dnsimple.provider.DnsimpleProvider.property.sandbox">sandbox</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-dnsimple.provider.DnsimpleProvider.property.prefetch">prefetch</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-dnsimple.provider.DnsimpleProvider.property.sandbox">sandbox</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-dnsimple.provider.DnsimpleProvider.property.token">token</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-dnsimple.provider.DnsimpleProvider.property.userAgent">user_agent</a></code> | <code>str</code> | *No description.* |
 
@@ -513,20 +513,20 @@ alias_input: str
 ##### `prefetch_input`<sup>Optional</sup> <a name="prefetch_input" id="@cdktf/provider-dnsimple.provider.DnsimpleProvider.property.prefetchInput"></a>
 
 ```python
-prefetch_input: typing.Union[bool, IResolvable]
+prefetch_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `sandbox_input`<sup>Optional</sup> <a name="sandbox_input" id="@cdktf/provider-dnsimple.provider.DnsimpleProvider.property.sandboxInput"></a>
 
 ```python
-sandbox_input: typing.Union[bool, IResolvable]
+sandbox_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -563,20 +563,20 @@ account: str
 ##### `prefetch`<sup>Optional</sup> <a name="prefetch" id="@cdktf/provider-dnsimple.provider.DnsimpleProvider.property.prefetch"></a>
 
 ```python
-prefetch: typing.Union[bool, IResolvable]
+prefetch: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `sandbox`<sup>Optional</sup> <a name="sandbox" id="@cdktf/provider-dnsimple.provider.DnsimpleProvider.property.sandbox"></a>
 
 ```python
-sandbox: typing.Union[bool, IResolvable]
+sandbox: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -630,8 +630,8 @@ from cdktf_cdktf_provider_dnsimple import provider
 provider.DnsimpleProviderConfig(
   account: str = None,
   alias: str = None,
-  prefetch: typing.Union[bool, IResolvable] = None,
-  sandbox: typing.Union[bool, IResolvable] = None,
+  prefetch: bool | IResolvable = None,
+  sandbox: bool | IResolvable = None,
   token: str = None,
   user_agent: str = None
 )
@@ -643,8 +643,8 @@ provider.DnsimpleProviderConfig(
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-dnsimple.provider.DnsimpleProviderConfig.property.account">account</a></code> | <code>str</code> | The account for API operations. |
 | <code><a href="#@cdktf/provider-dnsimple.provider.DnsimpleProviderConfig.property.alias">alias</a></code> | <code>str</code> | Alias name. |
-| <code><a href="#@cdktf/provider-dnsimple.provider.DnsimpleProviderConfig.property.prefetch">prefetch</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Flag to enable the prefetch of zone records. |
-| <code><a href="#@cdktf/provider-dnsimple.provider.DnsimpleProviderConfig.property.sandbox">sandbox</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Flag to enable the sandbox API. |
+| <code><a href="#@cdktf/provider-dnsimple.provider.DnsimpleProviderConfig.property.prefetch">prefetch</a></code> | <code>bool \| cdktf.IResolvable</code> | Flag to enable the prefetch of zone records. |
+| <code><a href="#@cdktf/provider-dnsimple.provider.DnsimpleProviderConfig.property.sandbox">sandbox</a></code> | <code>bool \| cdktf.IResolvable</code> | Flag to enable the sandbox API. |
 | <code><a href="#@cdktf/provider-dnsimple.provider.DnsimpleProviderConfig.property.token">token</a></code> | <code>str</code> | The API v2 token for API operations. |
 | <code><a href="#@cdktf/provider-dnsimple.provider.DnsimpleProviderConfig.property.userAgent">user_agent</a></code> | <code>str</code> | Custom string to append to the user agent used for sending HTTP requests to the API. |
 
@@ -681,10 +681,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsim
 ##### `prefetch`<sup>Optional</sup> <a name="prefetch" id="@cdktf/provider-dnsimple.provider.DnsimpleProviderConfig.property.prefetch"></a>
 
 ```python
-prefetch: typing.Union[bool, IResolvable]
+prefetch: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Flag to enable the prefetch of zone records.
 
@@ -695,10 +695,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsim
 ##### `sandbox`<sup>Optional</sup> <a name="sandbox" id="@cdktf/provider-dnsimple.provider.DnsimpleProviderConfig.property.sandbox"></a>
 
 ```python
-sandbox: typing.Union[bool, IResolvable]
+sandbox: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Flag to enable the sandbox API.
 
